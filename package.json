@@ -4,7 +4,7 @@
   "main": "app.js",
   "engines": {
     "node": "8.9.4",
-    "npm":  "1.1.x"
+    "npm":  "6.2.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
