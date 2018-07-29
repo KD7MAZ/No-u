@@ -12,6 +12,7 @@ exports.run = async function (client, message, args) {
     message.delete();
     if (message.mentions.members.size === 0)
     return message.channel.send(`${message.author} Please mention a user to DDoS.`)
+    const ddosMember = message.mentions.members.first();
     const loading = client.emojis.find("name", "BUFFER1")
     const m = await message.channel.send(`${loading} Initializing DDoS ${loading}`);
     let randm = Math.floor(Math.random() * 7891011) + 123456;
