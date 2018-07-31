@@ -6,7 +6,7 @@ const prefix = '-'
 const owner = '321673115891531787'
 
 
-exports.run = (bot, message, [mention, ...reason]) => {
+exports.run = (bot, message, args) => {
 
     let content = message.content.slice(prefix.length).split(" ");
     let args = content.slice(1);
