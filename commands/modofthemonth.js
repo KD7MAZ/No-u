@@ -12,10 +12,10 @@ const nmofm = message.guild.member(message.mentions.users.first());
 
     let motm = new Discord.RichEmbed()
     .setTimestamp()
-    .setTitle("__**Mod Of The Month Reset!**__ | Month: June")
+    .setTitle("__**Mod Of The Month Reset!**__ | Month: July")
     .setColor("#8F00FF")
-    .setDescription('The month of june is over as the start of the hot weather has started!')
-    .addField("New Mod Of The Month:", `${nmofm.user.username}#${nmofm.user.discriminator} (${nmofm.user}) and is given the role: (<@&397741318979190784>) \n \nI decided to give it to Matty becaause we have alot of banter and hes quiet a nice person, hes been helping me by playing tanki with me when im lonely and i think it just suits him to have it. \nCongratulations on this! Keep up the great work.`)
+    .setDescription('The hot month of july is over as as alot of you will go to hot places on holiday!')
+    .addField("New Mod Of The Month:", `${nmofm.user.username}#${nmofm.user.discriminator} (${nmofm.user}) and is given the role: (<@&397741318979190784>) \n \nI have given to it my gay clan member black because he is fun to play with in tnaki and hes also very funny in discord and does help me alot with things i need! \nCongratulations on this! Keep up the great work.`)
     message.channel.send(motm);
 }
 
