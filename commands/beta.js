@@ -6,7 +6,7 @@ const prefix = '-'
 const owner = '321673115891531787'
 
 exports.run = (bot, message, [mention, ...reason]) => {
-    
+    if (message.author.id !== `${owner}`) return message.channel.send(`**|:exclamation:|  You dont have permission to use this command**`)    
     const betaRole = message.guild.roles.find("name", "BETA TESTER");
 
     const betaMember = message.mentions.members.first();
