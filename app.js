@@ -268,7 +268,7 @@ bot.on("message", async message => {
 const swearWords = ["Fuck", "Shit", "Bitch", "Faggot", "Dick", "Dickhead", "Cock", "Cocksucker", "Cunt", "Nigger", "Kys", "Gfys", "Knobhead","fuck", "shit", "bitch", "faggot", "dick", "dickhead", "cock", "cocksucker", "cunt", "nigger", "kys", "gfys", "knobhead", "pussy", "Pussy", "Pussies", "pussies", "dik", "Dik"];
 if (message.author.id === owner) return;
     if  (swearWords.some(word => message.content.includes(word)) ) {
-        message.delete();
+        message.delete().catch(err => console.log(err));
         message.channel.send(`${message.author} Please do not use bad words!`);
 
     }
