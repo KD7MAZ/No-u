@@ -265,7 +265,7 @@ bot.on("message", async message => {
 
     if(message.author.bot) return;
 
-const swearWords = ["Fuck", "Shit", "Bitch", "Ass", "Asshole", "Faggot", "Dick", "Dickhead", "Cock", "Cocksucker", "Cunt", "Nigger", "Kys", "Gfys", "Knobhead","fuck", "shit", "bitch", "ass", "asshole", "faggot", "dick", "dickhead", "cock", "cocksucker", "cunt", "nigger", "kys", "gfys", "knobhead", "pussy", "Pussy", "Pussies", "pussies", "dik", "Dik"];
+const swearWords = ["Fuck", "Shit", "Bitch", "Asshole", "Faggot", "Dick", "Dickhead", "Cock", "Cocksucker", "Cunt", "Nigger", "Kys", "Gfys", "Knobhead","fuck", "shit", "bitch", "asshole", "faggot", "dick", "dickhead", "cock", "cocksucker", "cunt", "nigger", "kys", "gfys", "knobhead", "pussy", "Pussy", "Pussies", "pussies", "dik", "Dik"];
 if (message.author.id === owner) return;
     if  (swearWords.some(word => message.content.includes(word)) ) {
         message.delete();
