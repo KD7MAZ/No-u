@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 const weather = require('weather-js')
-const prefix = '.'
+const prefix = '-'
 const owner = '321673115891531787'
 
 exports.run = (bot, message, args) => {
