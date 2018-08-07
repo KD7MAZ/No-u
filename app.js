@@ -181,7 +181,8 @@ bot.on("guildCreate", guild => {
      .addField("Owner" , `${guild.owner}`)
      .addField("Amount of Members", `${guild.memberCount}`)
      .addField("Server ID", `${guild.id}`)
-     .addField("Owner ID", `${guild.ownerID}`);
+     .addField("Owner ID", `${guild.ownerID}`)
+     .addField("Owner Name", `${guild.owner.user.tag}`);
 
       bot.guilds.get('323206382147076096').channels.get('443483970705948682').send(embed);
 
@@ -198,7 +199,8 @@ bot.on("guildDelete", guild => {
       .addField("Owner", `${guild.owner}`)
       .addField("Amount of Members", `${guild.memberCount}`)
       .addField("Server ID", `${guild.id}`)
-      .addField("Owner ID", `${guild.ownerID}`);
+      .addField("Owner ID", `${guild.ownerID}`)
+      .addField("Owner Name", `${guild.owner.user.tag}`);
 
       bot.guilds.get('323206382147076096').channels.get('443483970705948682').send(embed);
 
