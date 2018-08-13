@@ -318,7 +318,7 @@ bot.on("guildMemberAdd", (member) => {
     //my server
     try {
         if (member.guild.id == '323206382147076096') {
-            member.guild.channels.get("477585601105887242").send(`<a:PARTY:463006559446892555> **Welcome to ${member.guild.name} ${member.user} You are the ${last} Member! :tada:** \nPlease read the <#323211253709275138> and stay out of trouble!`);
+            member.guild.channels.get("477585260457230336").send(`<a:PARTY:463006559446892555> **Welcome to ${member.guild.name} ${member.user} You are the ${last} Member! :tada:** \nPlease read the <#323211253709275138> and stay out of trouble!`);
 
         }
         //leos server
@@ -390,7 +390,7 @@ bot.on('guildMemberRemove', (member) => {
     //my server
     try {
         if (member.guild.id == '323206382147076096') {
-            member.guild.channels.get("477585601105887242").send(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} has just left ${member.guild.name} <a:CRY:437630971693498368> the server now has ${member.guild.memberCount} Members!** \nI guess ${member.user.username}#${member.user.discriminator} didnt want to follow the rules!`);
+            member.guild.channels.get("477585260457230336").send(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} has just left ${member.guild.name} <a:CRY:437630971693498368> the server now has ${member.guild.memberCount} Members!** \nI guess ${member.user.username}#${member.user.discriminator} didnt want to follow the rules!`);
 
         }
         //leos server
