@@ -318,7 +318,7 @@ bot.on("guildMemberAdd", (member) => {
     //my server
     try {
         if (member.guild.id == '323206382147076096') {
-            member.guild.channels.get("477585260457230336").send(`<a:PARTY:463006559446892555> **Welcome to ${member.guild.name} ${member.user} You are the ${last} Member! :tada:** \nPlease read the <#323211253709275138> and stay out of trouble!`);
+            member.guild.channels.get("477585260457230336").send(`<a:PARTY:463006559446892555> **Welcome to ${member.guild.name} ${member.user} You are the ${last} Member! :tada:** \nPlease read the <#477584677339660308> and stay out of trouble!`);
             member.send(`Hello ${member.user.username} if this is your first time joining the server then, welcome, if not and you've come back because you were kicked from the bot that was hacked and you had roles other than members then either pm my master Ahsan#3247 (<@321673115891531787>) or pm a moderator in the server that can give it back to you if you lie to us we will know and you will be banned so don't try anything \nThanks \n \nBot owner, Server owner ~ Ahsan.`)
             
         }
