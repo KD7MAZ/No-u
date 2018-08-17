@@ -38,7 +38,7 @@ if(message.content.indexOf(prefix) !== 0) return;
 
    
 if (message.guild.id == '478130826383589386'){
-    if (!message.content.startWith("-ratings", "-weekly", "-help", "-open")) 
+    if (!message.content.startWith("-ratings"))
      return message.channel.send('**|:x:| You are not allowed to use non tanki related commands! \n|:x:| nвам не разрешено использовать команды, не связанные с танками!**')
 }
     
