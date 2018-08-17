@@ -38,8 +38,8 @@ if(message.content.indexOf(prefix) !== 0) return;
 
    
 if (message.guild.id == '478130826383589386'){
-    if (message.content !== ["-ratings", "-weekly", "-help", "-open container"]) 
-  return message.channel.send('**|:x:| You are not allowed to use non tanki related commands! \n|:x:| nвам не разрешено использовать команды, не связанные с танками!**')
+    if (message.content == ["-ratings", "-weekly", "-help", "-open container"]) 
+     return message.channel.send('**|:x:| You are not allowed to use non tanki related commands! \n|:x:| nвам не разрешено использовать команды, не связанные с танками!**')
 }
     
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
