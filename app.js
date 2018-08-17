@@ -387,14 +387,7 @@ bot.on('guildMemberRemove', (member) => {
         }
         //bossuls server
         else if (member.guild.id == '352216498867142666') {
-            member.guild.channels.get("352216498867142667").send(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} has just left ${member.guild.name} <a:CRY:437630971693498368> the server now has ${member.guild.memberCount} Members!** \nI guess ${member.user.username}#${member.user.discriminator} didnt want to follow the rules!`);
-        
-        }
-        //quicks server
-        else if (member.guild.id == '353641481304670222') {
-            let embed = new Discord.RichEmbed()
-            .setDescription(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} you have just left ${member.guild.name} please join the following server to show your support** <a:CRY:437630971693498368> **:** \n[Click here to join the support server!](https://discord.gg/D4UqdWh) \n \n\n **Also add me to your server for cool  new perks!** \n[Click here to invite me!](https://discordapp.com/oauth2/authorize?client_id=451417687294345216&scope=bot&permissions=2146958591) `)
-        member.send(embed)   
+            member.guild.channels.get("352216498867142667").send(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} has just left ${member.guild.name} <a:CRY:437630971693498368> the server now has ${member.guild.memberCount} Members!** \nI guess ${member.user.username}#${member.user.discriminator} didnt want to follow the rules!`);        
         }
         //wassils server
         else if (member.guild.id == '465702266104446976') {
@@ -406,20 +399,6 @@ bot.on('guildMemberRemove', (member) => {
         //mattys other server
         else if (member.guild.id == '468839234275639305') {
             member.guild.channels.get("468839234275639326").send(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} has just left ${member.guild.name} <a:CRY:437630971693498368> the server now has ${member.guild.memberCount} Members!** \nI guess ${member.user.username}#${member.user.discriminator} didnt want to follow the rules!`);
-            let embed = new Discord.RichEmbed()
-            .setDescription(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} you have just left ${member.guild.name} please join the following server to show your support** <a:CRY:437630971693498368> **:** \n[Click here to join the support server!](https://discord.gg/D4UqdWh) \n \n\n **Also add me to your server for cool  new perks!** \n[Click here to invite me!](https://discordapp.com/oauth2/authorize?client_id=451417687294345216&scope=bot&permissions=2146958591) `)
-        member.send(embed)
-        }
-        //laims server
-        else if (member.guild.id == '466878941026582528') {
-            member.guild.channels.get("466879041723695105").send(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} has just left ${member.guild.name} <a:CRY:437630971693498368> the server now has ${member.guild.memberCount} Members!** \nI guess ${member.user.username}#${member.user.discriminator} didnt want to follow the rules!`);
-            let embed = new Discord.RichEmbed()
-            .setDescription(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} you have just left ${member.guild.name} please join the following server to show your support** <a:CRY:437630971693498368> **:** \n[Click here to join the support server!](https://discord.gg/D4UqdWh) \n \n\n **Also add me to your server for cool  new perks!** \n[Click here to invite me!](https://discordapp.com/oauth2/authorize?client_id=451417687294345216&scope=bot&permissions=2146958591) `)
-        member.send(embed)
-        }
-        //prices server
-        else if (member.guild.id == '419567438452097027') {
-            member.guild.channels.get("466170834604785664").send(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} has just left ${member.guild.name} <a:CRY:437630971693498368> the server now has ${member.guild.memberCount} Members!** \nI guess ${member.user.username}#${member.user.discriminator} didnt want to follow the rules!`);
             let embed = new Discord.RichEmbed()
             .setDescription(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} you have just left ${member.guild.name} please join the following server to show your support** <a:CRY:437630971693498368> **:** \n[Click here to join the support server!](https://discord.gg/D4UqdWh) \n \n\n **Also add me to your server for cool  new perks!** \n[Click here to invite me!](https://discordapp.com/oauth2/authorize?client_id=451417687294345216&scope=bot&permissions=2146958591) `)
         member.send(embed)
