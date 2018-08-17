@@ -39,7 +39,7 @@ if(message.content.indexOf(prefix) !== 0) return;
    
 If (message.guild.id = '296633199004614656'){
     If (message.content !== prefix + 'ratings', prefix + 'weekly', prefix + 'open container') 
-    return message.chanmel.send('**| :x:| You are not allowed to use non tanki related commands!**')
+    return message.chanmel.send('**|:x:| You are not allowed to use non tanki related commands! \|:x:| nвам не разрешено использовать команды, не связанные с танками!**')
  
     
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
