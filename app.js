@@ -349,27 +349,7 @@ bot.on("guildMemberAdd", (member) => {
             .setDescription(`<a:PARTY:463006559446892555> **Hello ${member.user.username}#${member.user.discriminator} Welcome to ${member.guild.name} please join the following server to show your support** <a:PARTY:463006559446892555> **:** \n[Click here to join the support server!](https://discord.gg/D4UqdWh) \n \n\n **Also add me to your server for cool  new perks!** \n[Click here to invite me!](https://discordapp.com/oauth2/authorize?client_id=451417687294345216&scope=bot&permissions=2146958591) `)
         member.send(embed)
         }
-        //princes server
-        else if (member.guild.id == '419567438452097027') {
-            member.guild.channels.get("466170834604785664").send(`<a:PARTY:463006559446892555> **Welcome to ${member.guild.name} ${member.user} You are the ${last} Member! :tada:** \nPlease read the <#465912999152975874> and stay out of trouble!`);
-            let embed = new Discord.RichEmbed()
-            .setDescription(`<a:PARTY:463006559446892555> **Hello ${member.user.username}#${member.user.discriminator} Welcome to ${member.guild.name} please join the following server to show your support** <a:PARTY:463006559446892555> **:** \n[Click here to join the support server!](https://discord.gg/D4UqdWh) \n \n\n **Also add me to your server for cool  new perks!** \n[Click here to invite me!](https://discordapp.com/oauth2/authorize?client_id=451417687294345216&scope=bot&permissions=2146958591) `)
-        member.send(embed)
-        }
-        //liams server
-        else if (member.guild.id == '466878941026582528') {
-            member.guild.channels.get("466879041723695105").send(`<a:PARTY:463006559446892555> **Welcome to ${member.guild.name} ${member.user} You are the ${last} Member! :tada:** \nPlease read the <#465912999152975874> and stay out of trouble!`);
-            let embed = new Discord.RichEmbed()
-            .setDescription(`<a:PARTY:463006559446892555> **Hello ${member.user.username}#${member.user.discriminator} Welcome to ${member.guild.name} please join the following server to show your support** <a:PARTY:463006559446892555> **:** \n[Click here to join the support server!](https://discord.gg/D4UqdWh) \n \n\n **Also add me to your server for cool  new perks!** \n[Click here to invite me!](https://discordapp.com/oauth2/authorize?client_id=451417687294345216&scope=bot&permissions=2146958591) `)
-        member.send(embed)
-        }
-        //quicks server
-        else if (member.guild.id == '353641481304670222') {
-            
-            let embed = new Discord.RichEmbed()
-            .setDescription(`<a:PARTY:463006559446892555> **Hello ${member.user.username}#${member.user.discriminator} Welcome to ${member.guild.name} please join the following server to show your support** <a:PARTY:463006559446892555> **:** \n[Click here to join the support server!](https://discord.gg/D4UqdWh) \n \n\n **Also add me to your server for cool  new perks!** \n[Click here to invite me!](https://discordapp.com/oauth2/authorize?client_id=451417687294345216&scope=bot&permissions=2146958591) `)
-        member.send(embed)
-        }
+
         //scanners server
         else if (member.guild.id == '418001869781205002') {
             let embed = new Discord.RichEmbed()
