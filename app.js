@@ -37,10 +37,10 @@ if (message.channel.type == 'dm') return;
 if(message.content.indexOf(prefix) !== 0) return;
 
    
-//if (message.guild.id == '478130826383589386'){
-   // if (message.content !== prefix + 'ratings', prefix + 'weekly', prefix + 'open container', prefix + 'help') 
-  //  return message.chanmel.send('**|:x:| You are not allowed to use non tanki related commands! \n|:x:| nвам не разрешено использовать команды, не связанные с танками!**')
-//}
+if (message.guild.id == '478130826383589386'){
+    if (message.content !== ["-ratings", "-weekly", "-help", "-open container"]) 
+  return message.chanmel.send('**|:x:| You are not allowed to use non tanki related commands! \n|:x:| nвам не разрешено использовать команды, не связанные с танками!**')
+}
     
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
