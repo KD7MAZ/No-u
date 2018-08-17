@@ -20,8 +20,6 @@ bot.on("message", async message => {
 if(message.author.bot) return;
 if (message.channel.type == 'dm') return;
     
-
-
     if (message.content.includes('t!rep <@321673115891531787>')) {   
         message.channel.send(`Thank you ${message.author} for repping Ahsan!`)
     
@@ -38,6 +36,12 @@ if (message.channel.type == 'dm') return;
     
 if(message.content.indexOf(prefix) !== 0) return;
 
+   
+If (message.guild.id = '296633199004614656'){
+    If (message.content !== prefix + 'ratings', prefix + 'weekly', prefix + 'open container') 
+    return message.chanmel.send('**| :x:| You are not allowed to use non tanki related commands!**')
+ 
+    
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
 
