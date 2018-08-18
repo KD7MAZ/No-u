@@ -527,7 +527,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          else if ((epicitem) == 50){
          var paintimg = 'https://i.imgur.com/hniZLLO.png'
          var paintname = 'Phantom Paint'}
-         else if ((epicitem) == 15){
+         else if ((epicitem) == 51){
          var paintimg = 'https://i.imgur.com/ugXhy8B.png'
          var paintname = 'Play Doh Paint'}
          else if ((epicitem) == 52){
