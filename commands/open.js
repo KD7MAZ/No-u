@@ -8,12 +8,16 @@ const prefix = '-'
 const owner = '321673115891531787'
 const myserver = '323206382147076096'
 const a = '`'
+const talkedRecently = new Set();
 
 exports.run = (client, message, args) => {
  
 if (message.content === prefix + 'open'){
     return message.channel.send(`:x: ${message.author} I think you meant ${a}-open container${a}`)   
 }
+ if (talkedRecently.has(msg.author.id)) {
+            message.channel.send("Wait 2 seconds before getting typing this again. - " + message.author);
+    } else {
 if (message.content === prefix + 'open container'){      
 const crarity = Math.floor(Math.random() * 1000) + 1; 
 
@@ -751,4 +755,10 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
         .setFooter(`${message.author.username} got an ${rareity} item!`, `${message.author.avatarURL}`)
     message.channel.send(embed)
     
-}}}}}}}}
+}}}}}}
+talkedRecently.add(message.author.id);
+        setTimeout(() => {
+          talkedRecently.delete(message.author.id);
+        }, 2000);
+    }
+}}
