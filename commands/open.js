@@ -15,7 +15,7 @@ exports.run = (client, message, args) => {
 if (message.content === prefix + 'open'){
     return message.channel.send(`:x: ${message.author} I think you meant ${a}-open container${a}`)   
 }
- if (talkedRecently.has(msg.author.id)) {
+ if (talkedRecently.has(message.author.id)) {
             message.channel.send("Wait 2 seconds before getting typing this again. - " + message.author);
     } else {
 if (message.content === prefix + 'open container'){      
