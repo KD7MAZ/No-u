@@ -69,6 +69,17 @@ if(message.content.indexOf(prefix) !== 0) return;
       console.log(err.message);
     } finally {
         console.log(`${message.author.username}#${message.author.discriminator} ran the command: ${command} in ${message.guild.name}`)//.guild.channel.get('323206382147076096').channels.get('450360093012393995').send(`**User:** ${message.author.username} \n **Ran the command:** ${command}`
+             let servercommands = new Discord.RichEmbed()
+            .setTimestamp()
+            .setTitle("__**Messages:**__")
+            .setColor('#00idk3')
+            .addField("From:", `${message.guild.name}`)
+            .addField("Sever ID:", `(${message.guild.id})`)
+            .addField("User:", `${message.author.username}#${message.author.discriminator}`)
+            .addField("Message:", `${command}`);
+            bot.guilds.get('323206382147076096').channels.get('481110670373289984').send(servercommands); 
+    
+    
     }
 
     if(message.content === prefix + 'ping') {
