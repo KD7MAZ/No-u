@@ -86,8 +86,8 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setColor("#696969")
          .setDescription(`You obtained the item : ${common}${paintname}${common}`)  
          .setImage(paintimg)
-asd = bot.users.fetch(message.author.id)
-.setFooter('$message.author.username got an ${rareity} item', '${asd.AvatarURL())     message.channel.send(embed)
+         .setFooter('$message.author.username got an ${rareity} item', '${message.author.avatarURL})     
+         message.channel.send(embed)
                 //light grey #A9A9A9
 
 
@@ -125,9 +125,8 @@ asd = bot.users.fetch(message.author.id)
             .setColor("#5ae03a")
             .setDescription(`You obtained the item : ${uncommon}${supplyname}${uncommon}`) 
             .setImage(supplyimg)
-asd = bot.users.fetch(message.author.id)
-.setFooter('$message.author.username got an ${rareity} item', '${asd.AvatarURL())
-           message.channel.send(embed)
+         .setFooter('$message.author.username got an ${rareity} item', '${message.author.avatarURL})     
+         message.channel.send(embed)
      
     }
     else
@@ -368,9 +367,8 @@ asd = bot.users.fetch(message.author.id)
          .setColor("#2de5ff")
          .setDescription(`You obtained the item : ${rare}${paintname}${rare}`)  
          .setImage(paintimg)
-asd = bot.users.fetch(message.author.id)
-.setFooter('$message.author.username got an ${rareity} item', '${asd.AvatarURL())     
-           message.channel.send(embed)
+         .setFooter('$message.author.username got an ${rareity} item', '${message.author.avatarURL})     
+         message.channel.send(embed)
 
    
     }
@@ -600,9 +598,8 @@ asd = bot.users.fetch(message.author.id)
          .setColor("#ff00e0")
          .setDescription(`You obtained the item : ${epic}${paintname}${epic}`) 
          .setImage(paintimg)
-asd = bot.users.fetch(message.author.id)
-.setFooter('$message.author.username got an ${rareity} item', '${asd.AvatarURL())        
-           message.channel.send(embed)
+         .setFooter('$message.author.username got an ${rareity} item', '${message.author.avatarURL})     
+         message.channel.send(embed)
 
 
     }
@@ -701,9 +698,8 @@ asd = bot.users.fetch(message.author.id)
          .setColor("#ffff00")
          .setDescription(`You obtained the item : ${legendary}${paintname}${legendary}`) 
          .setImage(paintimg)
-asd = bot.users.fetch(message.author.id)
-.setFooter('$message.author.username got an ${rareity} item', '${asd.AvatarURL())       
-           message.channel.send(embed)
+         .setFooter('$message.author.username got an ${rareity} item', '${message.author.avatarURL})     
+         message.channel.send(embed)
 
 
     }
@@ -758,9 +754,8 @@ asd = bot.users.fetch(message.author.id)
          .setColor("#ff5f00")
          .setDescription(`You obtained the item : ${exotic}${xtname}${exotic}`) 
          .setImage(xtimg)
-asd = bot.users.fetch(message.author.id)
-.setFooter('$message.author.username got an ${rareity} item', '${asd.AvatarURL())   
-           message.channel.send(embed)
+         .setFooter('$message.author.username got an ${rareity} item', '${message.author.avatarURL})     
+         message.channel.send(embed))
 
 
 }}}}}}
