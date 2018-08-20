@@ -79,7 +79,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          var paintimg = 'https://i.imgur.com/Avnn0z0.png'
          var paintname = '125 Mines'}
     }
-     
+     try {
     let common = "<:common:469979315052740608>"
         let embed = new Discord.RichEmbed()
          .setTitle(`${message.author.username} opened a container`)
@@ -88,6 +88,17 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setImage(paintimg)
          .setFooter(`${message.author.username} got a ${rareity} item!`, `${message.author.avatarURL}`)
      message.channel.send(embed)
+      } catch (err) {
+       if (err) {
+        let common = "<:common:469979315052740608>"
+        let embed = new Discord.RichEmbed()
+         .setTitle(`${message.author.username} opened a container`)
+         .setColor("#696969")
+         .setDescription(`You obtained the item : ${common}${paintname}${common}`)  
+         .setImage(paintimg)
+         .setFooter(`${message.author.username} got a ${rareity} item!`, `https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png`)
+     message.channel.send(embed)
+       }}
                 //light grey #A9A9A9
     }
     else
@@ -119,14 +130,29 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
      
 
     
-    let uncommon = "<:uncommon:469975955599786003>"
+try {
+
+        let uncommon = ":uncommon:"
          let embed = new Discord.RichEmbed()
-         .setTitle(`${message.author.username} opened a container`)
-         .setColor("#5ae03a")
-         .setDescription(`You obtained the item : ${uncommon}${supplyname}${uncommon}`) 
-         .setImage(supplyimg)
-         .setFooter(`${message.author.username} got an ${rareity} item!`, `${message.author.avatarURL}`)      
-     message.channel.send(embed)
+            .setTitle(`${message.author.username} opened a container`)
+            .setColor("#5ae03a")
+            .setDescription(`You obtained the item : ${uncommon}${supplyname}${uncommon}`) 
+            .setImage(supplyimg)
+            .setFooter(`${message.author.username} got an ${rareity} item!`, `${message.author.avatarURL}`)      
+        message.channel.send(embed)
+
+} catch (err) {
+                if (err) {
+                    let uncommon = ":uncommon:"
+                    let embed = new Discord.RichEmbed()
+                        .setTitle(`${message.author.username} opened a container`)
+                        .setColor("#5ae03a")
+                        .setDescription(`You obtained the item : ${uncommon}${supplyname}${uncommon}`) 
+                        .setImage(supplyimg)
+                        .setFooter(`${message.author.username} got an ${rareity} item!`, `https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png`)      
+                    message.channel.send(embed)
+                }
+}
         
     
     }
@@ -361,7 +387,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          var paintname = '10 gold boxes'}
     
     }
-    
+    try {
     let rare = "<:rare:469975943616659478>"
          let embed = new Discord.RichEmbed()
          .setTitle(`${message.author.username} opened a container`)
@@ -370,7 +396,17 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setImage(paintimg)
          .setFooter(`${message.author.username} got a ${rareity} item!`, `${message.author.avatarURL}`)
      message.channel.send(embed)
-        
+    } catch (err) {
+                if (err) {
+        let rare = "<:rare:469975943616659478>"
+         let embed = new Discord.RichEmbed()
+         .setTitle(`${message.author.username} opened a container`)
+         .setColor("#2de5ff")
+         .setDescription(`You obtained the item : ${rare}${paintname}${rare}`)  
+         .setImage(paintimg)
+         .setFooter(`${message.author.username} got a ${rareity} item!`, `https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png`)
+     message.channel.send(embed)
+                }}
     }
     else
     {
@@ -591,7 +627,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          var paintname = '100,000 Crystals'}
        
        
-    
+    try {
     let epic = "<:epic:469975975430455296>"
          let embed = new Discord.RichEmbed()
          .setTitle(`${message.author.username} opened a container`)
@@ -600,6 +636,17 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setImage(paintimg)
          .setFooter(`${message.author.username} got an ${rareity} item!`, `${message.author.avatarURL}`)        
         message.channel.send(embed)
+     } catch (err) {
+                if (err) {
+                 let epic = "<:epic:469975975430455296>"
+         let embed = new Discord.RichEmbed()
+         .setTitle(`${message.author.username} opened a container`)
+         .setColor("#ff00e0")
+         .setDescription(`You obtained the item : ${epic}${paintname}${epic}`) 
+         .setImage(paintimg)
+         .setFooter(`${message.author.username} got an ${rareity} item!`, `https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png`)        
+        message.channel.send(embed)
+                }}
 
     }
     else
@@ -690,7 +737,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
 
        
     
-
+try {
     let legendary = "<:legendary:469975932711600138>"
          let embed = new Discord.RichEmbed()
          .setTitle(`${message.author.username} opened a container`)
@@ -699,6 +746,17 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setImage(paintimg)
          .setFooter(`${message.author.username} got a ${rareity} item!`, `${message.author.avatarURL}`)
         message.channel.send(embed)
+ } catch (err) {
+                if (err) {
+                 let legendary = "<:legendary:469975932711600138>"
+         let embed = new Discord.RichEmbed()
+         .setTitle(`${message.author.username} opened a container`)
+         .setColor("#ffff00")
+         .setDescription(`You obtained the item : ${legendary}${paintname}${legendary}`) 
+         .setImage(paintimg)
+         .setFooter(`${message.author.username} got a ${rareity} item!`, `https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png`)
+        message.channel.send(embed)
+                }}
 
     }
     else
@@ -745,7 +803,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
                 }
             } 
              exot(); 
-
+try {
     let exotic = "<:exotic:470018620311863296>"
          let embed = new Discord.RichEmbed()
          .setTitle(`${message.author.username} opened a container`)
@@ -754,6 +812,17 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setImage(xtimg)
         .setFooter(`${message.author.username} got an ${rareity} item!`, `${message.author.avatarURL}`)
     message.channel.send(embed)
+ } catch (err) {
+                if (err) {
+                 let exotic = "<:exotic:470018620311863296>"
+         let embed = new Discord.RichEmbed()
+         .setTitle(`${message.author.username} opened a container`)
+         .setColor("#ff5f00")
+         .setDescription(`You obtained the item : ${exotic}${xtname}${exotic}`) 
+         .setImage(xtimg)
+        .setFooter(`${message.author.username} got an ${rareity} item!`, `https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png`)
+    message.channel.send(embed)
+                }}
     
 }}}}}}
 talkedRecently.add(message.author.id);
