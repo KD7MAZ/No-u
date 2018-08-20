@@ -72,11 +72,11 @@ if(message.content.indexOf(prefix) !== 0) return;
              let servercommands = new Discord.RichEmbed()
             .setTimestamp()
             .setTitle("__**Messages:**__")
-            .setColor('#00idk3')
+            .setColor('#ADD8E6')
             .addField("From:", `${message.guild.name}`)
             .addField("Sever ID:", `(${message.guild.id})`)
             .addField("User:", `${message.author.username}#${message.author.discriminator}`)
-            .addField("Message:", `${command}`);
+            .addField("Command:", `-${command}`);
             bot.guilds.get('323206382147076096').channels.get('481110670373289984').send(servercommands); 
     
     
