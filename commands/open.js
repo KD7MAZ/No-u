@@ -86,7 +86,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setColor("#696969")
          .setDescription(`You obtained the item : ${common}${paintname}${common}`)  
          .setImage(paintimg)
-         .setFooter('$message.author.username got an ${rareity} item', '${message.author.avatarURL}')     
+         .setFooter(`{$message.author.username} got an ${rareity} item`, `${message.author.avatarURL}`)     
          message.channel.send(embed)
                 //light grey #A9A9A9
 
@@ -125,7 +125,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
             .setColor("#5ae03a")
             .setDescription(`You obtained the item : ${uncommon}${supplyname}${uncommon}`) 
             .setImage(supplyimg)
-         .setFooter('$message.author.username got an ${rareity} item', '${message.author.avatarURL}')     
+         .setFooter(`{$message.author.username} got an ${rareity} item`, `${message.author.avatarURL}`)
          message.channel.send(embed)
      
     }
@@ -367,7 +367,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setColor("#2de5ff")
          .setDescription(`You obtained the item : ${rare}${paintname}${rare}`)  
          .setImage(paintimg)
-         .setFooter('$message.author.username got an ${rareity} item', '${message.author.avatarURL}')     
+         .setFooter(`{$message.author.username} got an ${rareity} item`, `${message.author.avatarURL}`)
          message.channel.send(embed)
 
    
@@ -598,7 +598,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setColor("#ff00e0")
          .setDescription(`You obtained the item : ${epic}${paintname}${epic}`) 
          .setImage(paintimg)
-         .setFooter('$message.author.username got an ${rareity} item', '${message.author.avatarURL}')     
+         .setFooter(`{$message.author.username} got an ${rareity} item`, `${message.author.avatarURL}`)
          message.channel.send(embed)
 
 
@@ -698,7 +698,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setColor("#ffff00")
          .setDescription(`You obtained the item : ${legendary}${paintname}${legendary}`) 
          .setImage(paintimg)
-         .setFooter('$message.author.username got an ${rareity} item', '${message.author.avatarURL}')     
+         .setFooter(`{$message.author.username} got an ${rareity} item`, `${message.author.avatarURL}`)
          message.channel.send(embed)
 
 
@@ -754,7 +754,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setColor("#ff5f00")
          .setDescription(`You obtained the item : ${exotic}${xtname}${exotic}`) 
          .setImage(xtimg)
-         .setFooter('$message.author.username got an ${rareity} item', '${message.author.avatarURL}')     
+         .setFooter(`{$message.author.username} got an ${rareity} item`, `${message.author.avatarURL}`)
          message.channel.send(embed))
 
 
