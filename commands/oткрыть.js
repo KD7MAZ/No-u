@@ -723,7 +723,7 @@ if (message.content === prefix + 'oткрыть контейнер'){
          var xtimg = "https://i.imgur.com/ie7gs43.png"
          var xtname = 'oгнемёт  XT'}  
          else if ((exoticitem) == 5){
-         var xtimg = 'https://imgur.com/BM9wl96'
+         var xtimg = 'https://imgur.com/BM9wl96.png'
          var xtname = 'cмоки XT'}
          else if ((exoticitem) == 6){
          var xtimg = 'https://i.imgur.com/OXiloKX.png'
