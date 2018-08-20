@@ -755,7 +755,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setDescription(`You obtained the item : ${exotic}${xtname}${exotic}`) 
          .setImage(xtimg)
          .setFooter(`{$message.author.username} got an ${rareity} item`, `${message.author.avatarURL}`)
-         message.channel.send(embed))
+         message.channel.send(embed)
 
 
 }}}}}}
