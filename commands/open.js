@@ -89,7 +89,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setFooter(`${message.author.username} got a ${rareity} item!`, `${message.author.avatarURL}`)
      message.channel.send(embed)
                 //light grey #A9A9A9
-    console.log(message.author.AvatarURL)
+
 
     
     }
@@ -130,7 +130,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setImage(supplyimg)
          .setFooter(`${message.author.username} got an ${rareity} item!`, `${message.author.avatarURL}`)      
      message.channel.send(embed)
-       console.log(message.author.AvatarURL)
+
  
     
     }
@@ -374,7 +374,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setImage(paintimg)
          .setFooter(`${message.author.username} got a ${rareity} item!`, `${message.author.avatarURL}`)
      message.channel.send(embed)
-     console.log(message.author.AvatarURL)
+
    
     }
     else
@@ -605,7 +605,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setImage(paintimg)
          .setFooter(`${message.author.username} got an ${rareity} item!`, `${message.author.avatarURL}`)        
         message.channel.send(embed)
-console.log(message.author.AvatarURL)
+
 
     }
     else
@@ -705,7 +705,7 @@ console.log(message.author.AvatarURL)
          .setImage(paintimg)
          .setFooter(`${message.author.username} got a ${rareity} item!`, `${message.author.avatarURL}`)
         message.channel.send(embed)
-console.log(message.author.AvatarURL)
+
 
     }
     else
@@ -761,7 +761,7 @@ console.log(message.author.AvatarURL)
          .setImage(xtimg)
         .setFooter(`${message.author.username} got an ${rareity} item!`, `${message.author.avatarURL}`)
     message.channel.send(embed)
-    console.log(message.author.AvatarURL)
+
 
 }}}}}}
 talkedRecently.add(message.author.id);
