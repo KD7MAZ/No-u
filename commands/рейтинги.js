@@ -15,7 +15,7 @@ exports.run = (client, message, args) => {
  var parts = content.split(" "); 
  var username = parts[1];
 
-  if (message.content === '-ratings') return message.channel.send(`:x: ${message.author} Введите действительный псевдоним!`)
+  if (message.content === '-рейтинги') return message.channel.send(`:x: ${message.author} Введите действительный псевдоним!`)
 
   request('http://ratings.tankionline.com/get_stat/profile/?user=' + (username) + '&lang=ru', { json: true }, (err, res, body) => {
     
