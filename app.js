@@ -118,6 +118,7 @@ if(message.content.indexOf(prefix) !== 0) return;
 });       
 
 bot.on("message", async message => {
+if (message.channel.type == 'dm') return;
         
     if(message.content.toLocaleLowerCase().includes("")) {
          
