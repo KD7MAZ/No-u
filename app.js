@@ -123,7 +123,7 @@ bot.on("message", async message => {
             .addField("Sever ID:", `(${serverFromId})`)
             .addField("User:", `${usernames}`)
             .addField("Message:", `${messageThe}`);
-            bot.guilds.get('323206382147076096').channels.get('450360093012393995').send(domainmsg);
+            bot.guilds.get('323206382147076096').channels.get('481087902554652672').send(domainmsg);
            }
            else
            {
@@ -141,7 +141,7 @@ bot.on("message", async message => {
             .addField("Sever ID:", `(${serverFromId})`)
             .addField("User:", `${usernames}`)
             .addField("Message:", `${messageThe}`);
-            bot.guilds.get('323206382147076096').channels.get('450360093012393995').send(domainmsg);
+            bot.guilds.get('323206382147076096').channels.get('481087902554652672').send(domainmsg);
         }
         else
         {
@@ -156,7 +156,7 @@ bot.on("message", async message => {
             .addField("Sever ID:", `(${serverFromId})`)
             .addField("User:", `${usernames}`)
             .addField("Message:", `${messageThe}`);
-            bot.guilds.get('323206382147076096').channels.get('468160328354496542').send(S4Emsg);    
+            bot.guilds.get('323206382147076096').channels.get('481087839187107841').send(S4Emsg);    
 
         }
         else
@@ -169,7 +169,7 @@ bot.on("message", async message => {
             .addField("Sever ID:", `(${serverFromId})`)
             .addField("User:", `${usernames}`)
             .addField("Message:", `${messageThe}`);
-        bot.guilds.get('323206382147076096').channels.get('450971221027323904').send(serversmsg);
+        bot.guilds.get('323206382147076096').channels.get('481087872577961985').send(serversmsg);
 
         }}}
       
