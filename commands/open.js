@@ -122,14 +122,29 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
      
 
     
-    let uncommon = "<:uncommon:469975955599786003>"
+    try {
+
+        let uncommon = ":uncommon:"
          let embed = new Discord.RichEmbed()
-         .setTitle(`${message.author.username} opened a container`)
-         .setColor("#5ae03a")
-         .setDescription(`You obtained the item : ${uncommon}${supplyname}${uncommon}`) 
-         .setImage(supplyimg)
-         .setFooter(`${message.author.username} got an ${rareity} item!`, `${message.author.AvatarURL()}`)      
-     message.channel.send(embed)
+            .setTitle(`${message.author.username} opened a container`)
+            .setColor("#5ae03a")
+            .setDescription(`You obtained the item : ${uncommon}${supplyname}${uncommon}`) 
+            .setImage(supplyimg)
+            .setFooter(`${message.author.username} got an ${rareity} item!`, `${message.author.avatarURL}`)      
+        message.channel.send(embed)
+
+} catch (err) {
+                if (err) {
+                    let uncommon = ":uncommon:"
+                    let embed = new Discord.RichEmbed()
+                        .setTitle(`${message.author.username} opened a container`)
+                        .setColor("#5ae03a")
+                        .setDescription(`You obtained the item : ${uncommon}${supplyname}${uncommon}`) 
+                        .setImage(supplyimg)
+                        .setFooter(`${message.author.username} got an ${rareity} item!`, `https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png`)      
+                    message.channel.send(embed)
+                }
+}
 
  
     
