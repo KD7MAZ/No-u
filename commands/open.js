@@ -794,7 +794,7 @@ try {
              xtimg = 'https://i.imgur.com/H3j3l1y.png'
              xtname = '1,000,000 Crystals'}
              else if ((exoticitem) == 10){
-             xtimg = 'https://imgur.com/BM9wl96'
+             xtimg = 'https://imgur.com/BM9wl96.png'
              xtname = 'Smoky XT'}
              else if ((exoticitem) == 11 && message.guild.id == '456016111251488769'){ 
              xtname = 'SPECTRUM ROLE!'
