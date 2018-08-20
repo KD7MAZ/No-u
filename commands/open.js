@@ -16,7 +16,7 @@ if (message.content === prefix + 'open'){
     return message.channel.send(`:x: ${message.author} I think you meant ${a}-open container${a}`)   
 }
  if (talkedRecently.has(message.author.id)) {
-            message.channel.send("Wait 2 seconds before getting typing this again. - " + message.author);
+            message.channel.send(`:x: ${message.author} There is a 2 second cool down please wait!`);
     } else {
 if (message.content === prefix + 'open container'){      
 const crarity = Math.floor(Math.random() * 1000) + 1; 
