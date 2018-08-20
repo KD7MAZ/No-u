@@ -10,6 +10,7 @@ const myserver = '323206382147076096'
 const a = '`'
 const talkedRecently = new Set();
 
+
 exports.run = (client, message, args) => {
  
 if (message.content === prefix + 'open'){
@@ -86,7 +87,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setColor("#696969")
          .setDescription(`You obtained the item : ${common}${paintname}${common}`)  
          .setImage(paintimg)
-         .setFooter(`${message.author.username} got a ${rareity} item!`, `${message.author.avatarURL}`)
+         .setFooter(`${message.author.username} got a ${rareity} item!`, message.author.displayAvatarURL)
      message.channel.send(embed)
       } catch (err) {
        if (err) {
@@ -128,17 +129,14 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          var supplyname = '5 Gold boxes'}
     
      
-
-    
-try {
-
+       try {
         let uncommon = "<:uncommon:469975955599786003>"
          let embed = new Discord.RichEmbed()
             .setTitle(`${message.author.username} opened a container`)
             .setColor("#5ae03a")
             .setDescription(`You obtained the item : ${uncommon}${supplyname}${uncommon}`) 
             .setImage(supplyimg)
-            .setFooter(`${message.author.username} got an ${rareity} item!`, `${message.author.avatarURL}`)      
+            .setFooter(`${message.author.username} got an ${rareity} item!`, message.author.displayAvatarURL)      
         message.channel.send(embed)
 
 } catch (err) {
@@ -394,7 +392,7 @@ try {
          .setColor("#2de5ff")
          .setDescription(`You obtained the item : ${rare}${paintname}${rare}`)  
          .setImage(paintimg)
-         .setFooter(`${message.author.username} got a ${rareity} item!`, `${message.author.avatarURL}`)
+         .setFooter(`${message.author.username} got a ${rareity} item!`, message.author.displayAvatarURL)
      message.channel.send(embed)
     } catch (err) {
                 if (err) {
@@ -634,7 +632,7 @@ try {
          .setColor("#ff00e0")
          .setDescription(`You obtained the item : ${epic}${paintname}${epic}`) 
          .setImage(paintimg)
-         .setFooter(`${message.author.username} got an ${rareity} item!`, `${message.author.avatarURL}`)        
+         .setFooter(`${message.author.username} got an ${rareity} item!`, message.author.displayAvatarURL)        
         message.channel.send(embed)
      } catch (err) {
                 if (err) {
@@ -744,7 +742,7 @@ try {
          .setColor("#ffff00")
          .setDescription(`You obtained the item : ${legendary}${paintname}${legendary}`) 
          .setImage(paintimg)
-         .setFooter(`${message.author.username} got a ${rareity} item!`, `${message.author.avatarURL}`)
+         .setFooter(`${message.author.username} got a ${rareity} item!`, message.author.displayAvatarURL)
         message.channel.send(embed)
  } catch (err) {
                 if (err) {
@@ -810,7 +808,7 @@ try {
          .setColor("#ff5f00")
          .setDescription(`You obtained the item : ${exotic}${xtname}${exotic}`) 
          .setImage(xtimg)
-        .setFooter(`${message.author.username} got an ${rareity} item!`, `${message.author.avatarURL}`)
+        .setFooter(`${message.author.username} got an ${rareity} item!`, message.author.displayAvatarURL)
     message.channel.send(embed)
  } catch (err) {
                 if (err) {
