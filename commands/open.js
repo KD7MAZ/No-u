@@ -132,7 +132,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
     
 try {
 
-        let uncommon = ":uncommon:"
+        let uncommon = "<:uncommon:469975955599786003>"
          let embed = new Discord.RichEmbed()
             .setTitle(`${message.author.username} opened a container`)
             .setColor("#5ae03a")
@@ -143,7 +143,7 @@ try {
 
 } catch (err) {
                 if (err) {
-                    let uncommon = ":uncommon:"
+                    let uncommon = "<:uncommon:469975955599786003>"
                     let embed = new Discord.RichEmbed()
                         .setTitle(`${message.author.username} opened a container`)
                         .setColor("#5ae03a")
