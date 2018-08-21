@@ -438,7 +438,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          var paintname = 'Saudi Arabia'}
          else if ((rareitem) == 92){
          var paintimg = 'https://i.imgur.com/cvBh12Z.png'
-         var paintname = 'Senagal'}
+         var paintname = 'Senegal'}
          else if ((rareitem) == 93){
          var paintimg = 'https://i.imgur.com/Xp5wtvv.png'
          var paintname = 'Serbia'}
@@ -453,7 +453,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          var paintname = 'Denmark'}
          else if ((rareitem) == 97){
          var paintimg = 'https://i.imgur.com/59R91Q0.png'
-         var paintname = 'Tunisa'}
+         var paintname = 'Tunisia'}
          else if ((rareitem) == 98){
          var paintimg = 'https://i.imgur.com/3LRdNAn.png'
          var paintname = 'Uruguay'}
