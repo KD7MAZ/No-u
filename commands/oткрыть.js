@@ -8,6 +8,7 @@ const prefix = '-'
 const owner = '321673115891531787'
 const myserver = '323206382147076096'
 const a = '`'
+const talkedRecently = new Set();
 
 exports.run = (client, message, args) => {
  
@@ -15,7 +16,9 @@ if (message.content === prefix + 'oткрыть'){
     message.channel.send(`:x: ${message.author} я думаю вы имели в виду ${a}-oткрыть контейнер${a}`)
 
 }
-
+if (talkedRecently.has(message.author.id)) {
+            message.channel.send(`:x: ${message.author} Есть 2 секунды, чтобы остыть, пожалуйста, подождите!`);
+} else {
 if (message.content === prefix + 'oткрыть контейнер'){      
 
   
@@ -756,4 +759,9 @@ if (message.content === prefix + 'oткрыть контейнер'){
         .setFooter(`${message.author.username} получил ${rareity} пункт!`, message.author.displayAvatarURL)
     message.channel.send(embed)
     
-}}}}}}}
+}}}}}
+talkedRecently.add(message.author.id);
+        setTimeout(() => {
+          talkedRecently.delete(message.author.id);
+        }, 2000);
+}}}
