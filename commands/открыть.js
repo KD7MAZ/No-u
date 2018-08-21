@@ -141,7 +141,7 @@ if (message.content === prefix + 'открыть контейнер'){
     let rareity = 'pедкие'   
     const rarepaint = Math.floor(Math.random() * 100 ) + 1;
     if ((rarepaint) < 65 ) {   
-        let rareitem = Math.floor(Math.random() * 66) + 1;
+        let rareitem = Math.floor(Math.random() * 98) + 1;
         if ((rareitem) == 1){
          var paintimg = 'https://i.imgur.com/yJcKJIM.png'
          var paintname = 'лавовая краска'}
@@ -709,7 +709,7 @@ if (message.content === prefix + 'открыть контейнер'){
     const legendarypaint = Math.floor(Math.random() * 100) + 1;
             
     if ((legendarypaint) < 85 ) {   
-        let legendaryitem = Math.floor(Math.random() * 23) + 1;
+        let legendaryitem = Math.floor(Math.random() * 29) + 1;
         if ((legendaryitem) == 1){
         var paintimg = 'https://i.imgur.com/lMaHubB.png'
         var paintname = 'Луноход краска'}
