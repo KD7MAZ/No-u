@@ -343,7 +343,102 @@ if (message.content === prefix + 'oткрыть контейнер'){
          else if ((rareitem) == 66){
          var paintimg = 'https://i.imgur.com/ggGlJGu.png'
          var paintname = 'Пикассо краска'}
-    
+         else if ((rareitem) == 67){
+         var paintimg = 'https://i.imgur.com/oPsUaQS.png'
+         var paintname = 'aргентина краска'}
+         else if ((rareitem) == 68){
+         var paintimg = 'https://i.imgur.com/reDTcBH.png'
+         var paintname = 'aвстралия '}
+         else if ((rareitem) == 69){
+         var paintimg = 'https://i.imgur.com/AJQrwyi.png'
+         var paintname = 'Бельгия краска'}
+         else if ((rareitem) == 70){
+         var paintimg = 'https://i.imgur.com/958evYX.png'
+         var paintname = 'Бразилия краска'}
+         else if ((rareitem) == 71){
+         var paintimg = 'https://i.imgur.com/7Jt63vS.png'
+         var paintname = 'Колумбия краска'}
+         else if ((rareitem) == 72){
+         var paintimg = 'https://i.imgur.com/iVNsjXY.png'
+         var paintname = 'Южная Корея краска'}
+         else if ((rareitem) == 73){
+         var paintimg = 'https://i.imgur.com/PYRmJIp.png'
+         var paintname = 'Дания краска'}
+         else if ((rareitem) == 74){
+         var paintimg = 'https://i.imgur.com/7cYZu1I.png'
+         var paintname = 'Хорватия краска'}
+         else if ((rareitem) == 75){
+         var paintimg = 'https://i.imgur.com/wvYQSXa.png'
+         var paintname = 'Коста Рика краска'}
+         else if ((rareitem) == 76){
+         var paintimg = 'https://i.imgur.com/NVIdw9e.png'
+         var paintname = 'Египет краска'}
+         else if ((rareitem) == 77){
+         var paintimg = 'https://i.imgur.com/Jn5mrQI.png'
+         var paintname = 'Англия краска'}
+         else if ((rareitem) == 78){
+         var paintimg = 'https://i.imgur.com/XVrmTAE.png'
+         var paintname = 'Франция краска'}
+         else if ((rareitem) == 79){
+         var paintimg = 'https://i.imgur.com/7IU5kHG.png'
+         var paintname = 'Исландия краска'}
+         else if ((rareitem) == 80){
+         var paintimg = 'https://i.imgur.com/JCTfffl.png'
+         var paintname = 'Германия краска'}
+         else if ((rareitem) == 81){
+         var paintimg = 'https://i.imgur.com/0KgtBsx.png'
+         var paintname = 'Иран краска'}
+         else if ((rareitem) == 82){
+         var paintimg = 'https://i.imgur.com/6RzUNAy.png'
+         var paintname = 'Япония краска'}
+         else if ((rareitem) == 83){
+         var paintimg = 'https://i.imgur.com/ifrbtMe.png'
+         var paintname = 'Мексика краска'}
+         else if ((rareitem) == 84){
+         var paintimg = 'https://i.imgur.com/DPA9Bil.png'
+         var paintname = 'Марокко краска'}
+         else if ((rareitem) == 85){
+         var paintimg = 'https://i.imgur.com/bqxX9er.png'
+         var paintname = 'Панама краска'}
+         else if ((rareitem) == 86){
+         var paintimg = 'https://i.imgur.com/ZQLGlOC.png'
+         var paintname = 'Нигерия краска'}
+         else if ((rareitem) == 87){
+         var paintimg = 'https://i.imgur.com/lkZmpvy.png'
+         var paintname = 'Перу краска'}
+         else if ((rareitem) == 88){
+         var paintimg = 'https://i.imgur.com/rF67XB7.png'
+         var paintname = 'Португалия краска'}
+         else if ((rareitem) == 89){
+         var paintimg = 'https://i.imgur.com/32jmRY5.png'
+         var paintname = 'Польша краска'}
+         else if ((rareitem) == 90){
+         var paintimg = 'https://i.imgur.com/aSyZVyl.png'
+         var paintname = 'Россия краска'}
+         else if ((rareitem) == 91){
+         var paintimg = 'https://i.imgur.com/0pZ8POK.png'
+         var paintname = 'cаудовская aравия краска'}
+         else if ((rareitem) == 92){
+         var paintimg = 'https://i.imgur.com/cvBh12Z.png'
+         var paintname = 'Сенегал краска'}
+         else if ((rareitem) == 93){
+         var paintimg = 'https://i.imgur.com/Xp5wtvv.png'
+         var paintname = 'Сербия краска'}
+         else if ((rareitem) == 94){
+         var paintimg = 'https://i.imgur.com/o7dBXh6.png'
+         var paintname = 'Швеция краска'}
+         else if ((rareitem) == 95){
+         var paintimg = 'https://i.imgur.com/PkWhBUK.png'
+         var paintname = 'Испания краска'}
+         else if ((rareitem) == 96){
+         var paintimg = 'https://i.imgur.com/xYYxCTR.png'
+         var paintname = 'Дания краска'}
+         else if ((rareitem) == 97){
+         var paintimg = 'https://i.imgur.com/59R91Q0.png'
+         var paintname = 'Тунис краска'}
+         else if ((rareitem) == 98){
+         var paintimg = 'https://i.imgur.com/3LRdNAn.png'
+         var paintname = 'Уругвай краска'}
     }
     else
     { 
