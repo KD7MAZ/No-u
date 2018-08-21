@@ -749,7 +749,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
     const legendarypaint = Math.floor(Math.random() * 100) + 1;
             
     if ((legendarypaint) < 85 ) {   
-        let legendaryitem = Math.floor(Math.random() * 23) + 1;
+        let legendaryitem = Math.floor(Math.random() * 29) + 1;
         if ((legendaryitem) == 1){
         var paintimg = 'https://i.imgur.com/lMaHubB.png'
         var paintname = 'Moonwalker Paint'}
@@ -819,7 +819,24 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
         else if ((legendaryitem) == 23){
         var paintimg = 'https://i.imgur.com/JivLe7B.png'
         var paintname = 'Synesthesia paint'}
-
+        else if ((legendaryitem) == 24){
+        var paintimg = 'https://i.imgur.com/UM9U9zG.png'
+        var paintname = 'Gears Paint'}
+        else if ((legendaryitem) == 25){
+        var paintimg = 'https://i.imgur.com/YiZ8IRR.png'
+        var paintname = 'Raidioactive Jelly Paint'}
+        else if ((legendaryitem) == 26){
+        var paintimg = 'https://i.imgur.com/X0QGyIO.png'
+        var paintname = 'Spinner Paint'}
+        else if ((legendaryitem) == 27){
+        var paintimg = "https://i.imgur.com/4okwQzH.png"
+        var paintname = 'Tenticals paint'}
+        else if ((legendaryitem) == 28){
+        var paintimg = 'https://i.imgur.com/yYJLsJb.png'
+        var paintname = 'LEDs Paint'}
+        else if ((legendaryitem) == 29){
+        var paintimg = 'https://i.imgur.com/kB8q8kQ.png'
+        var paintname = 'Meteor Shower paint'}
     }
     else
     { 
