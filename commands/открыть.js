@@ -229,7 +229,7 @@ if (message.content === prefix + 'открыть контейнер'){
          else if ((rareitem) == 29){
          var paintimg = 'https://i.imgur.com/x8KgVmd.png'
          var paintname = 'питон краска'}
-         else if ((rareitem) == 20){
+         else if ((rareitem) == 30){
          var paintimg = 'https://i.imgur.com/IVaOz5u.png'
          var paintname = 'сакура краска'}
          else if ((rareitem) == 31){
@@ -630,7 +630,7 @@ if (message.content === prefix + 'открыть контейнер'){
          else if ((epicitem) == 50){
          var paintimg = 'https://i.imgur.com/hniZLLO.png'
          var paintname = 'Фантом краска'}
-         else if ((epicitem) == 15){
+         else if ((epicitem) == 51){
          var paintimg = 'https://i.imgur.com/ugXhy8B.png'
          var paintname = 'Пластилин краска'}
          else if ((epicitem) == 52){
