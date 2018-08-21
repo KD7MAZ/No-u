@@ -684,7 +684,24 @@ if (message.content === prefix + 'oткрыть контейнер'){
         else if ((legendaryitem) == 23){
         var paintimg = 'https://i.imgur.com/JivLe7B.png'
         var paintname = 'cинестезиякраска'}
-
+        else if ((legendaryitem) == 24){
+        var paintimg = 'https://i.imgur.com/UM9U9zG.png'
+        var paintname = 'Шестерёнки краска'}
+        else if ((legendaryitem) == 25){
+        var paintimg = 'https://i.imgur.com/YiZ8IRR.png'
+        var paintname = 'pадиоактивное желе краска'}
+        else if ((legendaryitem) == 26){
+        var paintimg = 'https://i.imgur.com/X0QGyIO.png'
+        var paintname = 'cпиннер краска'}
+        else if ((legendaryitem) == 27){
+        var paintimg = "https://i.imgur.com/4okwQzH.png"
+        var paintname = 'Щупальца краска'}
+        else if ((legendaryitem) == 28){
+        var paintimg = 'https://i.imgur.com/yYJLsJb.png'
+        var paintname = 'cветодиоды краска'}
+        else if ((legendaryitem) == 29){
+        var paintimg = 'https://i.imgur.com/kB8q8kQ.png'
+        var paintname = 'Звездопад краска'}
     }
     else
     { 
