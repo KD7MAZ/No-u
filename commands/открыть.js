@@ -12,14 +12,14 @@ const talkedRecently = new Set();
 
 exports.run = (client, message, args) => {
  
-if (message.content === prefix + 'oткрыть'){
+if (message.content === prefix + 'открыть'){
     message.channel.send(`:x: ${message.author} я думаю вы имели в виду ${a}-oткрыть контейнер${a}`)
 
 }
 if (talkedRecently.has(message.author.id)) {
             message.channel.send(`:x: ${message.author} Есть 2 секунды, чтобы остыть, пожалуйста, подождите!`);
 } else {
-if (message.content === prefix + 'oткрыть контейнер'){      
+if (message.content === prefix + 'открыть контейнер'){      
 
   
 
