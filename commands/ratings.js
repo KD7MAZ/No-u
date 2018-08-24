@@ -17,7 +17,7 @@ exports.run = (client, message, args) => {
 
   if (message.content === '-ratings') return message.channel.send(`:x: Please mention a valid nickname!`)
 
-  request('http://ratings.tankionline.com/get_stat/profile/?user=' + (username) + '&lang=en', { json: true }, (err, res, body) => {
+  request('https://ratings.tankionline.com/api/eu/profile/?user= + (username), { json: true }, (err, res, body) => {
     
   
   
