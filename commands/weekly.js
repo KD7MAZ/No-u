@@ -15,7 +15,7 @@ if (message.content === '-weekly') return message.channel.send(`:x: Please menti
  var parts = content.split(" "); 
  var username = parts[1];   
     
-    request('http://ratings.tankionline.com/get_stat/profile/?user=' + (username) + '&lang=en', { json: true }, (err, res, body) => {
+ request('https://ratings.tankionline.com/api/eu/profile/?user=' + (username), { json: true }, (err, res, body) => {
     
         if (err) { return console.log(err); }
         try {    
