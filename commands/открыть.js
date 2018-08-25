@@ -824,7 +824,7 @@ if (message.content === prefix + 'открыть контейнер'){
     const exoticS = Math.floor(Math.random() * 100) + 1;
             
     if ((exoticS) < 85 ) {   
-         let exoticitem = Math.floor(Math.random() * 9) + 1;
+         let exoticitem = Math.floor(Math.random() * 10) + 1;
          if ((exoticitem) == 1){
          var xtimg = 'https://i.imgur.com/sNKCyDf.png'
          var xtname = 'pельса XT'}
@@ -833,10 +833,10 @@ if (message.content === prefix + 'открыть контейнер'){
          var xtname = 'Гром XT'}
          else if ((exoticitem) == 3){
          var xtimg = "https://i.imgur.com/aorl1aO.png"
-         var xtname = 'bулкан  XT'}
+         var xtname = 'bулкан XT'}
          else if ((exoticitem) == 4){
          var xtimg = "https://i.imgur.com/ie7gs43.png"
-         var xtname = 'oгнемёт  XT'}  
+         var xtname = 'oгнемёт XT'}  
          else if ((exoticitem) == 5){
          var xtimg = 'https://imgur.com/BM9wl96.png'
          var xtname = 'cмоки XT'}
@@ -845,13 +845,17 @@ if (message.content === prefix + 'открыть контейнер'){
          var xtname = 'bасп XT'}
          else if ((exoticitem) == 7){
          var xtimg = 'https://i.imgur.com/nYkf7Jy.png'
-         var xtname = 'xорнет  XT'}
+         var xtname = 'xорнет XT'}
          else if ((exoticitem) == 8){
          var xtimg = "https://i.imgur.com/aBsImnI.png"
          var xtname = 'bикинг XT'}
          else if ((exoticitem) == 9){
          var xtimg = "https://i.imgur.com/tA3Jzrj.png"
-         var xtname = 'mамонт  XT'}
+         var xtname = 'mамонт XT'}
+         else if ((exoticitem) == 10){
+         var xtimg = "https://i.imgur.com/FiPLqAq.png"
+         var xtname = 'Титан XT'}
+      
  
     }
     else
