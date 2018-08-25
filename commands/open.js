@@ -940,9 +940,10 @@ try {
                 }}
     
 }}}}}}
+if (message.author !== '321673115891531787'){
 talkedRecently.add(message.author.id);
        setTimeout(() => {
         talkedRecently.delete(message.author.id);
        }, 2000);
     }
-}}
+}}}
