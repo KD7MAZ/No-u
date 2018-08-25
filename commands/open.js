@@ -876,7 +876,7 @@ try {
             
     if ((exoticS) == 1 || message.author.id == '321673115891531787') {   
         function exot(){ 
-             let exoticitem = Math.floor(Math.random() * 11) + 1;
+             let exoticitem = Math.floor(Math.random() * 12) + 1;
              if ((exoticitem) == 1){
              xtimg = 'https://i.imgur.com/sNKCyDf.png'
              xtname = 'Railgun XT'}
@@ -905,12 +905,15 @@ try {
              xtimg = 'https://i.imgur.com/H3j3l1y.png'
              xtname = '1,000,000 Crystals'}
              else if ((exoticitem) == 10){
-             xtimg = 'https://imgur.com/BM9wl96.png'
+             xtimg = 'https://i.imgur.com/BM9wl96.png'
              xtname = 'Smoky XT'}
-             else if ((exoticitem) == 11 && message.guild.id == '456016111251488769'){ 
+             else if ((exoticitem) == 11){
+             xtimg = 'https://i.https://imgur.com/FiPLqAq.png'
+             xtname = 'Titan XT'}
+             else if ((exoticitem) == 12 && message.guild.id == '456016111251488769'){ 
              xtname = 'SPECTRUM ROLE!'
              xtimg = 'https://i.imgur.com/z8iOhJR.png'}
-             else if ((exoticitem) == 11 && message.guild.id !== '456016111251488769'){ 
+             else if ((exoticitem) == 12 && message.guild.id !== '456016111251488769'){ 
              exot()
                 }
             } 
