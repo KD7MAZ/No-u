@@ -93,7 +93,7 @@ exports.run = (client, message, args) => {
           let zEmbed = new Discord.RichEmbed()
           .setTitle("Stats for Ahsan") 
           .setColor('#FFFF00')
-          .setThumbnail('https://i.imgur.com/NahcZQ9.png')
+          .setThumbnail('https://i.imgur.com/qK6onnG.png')
           .setURL("http://ratings.tankionline.com/en/user/Ahsantank/")
           .addField("Profile:", `**Nickname:** Ahsan (Also know as God) \n \n**Rank:** Legend 999 \n \n**Exp**: 999,999,999 \n \n**Next rank:** 1xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 999,999,999 \n \n**Golds Caught:** 999,999,999 \n \n**Kills:** 999,999,999      **Deaths:** 0      **K/D:** -`)
         return message.channel.send(zEmbed);}
@@ -102,7 +102,7 @@ exports.run = (client, message, args) => {
           let lEmbed = new Discord.RichEmbed()
           .setTitle("Stats for Ahsan") 
           .setColor('#FFFF00')
-          .setThumbnail('https://i.imgur.com/NahcZQ9.png')
+          .setThumbnail('https://i.imgur.com/qK6onnG.png')
           .setURL("http://ratings.tankionline.com/en/user/Ahsantank/")
           .addField("Profile:", `**Nickname:** Ahsan (Also know as God) \n \n**Rank:** Legend 999 \n \n**Exp**: 999,999,999 \n \n**Next rank:** 1xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 999,999,999 \n \n**Golds Caught:** 999,999,999 \n \n**Kills:** 999,999,999      **Deaths:** 0      **K/D:** - `)
         return message.channel.send(lEmbed);}
@@ -111,7 +111,7 @@ exports.run = (client, message, args) => {
           let lEmbed = new Discord.RichEmbed()
           .setTitle("Stats for Leo") 
           .setColor('#FFFF00')
-          .setThumbnail('https://i.imgur.com/NahcZQ9.png')
+          .setThumbnail('https://i.imgur.com/qK6onnG.png')
           .setURL("http://ratings.tankionline.com/en/user/Ahsantank/")
           .addField("Profile:", `**Nickname:** Leo (Also know as the best Youtber) \n \n**Rank:** Legend 69 \n \n**Exp**: 69 \n \n**Next rank:** 31xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 69 \n \n**Golds Caught:** 69 \n \n**Kills:** 69      **Deaths:** 0      **K/D:** -`)
         return message.channel.send(lEmbed);}
@@ -120,7 +120,7 @@ exports.run = (client, message, args) => {
           let xEmbed = new Discord.RichEmbed()
           .setTitle("Stats for Leo") 
           .setColor('#FFFF00')
-          .setThumbnail('https://i.imgur.com/NahcZQ9.png')
+          .setThumbnail('https://i.imgur.com/qK6onnG.png')
           .setURL("http://ratings.tankionline.com/en/user/Ahsantank/")
           .addField("Profile:", `**Nickname:** Leo (Also know as the best Youtuber) \n \n**Rank:** Legend 69 \n \n**Exp**: 69 \n \n**Next rank:** 31xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 69 \n \n**Golds Caught:** 69 \n \n**Kills:** 69      **Deaths:** 0      **K/D:** - `)
         return message.channel.send(xEmbed);}
@@ -129,7 +129,7 @@ exports.run = (client, message, args) => {
           let fEmbed = new Discord.RichEmbed()
           .setTitle("Stats for Andy") 
           .setColor('#FFFF00')
-          .setThumbnail('https://i.imgur.com/NahcZQ9.png')
+          .setThumbnail('https://i.imgur.com/qK6onnG.png')
           .setURL("http://ratings.tankionline.com/en/user/Ahsantank/")
           .addField("Profile:", `**Nickname:** andy (Also know as Hacker) \n \n**Rank:** Legend 0000000 \n \n**Exp**: 0000000 \n \n**Next rank:** 0xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 0000000 \n \n**Golds Caught:** 0000000 \n \n**Kills:** 0000000     **Deaths:** 0      **K/D:** -`)
         return message.channel.send(fEmbed);}
@@ -138,7 +138,7 @@ exports.run = (client, message, args) => {
           let dEmbed = new Discord.RichEmbed()
           .setTitle("Stats for Andy") 
           .setColor('#FFFF00')
-          .setThumbnail('https://i.imgur.com/NahcZQ9.png')
+          .setThumbnail('https://i.imgur.com/qK6onnG.png')
           .setURL("http://ratings.tankionline.com/en/user/Ahsantank/")
           .addField("Profile:", `**Nickname:** andy (Also know as Hacker) \n \n**Rank:** Legend 0000000 \n \n**Exp**: 0000000 \n \n**Next rank:** 0xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 0000000 \n \n**Golds Caught:** 0000000 \n \n**Kills:** 0000000     **Deaths:** 0      **K/D:** -`)
         return message.channel.send(dEmbed);}    
