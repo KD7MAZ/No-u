@@ -28,12 +28,12 @@ exports.run = (client, message, args) => {
  
 
 
-    const speed = body.response.suppliesUsage[0].usages
-    const damage = body.response.suppliesUsage[1].usages
-    const repairs = body.response.suppliesUsage[2].usages
+    const armour = body.response.suppliesUsage[0].usages
+    const golds = body.response.suppliesUsage[1].usages
+    const speed = body.response.suppliesUsage[2].usages
     const mines = body.response.suppliesUsage[3].usages
-    const golds = body.response.suppliesUsage[4].usages
-    const armour = body.response.suppliesUsage[5].usages
+    const repairs = body.response.suppliesUsage[4].usages
+    const damage = body.response.suppliesUsage[5].usages
     const batteries = body.response.suppliesUsage[6].usages
     const total = batteries + damage + speed + armour + golds + repairs + mines
 
