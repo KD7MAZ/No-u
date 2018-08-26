@@ -10,7 +10,7 @@ if (message.author.id !== `${owner}`) return message.channel.send(`**|:exclamati
 message.delete()    
 
 const eventhelper1 = message.guild.member(message.mentions.users.first()); 
-let battlelink = "#/battle=2aaaaabae1706e78"   
+let battlelink = args[1]    
     let lmsevent = new Discord.RichEmbed()
     .setTimestamp()
     .setTitle("__**Event Xp/Bp Hustle!**__")
