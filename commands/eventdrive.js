@@ -9,8 +9,8 @@ exports.run = (client, message, args) => {
 if (message.author.id !== `${owner}`) return message.channel.send(`**|:exclamation:|  You dont have permission to use this command**`)
 message.delete()
 const eventhelper1 = message.guild.member(message.mentions.users.first()); 
-let battlelink = "#/battle=2aaaaabae02dd8da"   
-    let driveevent = new Discord.RichEmbed()
+let battlelink = args[1]      
+let driveevent = new Discord.RichEmbed()
     .setTimestamp()
     .setTitle("__**Event Drive Challenge!**__")
     .setColor("#8F00FF")
