@@ -10,7 +10,7 @@ exports.run = (client, message, args) => {
 message.delete()    
 
 const eventhelper1 = message.guild.member(message.mentions.users.first()); 
-let battlelink = "#/battle=2aaaaabae140d1e7"   
+let battlelink = args[1]   
     let stgevent = new Discord.RichEmbed()
     .setTimestamp()
     .setTitle("__**Event Save The Gold!**__")
