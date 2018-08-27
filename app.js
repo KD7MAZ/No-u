@@ -6,6 +6,7 @@ const prefix = '-'
 const owner = '321673115891531787'
 const myserver = '323206382147076096'
 //const db = require('quick.db')
+var cmdCount = 0
 
 bot.on('ready', () => {
     console.log(`Bot has started, with ${bot.users.size} users, in ${bot.channels.size} channels of ${bot.guilds.size} guilds. `);
@@ -47,7 +48,7 @@ if(message.content.indexOf(prefix) !== 0) return;
 
     try {
       let commandFile = require(`./commands/${command}.js`);
-    
+      cmdCount += 1
     
     if (message.author.id == '198876820727267330')
         return message.channel.send(`**:x: ${message.author} You are blacklisted you may not use commands from this bot!**`)      
@@ -81,6 +82,11 @@ if(message.content.indexOf(prefix) !== 0) return;
     
     
     }
+    if(message.content === prefix + 'cmdcount') {
+    message.channel.send(`${cmdCount} commands have been used today`)
+    }
+
+
 
     if(message.content === prefix + 'ping') {
         const loading = bot.emojis.find("name", "BUFFER1")
