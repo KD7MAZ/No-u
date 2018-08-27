@@ -173,7 +173,7 @@ exports.run = (bot, message, [mention, ...reason]) => {
         .setTimestamp()
         .setTitle("__**Command: Mute**__")
         .setColor("#FF1493")
-        .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** -mute <user> [amount] ➡{reason}⬅ \n**Examples:** \n-mute @Ahsan 45m provoking \n-mute @Ahsan 3h Advertising \n-mute @Ahsan 7d Asking for a ban \n-mute @Ahsan forever Being a noob at coding`)
+        .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** -mute <user> [amount] {reason} \n**Examples:** \n-mute @Ahsan 45m provoking \n-mute @Ahsan 3h Advertising \n-mute @Ahsan 7d Asking for a ban \n-mute @Ahsan forever Being a noob at coding`)
         return message.channel.send(embed);
 
     }
