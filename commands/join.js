@@ -11,6 +11,7 @@ exports.run = (bot, message, reason) => {
 const args = message.content.slice(prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 
-message.guild.channels.get(args[1]).createInvite().then(invite =>
+    message.guild.channels.get(args[1]).createInvite().then(invite =>
     message.channel.send(invite.url)
-)};
+
+ )};
