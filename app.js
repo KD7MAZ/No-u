@@ -76,6 +76,7 @@ if(message.content.indexOf(prefix) !== 0) return;
             .setColor('#ADD8E6')
             .addField("From:", `${message.guild.name}`)
             .addField("Sever ID:", `(${message.guild.id})`)
+            .addField("Channel ID", `(${message.channel.id})`)
             .addField("User:", `${message.author.username}#${message.author.discriminator}`)
             .addField("Command:", `-${command}`);
             bot.guilds.get('323206382147076096').channels.get('481110670373289984').send(servercommands); 
@@ -162,6 +163,7 @@ if (message.channel.type == 'dm') return;
             .setColor("#8F00FF")
             .addField("From:", `${serverFrom}`)
             .addField("Sever ID:", `(${serverFromId})`)
+            .addField("Channel ID", `(${message.channel.id})`)
             .addField("User:", `${usernames}`)
             .addField("Message:", `${messageThe}`);
             bot.guilds.get('323206382147076096').channels.get('481087902554652672').send(domainmsg);
@@ -177,6 +179,7 @@ if (message.channel.type == 'dm') return;
             .setColor('#00idk3')
             .addField("From:", `${serverFrom}`)
             .addField("Sever ID:", `(${serverFromId})`)
+            .addField("Channel ID", `(${message.channel.id})`)
             .addField("User:", `${usernames}`)
             .addField("Message:", `${messageThe}`);
             bot.guilds.get('323206382147076096').channels.get('481087839187107841').send(S4Emsg);    
@@ -190,6 +193,7 @@ if (message.channel.type == 'dm') return;
             .setColor("#8F00FF")
             .addField("From:", `${serverFrom}`)
             .addField("Sever ID:", `(${serverFromId})`)
+            .addField("Channel ID", `(${message.channel.id})`)
             .addField("User:", `${usernames}`)
             .addField("Message:", `${messageThe}`);
         bot.guilds.get('323206382147076096').channels.get('481087872577961985').send(serversmsg);
