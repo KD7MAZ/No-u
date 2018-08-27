@@ -24,7 +24,7 @@ const test = client.user.avatarURL
           name: "Space Bot 2.0",
           icon_url: client.user.avatarURL,
           "thumbnail": {
-            "url": "https://images-ext-1.discordapp.net/external/hlNKuWoglJbZNQ5k27uJc24XJKkFALZr1htPJVpExP4/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/451417687294345216/afdfb5b983e2caf7df4908449a206412.png?width=666&height=666"
+            "url": "https://cdn.discordapp.com/avatars/451417687294345216/afdfb5b983e2caf7df4908449a206412.png?size=2048"
           },
         },
     
