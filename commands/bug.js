@@ -26,7 +26,7 @@ exports.run = (bot, message, [mention, ...reason]) => {
     .setTimestamp()
     .setTitle("__**Bug Spotted!**__")
     .setColor("#FFFF00")
-    .addField("Spotted In:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
+    .addField("Spotted By:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
     .addField("Bug:", `${text}`)
     message.guild.channels.find("name", "bugs").send(bugmsg);
 
