@@ -217,22 +217,22 @@ if ((body.response.rating.efficiency.position) == -1) {
         .addField("Profile:", `**Nickname:** Leo (Also know as the best Youtber) \n \n**Rank:** Legend 69 \n__**Active Premium:**__ Yes \n \n__**Weekly Leaderboard Ratings:**__ \n \n__**Crystal Ratings:**__ \nPosition: 3 \nValue: 69 \n \n__**GoldBox Ratings:**__ \nPosition: 3 \nValue: 69 \n \n__**Experience Ratings:**__ \nPosition: 3 \nValue: 69 \n \n__**Efficiency Ratings:**__ \nPosition: 3 \nValue: 69`)
       return message.channel.send(xEmbed);}
 
-    if (message.content == '-weekly andy') {
+    if (message.content == '-weekly AndyisAwesomeYT') {
         let fEmbed = new Discord.RichEmbed()
-        .setTitle("Weekly Ratings For Andy") 
+        .setTitle("Weekly Ratings For AndyisAwesomeYT") 
         .setColor('#FFFF00')
         .setThumbnail('https://i.imgur.com/NahcZQ9.png')
         .setURL("http://ratings.tankionline.com/en/user/Ahsantank/")
-        .addField("Profile:", `**Nickname:** andy (Also know as Hacker) \n \n**Rank:** Legend 0000000 \n__**Active Premium:**__ Yes \n \n__**Weekly Leaderboard Ratings:**__ \n \n__**Crystal Ratings:**__ \nPosition: 2 \nValue: 0000000 \n \n__**GoldBox Ratings:**__ \nPosition: 2 \nValue: 0000000 \n \n__**Experience Ratings:**__ \nPosition: 2 \nValue: 0000000 \n \n__**Efficiency Ratings:**__ \nPosition: 2 \nValue: 0000000`)
+        .addField("Profile:", `**Nickname:** AndyisAwesomeYT (Also know as Hacker) \n \n**Rank:** Legend 0000000 \n__**Active Premium:**__ Yes \n \n__**Weekly Leaderboard Ratings:**__ \n \n__**Crystal Ratings:**__ \nPosition: 2 \nValue: 0000000 \n \n__**GoldBox Ratings:**__ \nPosition: 2 \nValue: 0000000 \n \n__**Experience Ratings:**__ \nPosition: 2 \nValue: 0000000 \n \n__**Efficiency Ratings:**__ \nPosition: 2 \nValue: 0000000`)
       return message.channel.send(fEmbed);}
     
-      if (message.content == '-weekly Andy') {
+      if (message.content == '-weekly andyisawesomeyt') {
         let dEmbed = new Discord.RichEmbed()
-        .setTitle("Weekly Ratings For Andy") 
+        .setTitle("Weekly Ratings For AndyisAwesomeYT") 
         .setColor('#FFFF00')
         .setThumbnail('https://i.imgur.com/NahcZQ9.png')
         .setURL("http://ratings.tankionline.com/en/user/Ahsantank/")
-        .addField("Profile:", `**Nickname:** andy (Also know as Hacker) \n \n**Rank:** Legend 0000000 \n__**Active Premium:**__ Yes \n \n__**Weekly Leaderboard Ratings:**__ \n \n__**Crystal Ratings:**__ \nPosition: 2 \nValue: 0000000 \n \n__**GoldBox Ratings:**__ \nPosition: 2 \nValue: 0000000 \n \n__**Experience Ratings:**__ \nPosition: 2 \nValue: 0000000 \n \n__**Efficiency Ratings:**__ \nPosition: 2 \nValue: 0000000`)  
+        .addField("Profile:", `**Nickname:** AndyisAwesomeYT (Also know as Hacker) \n \n**Rank:** Legend 0000000 \n__**Active Premium:**__ Yes \n \n__**Weekly Leaderboard Ratings:**__ \n \n__**Crystal Ratings:**__ \nPosition: 2 \nValue: 0000000 \n \n__**GoldBox Ratings:**__ \nPosition: 2 \nValue: 0000000 \n \n__**Experience Ratings:**__ \nPosition: 2 \nValue: 0000000 \n \n__**Efficiency Ratings:**__ \nPosition: 2 \nValue: 0000000`)  
       return message.channel.send(dEmbed);}
 
       if ((body.response.hasPremium) == true) {
