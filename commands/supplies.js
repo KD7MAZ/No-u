@@ -36,6 +36,13 @@ exports.run = (client, message, args) => {
     const speed = body.response.suppliesUsage[5].usages
     const batteries = body.response.suppliesUsage[6].usages
     const total = batteries + damage + speed + armour + golds + repairs + mines
+    const armourname = body.response.suppliesUsage[0].name
+    const damagename = body.response.suppliesUsage[1].name
+    const minesname = body.response.suppliesUsage[2].name
+    const repairsname = body.response.suppliesUsage[3].name
+    const goldsname = body.response.suppliesUsage[4].name
+    const speedname = body.response.suppliesUsage[5].name
+    const batteriesname = body.response.suppliesUsage[6].name
 
 
 
@@ -258,7 +265,7 @@ exports.run = (client, message, args) => {
           .setColor('#8F00FF')
           .setThumbnail(rankimg)
           .setURL("http://ratings.tankionline.com/en/user/" + (body.response.name) + "/")
-          .addField("Profile:", `__**Nickname:**__ ${username} \n \n__**Rank:**__ ${rank} \n__**Active Premium:**__ ${premium} \n \n__**Supplies Usages:**__ \n \n<:RepairKitIcon:482918499719708683> __**Repair Kits:**__ ${repairs.toLocaleString('en')} \n \n<:DoubleArmourIcon:482918515834224671> __**Double Armour:**__ ${armour.toLocaleString('en')} \n \n<:DoubleDamageIcon:482918526596939776> __**Double Damage:**__ ${damage.toLocaleString('en')} \n \n<:SpeedBoostIcon:482918535786659842> __**Speed Boost:**__ ${speed.toLocaleString('en')} \n \n<:MineIcon:482918544133324812> __**Mines:**__ ${mines.toLocaleString('en')} \n \n<:GoldBoxIcon:482918640820289546> __**Golds:**__ ${golds.toLocaleString('en')} \n \n<:DroneIcon:482918650102415380> __**Batteries:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Total Usage:**__ ${total.toLocaleString('en')}`)
+          .addField("Profile:", `__**Nickname:**__ ${username} \n \n__**Rank:**__ ${rank} \n__**Active Premium:**__ ${premium} \n \n__**Supplies Usages:**__ \n \n<:RepairKitIcon:482918499719708683> __**${repairsname}s:**__ ${repairs.toLocaleString('en')} \n \n<:DoubleArmourIcon:482918515834224671> __**${armourname}s:**__ ${armour.toLocaleString('en')} \n \n<:DoubleDamageIcon:482918526596939776> __**${damagename}:**__ ${damage.toLocaleString('en')} \n \n<:SpeedBoostIcon:482918535786659842> __**${speedname}s:**__ ${speed.toLocaleString('en')} \n \n<:MineIcon:482918544133324812> __**${minesname}s:**__ ${mines.toLocaleString('en')} \n \n<:GoldBoxIcon:482918640820289546> __**${goldsname}es:**__ ${golds.toLocaleString('en')} \n \n<:DroneIcon:482918650102415380> __**${batteriesname}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Total Usage:**__ ${total.toLocaleString('en')}`)
         message.channel.send(sEmbed);}
         message.react(`a:animatedtick:482541833805627412`)
 
