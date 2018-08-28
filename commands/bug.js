@@ -22,23 +22,23 @@ exports.run = (bot, message, [mention, ...reason]) => {
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   let text = args.slice(1).join(" ")
     
-    let suggestmsg = new Discord.RichEmbed()
+    let bugmsg = new Discord.RichEmbed()
     .setTimestamp()
     .setTitle("__**Bug Spotted!**__")
-    .setColor("#4D7FCB")
+    .setColor("#FFFF00")
     .addField("Spotted In:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
     .addField("Bug:", `${text}`)
-    message.guild.channels.find("name", "suggestions").send(suggestmsg);
+    message.guild.channels.find("name", "bugs").send(bugmsg);
 
     
-    let dmsuggestMsg = new Discord.RichEmbed()
+    let dmbugMsg = new Discord.RichEmbed()
     .setTimestamp()
     .setTitle("__**Bug Spotted!**__")
-    .setColor("#4D7FCB")
+    .setColor("#FFFF00")
     .addField("Spotted In:", `${message.guild.name}`)
     .addField("Spotted by:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
     .addField("Bug:", `${text}`);
-   message.author.send(dmsuggestMsg);
+   message.author.send(dmbugMsg);
    
    message.channel.send(`${message.author} your suggestion has been sent in!`)
     
@@ -48,7 +48,7 @@ exports.run = (bot, message, [mention, ...reason]) => {
     let logsMsg = new Discord.RichEmbed()
         .setTimestamp()
         .setTitle("__**Bug Spotted!**__")
-        .setColor("#4D7FCB")
+        .setColor("#FFFF00")
         .addField("Spotted In:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
         .addField("Spotted by:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
         .addField("Bug:", `${text}`);
