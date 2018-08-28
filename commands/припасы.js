@@ -19,7 +19,7 @@ exports.run = (client, message, args) => {
    message.channel.send(`<a:animatedx:482541818886750218> ${message.author} Введите действительный псевдоним!`) 
     return message.react(`a:animatedx:482541818886750218`)
   }
-  request('https://ratings.tankionline.com/api/eu/profile/?user=' + (username), { json: true }, (err, res, body) => {
+  request('https://ratings.tankionline.com/api/eu/profile/?user=' + (username) + '&lang=ru', { json: true }, (err, res, body) => {
     
   
   
@@ -38,6 +38,13 @@ exports.run = (client, message, args) => {
     const speed = body.response.suppliesUsage[5].usages
     const batteries = body.response.suppliesUsage[6].usages
     const total = batteries + damage + speed + armour + golds + repairs + mines
+    const armourname = body.response.suppliesUsage[0].name
+    const damagename = body.response.suppliesUsage[1].name
+    const minesname = body.response.suppliesUsage[2].name
+    const repairsname = body.response.suppliesUsage[3].name
+    const goldsname = body.response.suppliesUsage[4].name
+    const speedname = body.response.suppliesUsage[5].name
+    const batteriesname = body.response.suppliesUsage[6].name
 
 
 
@@ -149,7 +156,7 @@ exports.run = (client, message, args) => {
           .setColor('#FFFF00')
           .setThumbnail(rankimg)
           .setURL("http://ratings.tankionline.com/en/user/" + (body.response.name) + "/")
-          .addField("профиль:", `__**кличка:**__ ${username} \n \n__**Ранг:**__ ${rank} \n__**Aктивный Премиум:**__ ${premium} \n \n__**Припасы используемый:**__ \n \n<:RepairKitIcon:482918499719708683> __**Ремкомплект:**__ ${repairs.toLocaleString('en')} \n \n<:DoubleArmourIcon:482918515834224671> __**Двойная защита:**__ ${armour.toLocaleString('en')} \n \n<:DoubleDamageIcon:482918526596939776> __**Двойной урон:**__ ${damage.toLocaleString('en')}\n \n<:SpeedBoostIcon:482918535786659842> __**Ускорение:**__ ${speed.toLocaleString('en')} \n \n<:MineIcon:482918544133324812> __**Мина:**__ ${mines.toLocaleString('en')} \n \n<:GoldBoxIcon:482918640820289546> __**Золотой ящик:**__ ${golds.toLocaleString('en')} \n \n<:DroneIcon:482918650102415380> __**Батарея:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Всего используемый:**__ ${total.toLocaleString('en')}`)
+          .addField("профиль:", `__**кличка:**__ ${username} \n \n__**Ранг:**__ ${rank} \n__**Aктивный Премиум:**__ ${premium} \n \n__**Припасы используемый:**__ \n \n<:RepairKitIcon:482918499719708683> __**${repairsname}:**__ ${repairs.toLocaleString('en')} \n \n<:DoubleArmourIcon:482918515834224671> __**${armourname}:**__ ${armour.toLocaleString('en')} \n \n<:DoubleDamageIcon:482918526596939776> __**${damagename}:**__ ${damage.toLocaleString('en')} \n \n<:SpeedBoostIcon:482918535786659842> __**${speedname}:**__ ${speed.toLocaleString('en')} \n \n<:MineIcon:482918544133324812> __**${minesname}:**__ ${mines.toLocaleString('en')} \n \n<:GoldBoxIcon:482918640820289546> __**${goldsname}:**__ ${golds.toLocaleString('en')} \n \n<:DroneIcon:482918650102415380> __**${batteriesname}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Всего используемый:**__ ${total.toLocaleString('en')}`)
         message.channel.send(aEmbed);}
         message.react(`a:animatedtick:482541833805627412`)
             
@@ -261,7 +268,7 @@ exports.run = (client, message, args) => {
           .setColor('#8F00FF')
           .setThumbnail(rankimg)
           .setURL("http://ratings.tankionline.com/en/user/" + (body.response.name) + "/")
-          .addField("профиль:", `__**кличка:**__ ${username} \n \n__**Ранг:**__ ${rank} \n__**Aктивный Премиум:**__ ${premium} \n \n__**Припасы используемый:**__ \n \n<:RepairKitIcon:482918499719708683> __**Ремкомплект:**__ ${repairs.toLocaleString('en')} \n \n<:DoubleArmourIcon:482918515834224671> __**Двойная защита:**__ ${armour.toLocaleString('en')} \n \n<:DoubleDamageIcon:482918526596939776> __**Двойной урон:**__ ${damage.toLocaleString('en')}\n \n<:SpeedBoostIcon:482918535786659842> __**Ускорение:**__ ${speed.toLocaleString('en')} \n \n<:MineIcon:482918544133324812> __**Мина:**__ ${mines.toLocaleString('en')} \n \n<:GoldBoxIcon:482918640820289546> __**Золотой ящик:**__ ${golds.toLocaleString('en')} \n \n<:DroneIcon:482918650102415380> __**Батарея:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Всего используемый:**__ ${total.toLocaleString('en')}`)
+          .addField("профиль:", `__**кличка:**__ ${username} \n \n__**Ранг:**__ ${rank} \n__**Aктивный Премиум:**__ ${premium} \n \n__**Припасы используемый:**__ \n \n<:RepairKitIcon:482918499719708683> __**${repairsname}:**__ ${repairs.toLocaleString('en')} \n \n<:DoubleArmourIcon:482918515834224671> __**${armourname}:**__ ${armour.toLocaleString('en')} \n \n<:DoubleDamageIcon:482918526596939776> __**${damagename}:**__ ${damage.toLocaleString('en')} \n \n<:SpeedBoostIcon:482918535786659842> __**${speedname}:**__ ${speed.toLocaleString('en')} \n \n<:MineIcon:482918544133324812> __**${minesname}:**__ ${mines.toLocaleString('en')} \n \n<:GoldBoxIcon:482918640820289546> __**${goldsname}:**__ ${golds.toLocaleString('en')} \n \n<:DroneIcon:482918650102415380> __**${batteriesname}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Всего используемый:**__ ${total.toLocaleString('en')}`)
         message.channel.send(sEmbed);}
         message.react(`a:animatedtick:482541833805627412`)
 
