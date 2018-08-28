@@ -40,7 +40,7 @@ exports.run = (bot, message, [mention, ...reason]) => {
     .addField("Bug:", `${text}`);
    message.author.send(dmbugMsg);
    
-   message.channel.send(`${message.author} your suggestion has been sent in!`)
+   message.channel.send(`${message.author} your bug has been sent in, it will be checked out soon!`)
     
    const chanCheck = message.guild.channels.find("name", "logs");
     if(!chanCheck) 
