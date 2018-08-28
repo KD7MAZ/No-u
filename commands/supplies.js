@@ -36,6 +36,7 @@ exports.run = (client, message, args) => {
     const speed = body.response.suppliesUsage[5].usages
     const batteries = body.response.suppliesUsage[6].usages
     const total = batteries + damage + speed + armour + golds + repairs + mines
+    //names
     const armourname = body.response.suppliesUsage[0].name
     const damagename = body.response.suppliesUsage[1].name
     const minesname = body.response.suppliesUsage[2].name
