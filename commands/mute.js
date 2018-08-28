@@ -22,14 +22,38 @@ exports.run = (bot, message, [mention, timee, ...reason]) => { //added timee as 
     if (message.member.roles.has(muteRole.id))
       return message.channel.send(`:x: ${message.author} This user is already muted!`)
 
-    if (message.mentions.members.size === 0){
+  if ((message.mentions.members.size === 0) && (timee == undefined) && (reason.length == 0)){
+        let Incorrect = new Discord.RichEmbed()
+        .setTimestamp()
+        .setTitle("__**Incorrect Usage**__")
+        .setColor("#FF1493")
+        .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** -mute ➡<user>⬅ ➡[amount]⬅ ➡{reason}⬅ \n**Examples:** \n-mute @Ahsan 45m provoking \n-mute @Ahsan 3h Advertising \n-mute @Ahsan 7d Asking for a ban \n-mute @Ahsan forever Being a noob at coding \n**Error:** Did not specify a user to mute, a time limit nor a reason`)
+      return message.channel.send(Incorrect);}
+    
+  else if ((message.mentions.members.size === 0) && (timee == undefined) || (hasNumber.test(timee) == false)){
+    let Incorrect = new Discord.RichEmbed()
+    .setTimestamp()
+    .setTitle("__**Incorrect Usage**__")
+    .setColor("#FF1493")
+    .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** -mute ➡<user>⬅ ➡[amount]⬅ {reason} \n**Examples:** \n-mute @Ahsan 45m provoking \n-mute @Ahsan 3h Advertising \n-mute @Ahsan 7d Asking for a ban \n-mute @Ahsan forever Being a noob at coding \n**Error:** Did not specify a user to mute`)
+  return message.channel.send(Incorrect);}
+  
+  else if ((message.mentions.members.size === 0) && (reason.length == 0)){
+    let Incorrect = new Discord.RichEmbed()
+    .setTimestamp()
+    .setTitle("__**Incorrect Usage**__")
+    .setColor("#FF1493")
+    .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** -mute ➡<user>⬅ [amount] ➡{reason}⬅ \n**Examples:** \n-mute @Ahsan 45m provoking \n-mute @Ahsan 3h Advertising \n-mute @Ahsan 7d Asking for a ban \n-mute @Ahsan forever Being a noob at coding \n**Error:** Did not specify a user to mute`)
+  return message.channel.send(Incorrect);}
+
+  else if (message.mentions.members.size === 0){
     let Incorrect = new Discord.RichEmbed()
     .setTimestamp()
     .setTitle("__**Incorrect Usage**__")
     .setColor("#FF1493")
     .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** -mute ➡<user>⬅ [amount] {reason} \n**Examples:** \n-mute @Ahsan 45m provoking \n-mute @Ahsan 3h Advertising \n-mute @Ahsan 7d Asking for a ban \n-mute @Ahsan forever Being a noob at coding \n**Error:** Did not specify a user to mute`)
   return message.channel.send(Incorrect);}
-    
+
     if (message.author.id == message.mentions.users.first()) 
       return message.channel.send(`:x: ${message.author} You cannot do that to yourself, why did you try?`);
     
