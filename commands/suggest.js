@@ -25,7 +25,7 @@ exports.run = (bot, message, [mention, ...reason]) => {
     let suggestmsg = new Discord.RichEmbed()
     .setTimestamp()
     .setTitle("__**Suggestion!**__")
-    .setColor("#4D7FCB")
+    .setColor("#0000FF")
     .addField("Suggestion By:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
     .addField("Suggestion:", `${text}`)
     message.guild.channels.find("name", "suggestions").send(suggestmsg);
@@ -34,7 +34,7 @@ exports.run = (bot, message, [mention, ...reason]) => {
     let dmsuggestMsg = new Discord.RichEmbed()
     .setTimestamp()
     .setTitle("__**Suggestion!**__")
-    .setColor("#4D7FCB")
+    .setColor("#0000FF")
     .addField("Suggested In:", `${message.guild.name}`)
     .addField("Suggested By:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
     .addField("Suggestion:", `${text}`);
@@ -48,7 +48,7 @@ exports.run = (bot, message, [mention, ...reason]) => {
     let logsMsg = new Discord.RichEmbed()
         .setTimestamp()
         .setTitle("__**Suggestion!**__")
-        .setColor("#4D7FCB")
+        .setColor("#0000FF")
         .addField("Suggestion By:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
         .addField("Suggestion:", `${text}`);
     chanCheck.send(logsMsg);
