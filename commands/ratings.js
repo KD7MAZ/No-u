@@ -125,22 +125,22 @@ exports.run = (client, message, args) => {
           .addField("Profile:", `**Nickname:** Leo (Also know as the best Youtuber) \n \n**Rank:** Legend 69 \n \n**Exp**: 69 \n \n**Next rank:** 31xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 69 \n \n**Golds Caught:** 69 \n \n**Kills:** 69      **Deaths:** 0      **K/D:** - `)
         return message.channel.send(xEmbed);}
 
-      if (message.content == '-ratings andy') {
+      if (message.content == '-ratings andyisawesomeyt') {
           let fEmbed = new Discord.RichEmbed()
-          .setTitle("Stats for Andy") 
+          .setTitle("Stats for andyisawesomeyt") 
           .setColor('#FFFF00')
           .setThumbnail('https://i.imgur.com/qK6onnG.png')
           .setURL("http://ratings.tankionline.com/en/user/Ahsantank/")
-          .addField("Profile:", `**Nickname:** andy (Also know as Hacker) \n \n**Rank:** Legend 0000000 \n \n**Exp**: 0000000 \n \n**Next rank:** 0xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 0000000 \n \n**Golds Caught:** 0000000 \n \n**Kills:** 0000000     **Deaths:** 0      **K/D:** -`)
+          .addField("Profile:", `**Nickname:** AndyisAwesomeYT (Also know as Hacker) \n \n**Rank:** Legend 0000000 \n \n**Exp**: 0000000 \n \n**Next rank:** 0xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 0000000 \n \n**Golds Caught:** 0000000 \n \n**Kills:** 0000000     **Deaths:** 0      **K/D:** -`)
         return message.channel.send(fEmbed);}
       
-        if (message.content == '-ratings Andy') {
+        if (message.content == '-ratings AndyisAwesomeYT') {
           let dEmbed = new Discord.RichEmbed()
-          .setTitle("Stats for Andy") 
+          .setTitle("Stats for AndyisAwesomeYT") 
           .setColor('#FFFF00')
           .setThumbnail('https://i.imgur.com/qK6onnG.png')
           .setURL("http://ratings.tankionline.com/en/user/Ahsantank/")
-          .addField("Profile:", `**Nickname:** andy (Also know as Hacker) \n \n**Rank:** Legend 0000000 \n \n**Exp**: 0000000 \n \n**Next rank:** 0xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 0000000 \n \n**Golds Caught:** 0000000 \n \n**Kills:** 0000000     **Deaths:** 0      **K/D:** -`)
+          .addField("Profile:", `**Nickname:** AndyisAwesomeYT (Also know as Hacker) \n \n**Rank:** Legend 0000000 \n \n**Exp**: 0000000 \n \n**Next rank:** 0xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 0000000 \n \n**Golds Caught:** 0000000 \n \n**Kills:** 0000000     **Deaths:** 0      **K/D:** -`)
         return message.channel.send(dEmbed);}    
 
       if ((body.response.hasPremium) == true) {
