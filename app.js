@@ -506,3 +506,65 @@ bot.on('raw', event => {
 });
 
 
+let setupCMD2 = prefix + "rankrole"
+let initialMessage2 = `**React to the messages below to receive the associated role. If you would like to remove the role, simply remove your reaction!**`;
+let roles2 = ["Recruit", "Private", "Gefreiter", "Corporal", "Master Corporal", "Sergeant", "Staff Sergeant", "Master Sergeant", "First Sergeant", "Sergeant Major", "Warrent Officer 1", "Warrent Officer 2", "Warrent Officer 3", "Warrent Officer 4", "Warrent Officer 5", "Third Lieutenant", "Second Lieutenant", "First Lieutenant", "Major", "Lieutenant Colonel", "Colonel", "Brigadier", "Major General", "Lieutenant General", "General", "Marshal", "Fieldmarshal", "Commander", "Generalissimo", "Legend"];
+let reactions2 = [":Recruit:483627846590529556", ":Private:483627836666806272", ":Gefreiter:483627740713451538", ":Corporal:483627704130863135", ":MasterCorporal:483627820136923136", ":Sergeant:483627871336923147", ":StaffSergeant:483627880329379850", ":MasterSergeant:483627827514572800", ":FirstSergeant:483627731574325272", ":SergeantMajor:483627862960898048", ":WarrantOfficer1:483627896959664137", ":WarrantOfficer2:483627905495203840", ":WarrantOfficer3:483627912550154251", ":WarrantOfficer4:483627920724721679", ":WarrantOfficer5:483627936017022998", ":ThirdLieutenant:483627888692690955", ":SecondLieutenant:483627854853177361", ":FirstLieutenant:483627722073964554", ":Major:483627800310317066", ":LieutenantColonel:483627773370564609", ":Colonel:483627683943809025", ":Brigadier:483627659159666698", ":MajorGeneral:483627790483324942", ":LieutenantGeneral:483627781159256067", ":General:483627748514856960", ":Marshal:483627811609772032", ":Fieldmarshal:483627713282834473", ":Commander:483627694488158208", ":Generalissimo:483627756618252310", ":Legend:483627765304786946"];
+//If there isn't a reaction for every role, scold the user!
+if (roles2.length !== reactions2.length) throw "Roles list and reactions list are not the same length!";
+
+//Function to generate the role messages, based on your settings
+function generateMessages(){
+    var messages = [];
+    messages.push(initialMessage2);
+    for (let role of roles2) messages.push(`React below to get the **"${role}"** role!`); //DONT CHANGE THIS
+    return messages;
+}
+
+
+bot.on("message", message => {
+    let yourID = owner
+    if (message.author.id == yourID && message.content.toLowerCase() == setupCMD2){
+        var toSend = generateMessages();
+        let mappedArray = [[toSend[0], false], ...toSend.slice(1).map( (message, idx) => [message, reactions2[idx]])];
+        for (let mapObj of mappedArray){
+            message.channel.send(mapObj[0]).then( sent => {
+                if (mapObj[1]){
+                  sent.react(mapObj[1]);  
+                } 
+            });
+        }
+    }
+})
+bot.on('raw', event => {
+    if (event.t === 'MESSAGE_REACTION_ADD' || event.t == "MESSAGE_REACTION_REMOVE"){
+        
+        let channel = bot.channels.get(event.d.channel_id);
+        let message = channel.fetchMessage(event.d.message_id).then(msg=> {
+        let user = msg.guild.members.get(event.d.user_id);
+        
+        if (msg.author.id == bot.user.id && msg.content != initialMessage){
+       
+            var re = `\\*\\*"(.+)?(?="\\*\\*)`;
+            var role = msg.content.match(re)[1];
+        
+            if (user.id != bot.user.id){
+                var roleObj = msg.guild.roles.find('name', role);
+                var memberObj = msg.guild.members.get(user.id);
+                
+                if (event.t === "MESSAGE_REACTION_ADD"){
+                    
+                    memberObj.send(`In ${memberObj.guild.name} You were given from the role \`${role}\``)
+                    memberObj.addRole(roleObj)
+                
+                } else {
+                    memberObj.send(`In ${memberObj.guild.name} You were removed from the role \`${role}\``)
+                    memberObj.removeRole(roleObj);
+                }
+            }
+        }
+        })
+ 
+    }   
+});
+
