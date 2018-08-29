@@ -36,14 +36,209 @@ exports.run = (client, message, args) => {
     const speed = body.response.suppliesUsage[5].usages
     const batteries = body.response.suppliesUsage[6].usages
     const total = batteries + damage + speed + armour + golds + repairs + mines
-    //names
-    const armourname = body.response.suppliesUsage[0].name
-    const damagename = body.response.suppliesUsage[1].name
-    const minesname = body.response.suppliesUsage[2].name
-    const repairsname = body.response.suppliesUsage[3].name
-    const goldsname = body.response.suppliesUsage[4].name
-    const speedname = body.response.suppliesUsage[5].name
-    const batteriesname = body.response.suppliesUsage[6].name
+    //DO NOT TOUCH
+    if (body.response.suppliesUsage[0].name == "Repair Kit") {
+  var emoji0 = "<:RepairKitIcon:482918499719708683>"
+  var name0 = "Repair Kits"
+}
+else if (body.response.suppliesUsage[0].name == "Double Damage") {
+  var emoji0 = "<:DoubleDamageIcon:482918526596939776>"
+  var name0 = "Double Damage"
+}
+else if (body.response.suppliesUsage[0].name == "Speed Boost") {
+  var emoji0 = "<:SpeedBoostIcon:482918535786659842>"
+  var name0 = "Speed Boost"
+}
+else if (body.response.suppliesUsage[0].name == "Gold box") {
+  var emoji0 = "<:GoldBoxIcon:482918640820289546> "
+  var name0 = "Golds"
+}
+else if (body.response.suppliesUsage[0].name == "Double Armor") {
+  var emoji0 = "<:DoubleArmourIcon:482918515834224671>"
+  var name0 = "Double Armour"
+}
+else if (body.response.suppliesUsage[0].name == "Mine") {
+  var emoji0 = "<:MineIcon:482918544133324812>"
+  var name0 = "Mines"
+}
+else if (body.response.suppliesUsage[0].name == "Battery") {
+  var emoji0 = "<:DroneIcon:482918650102415380>"
+  var name0 = "Batteries"
+}
+//////////////////////////////////////////////
+if (body.response.suppliesUsage[1].name == "Repair Kit") {
+  var emoji1 = "<:RepairKitIcon:482918499719708683>"
+  var name1 = "Repair Kits"
+}
+else if (body.response.suppliesUsage[1].name == "Double Damage") {
+  var emoji1 = "<:DoubleDamageIcon:482918526596939776>"
+  var name1 = "Double Damage"
+}
+else if (body.response.suppliesUsage[1].name == "Speed Boost") {
+  var emoji1 = "<:SpeedBoostIcon:482918535786659842>"
+  var name1 = "Speed Boost"
+}
+else if (body.response.suppliesUsage[1].name == "Gold box") {
+  var emoji1 = "<:GoldBoxIcon:482918640820289546> "
+  var name1 = "Golds"
+}
+else if (body.response.suppliesUsage[1].name == "Double Armor") {
+  var emoji1 = "<:DoubleArmourIcon:482918515834224671>"
+  var name1 = "Double Armour"
+}
+else if (body.response.suppliesUsage[1].name == "Mine") {
+  var emoji1 = "<:MineIcon:482918544133324812>"
+  var name1 = "Mines"
+}
+else if (body.response.suppliesUsage[1].name == "Battery") {
+  var emoji1 = "<:DroneIcon:482918650102415380>"
+  var name1 = "Batteries"
+}
+///////////////////////
+if (body.response.suppliesUsage[2].name == "Repair Kit") {
+  var emoji2 = "<:RepairKitIcon:482918499719708683>"
+  var name2 = "Repair Kits"
+}
+else if (body.response.suppliesUsage[2].name == "Double Damage") {
+  var emoji2 = "<:DoubleDamageIcon:482918526596939776>"
+  var name2 = "Double Damage"
+}
+else if (body.response.suppliesUsage[2].name == "Speed Boost") {
+  var emoji2 = "<:SpeedBoostIcon:482918535786659842>"
+  var name2 = "Speed Boost"
+}
+else if (body.response.suppliesUsage[2].name == "Gold box") {
+  var emoji2 = "<:GoldBoxIcon:482918640820289546> "
+  var name2 = "Golds"
+}
+else if (body.response.suppliesUsage[2].name == "Double Armor") {
+  var emoji2 = "<:DoubleArmourIcon:482918515834224671>"
+  var name2 = "Double Armour"
+}
+else if (body.response.suppliesUsage[2].name == "Mine") {
+  var emoji2 = "<:MineIcon:482918544133324812>"
+  var name2 = "Mines"
+}
+else if (body.response.suppliesUsage[2].name == "Battery") {
+  var emoji2 = "<:DroneIcon:482918650102415380>"
+  var name2 = "Batteries"
+}
+///////////////////////////
+if (body.response.suppliesUsage[3].name == "Repair Kit") {
+  var emoji3 = "<:RepairKitIcon:482918499719708683>"
+  var name3 = "Repair Kits"
+}
+else if (body.response.suppliesUsage[3].name == "Double Damage") {
+  var emoji3 = "<:DoubleDamageIcon:482918526596939776>"
+  var name3 = "Double Damage"
+}
+else if (body.response.suppliesUsage[3].name == "Speed Boost") {
+  var emoji3 = "<:SpeedBoostIcon:482918535786659842>"
+  var name3 = "Speed Boost"
+}
+else if (body.response.suppliesUsage[3].name == "Gold box") {
+  var emoji3 = "<:GoldBoxIcon:482918640820289546> "
+  var name3 = "Golds"
+}
+else if (body.response.suppliesUsage[3].name == "Double Armor") {
+  var emoji3 = "<:DoubleArmourIcon:482918515834224671>"
+  var name3 = "Double Armour"
+}
+else if (body.response.suppliesUsage[3].name == "Mine") {
+  var emoji3 = "<:MineIcon:482918544133324812>"
+  var name3 = "Mines"
+}
+else if (body.response.suppliesUsage[3].name == "Battery") {
+  var emoji3 = "<:DroneIcon:482918650102415380>"
+  var name3 = "Batteries"
+}
+///////////////////////////////
+if (body.response.suppliesUsage[4].name == "Repair Kit") {
+  var emoji4 = "<:RepairKitIcon:482918499719708683>"
+  var name4 = "Repair Kits"
+}
+else if (body.response.suppliesUsage[4].name == "Double Damage") {
+  var emoji4 = "<:DoubleDamageIcon:482918526596939776>"
+  var name4 = "Double Damage"
+}
+else if (body.response.suppliesUsage[4].name == "Speed Boost") {
+  var emoji4 = "<:SpeedBoostIcon:482918535786659842>"
+  var name4 = "Speed Boost"
+}
+else if (body.response.suppliesUsage[4].name == "Gold box") {
+  var emoji4 = "<:GoldBoxIcon:482918640820289546> "
+  var name4 = "Golds"
+}
+else if (body.response.suppliesUsage[4].name == "Double Armor") {
+  var emoji4 = "<:DoubleArmourIcon:482918515834224671>"
+  var name4 = "Double Armour"
+}
+else if (body.response.suppliesUsage[4].name == "Mine") {
+  var emoji4 = "<:MineIcon:482918544133324812>"
+  var name4 = "Mines"
+}
+else if (body.response.suppliesUsage[4].name == "Battery") {
+  var emoji4 = "<:DroneIcon:482918650102415380>"
+  var name4 = "Batteries"
+}
+//////////////////
+if (body.response.suppliesUsage[5].name == "Repair Kit") {
+  var emoji5 = "<:RepairKitIcon:482918499719708683>"
+  var name5 = "Repair Kits"
+}
+else if (body.response.suppliesUsage[5].name == "Double Damage") {
+  var emoji5 = "<:DoubleDamageIcon:482918526596939776>"
+  var name5 = "Double Damage"
+}
+else if (body.response.suppliesUsage[5].name == "Speed Boost") {
+  var emoji5 = "<:SpeedBoostIcon:482918535786659842>"
+  var name5 = "Speed Boost"
+}
+else if (body.response.suppliesUsage[5].name == "Gold box") {
+  var emoji5 = "<:GoldBoxIcon:482918640820289546> "
+  var name5 = "Golds"
+}
+else if (body.response.suppliesUsage[5].name == "Double Armor") {
+  var emoji5 = "<:DoubleArmourIcon:482918515834224671>"
+  var name5 = "Double Armour"
+}
+else if (body.response.suppliesUsage[5].name == "Mine") {
+  var emoji5 = "<:MineIcon:482918544133324812>"
+  var name5 = "Mines"
+}
+else if (body.response.suppliesUsage[5].name == "Battery") {
+  var emoji5 = "<:DroneIcon:482918650102415380>"
+  var name5 = "Batteries"
+}
+////////////////////////
+if (body.response.suppliesUsage[6].name == "Repair Kit") {
+  var emoji6 = "<:RepairKitIcon:482918499719708683>"
+  var name6 = "Repair Kits"
+}
+else if (body.response.suppliesUsage[6].name == "Double Damage") {
+  var emoji6 = "<:DoubleDamageIcon:482918526596939776>"
+  var name6 = "Double Damage"
+}
+else if (body.response.suppliesUsage[6].name == "Speed Boost") {
+  var emoji6 = "<:SpeedBoostIcon:482918535786659842>"
+  var name6 = "Speed Boost"
+}
+else if (body.response.suppliesUsage[6].name == "Gold box") {
+  var emoji6 = "<:GoldBoxIcon:482918640820289546> "
+  var name6 = "Golds"
+}
+else if (body.response.suppliesUsage[6].name == "Double Armor") {
+  var emoji6 = "<:DoubleArmourIcon:482918515834224671>"
+  var name6 = "Double Armour"
+}
+else if (body.response.suppliesUsage[6].name == "Mine") {
+  var emoji6 = "<:MineIcon:482918544133324812>"
+  var name6 = "Mines"
+}
+else if (body.response.suppliesUsage[6].name == "Battery") {
+  var emoji6 = "<:DroneIcon:482918650102415380>"
+  var name6 = "Batteries"
+}
 
 
 
@@ -154,7 +349,7 @@ exports.run = (client, message, args) => {
           .setColor('#FFFF00')
           .setThumbnail(rankimg)
           .setURL("http://ratings.tankionline.com/en/user/" + (body.response.name) + "/")
-          .addField("Profile:", `__**Nickname:**__ ${username} \n \n__**Rank:**__ ${rank} \n__**Active Premium:**__ ${premium} \n \n__**Supplies Usages:**__ \n \n<:RepairKitIcon:482918499719708683> __**${repairsname}s:**__ ${repairs.toLocaleString('en')} \n \n<:DoubleArmourIcon:482918515834224671> __**${armourname}s:**__ ${armour.toLocaleString('en')} \n \n<:DoubleDamageIcon:482918526596939776> __**${damagename}:**__ ${damage.toLocaleString('en')} \n \n<:SpeedBoostIcon:482918535786659842> __**${speedname}s:**__ ${speed.toLocaleString('en')} \n \n<:MineIcon:482918544133324812> __**${minesname}s:**__ ${mines.toLocaleString('en')} \n \n<:GoldBoxIcon:482918640820289546> __**${goldsname}es:**__ ${golds.toLocaleString('en')} \n \n<:DroneIcon:482918650102415380> __**${batteriesname}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Total Usage:**__ ${total.toLocaleString('en')}`)
+          .addField("Profile:", `__**Nickname:**__ ${username} \n \n__**Rank:**__ ${rank} \n__**Active Premium:**__ ${premium} \n \n__**Supplies Usages:**__ \n \n${emoji3} __**${name3}:**__ ${repairs.toLocaleString('en')} \n \n${emoji0} __**${name0}:**__ ${armour.toLocaleString('en')} \n \n${emoji1} __**${name1}:**__ ${damage.toLocaleString('en')} \n \n${emoji5} __**${name5}:**__ ${speed.toLocaleString('en')} \n \n${emoji2} __**${name2}:**__ ${mines.toLocaleString('en')} \n \n${emoji4} __**${name4}:**__ ${golds.toLocaleString('en')} \n \n${emoji6} __**${name6}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Total Usage:**__ ${total.toLocaleString('en')}`)
         message.channel.send(aEmbed);}
         message.react(`a:animatedtick:482541833805627412`)
             
@@ -266,7 +461,7 @@ exports.run = (client, message, args) => {
           .setColor('#8F00FF')
           .setThumbnail(rankimg)
           .setURL("http://ratings.tankionline.com/en/user/" + (body.response.name) + "/")
-          .addField("Profile:", `__**Nickname:**__ ${username} \n \n__**Rank:**__ ${rank} \n__**Active Premium:**__ ${premium} \n \n__**Supplies Usages:**__ \n \n<:RepairKitIcon:482918499719708683> __**${repairsname}s:**__ ${repairs.toLocaleString('en')} \n \n<:DoubleArmourIcon:482918515834224671> __**${armourname}s:**__ ${armour.toLocaleString('en')} \n \n<:DoubleDamageIcon:482918526596939776> __**${damagename}:**__ ${damage.toLocaleString('en')} \n \n<:SpeedBoostIcon:482918535786659842> __**${speedname}s:**__ ${speed.toLocaleString('en')} \n \n<:MineIcon:482918544133324812> __**${minesname}s:**__ ${mines.toLocaleString('en')} \n \n<:GoldBoxIcon:482918640820289546> __**${goldsname}es:**__ ${golds.toLocaleString('en')} \n \n<:DroneIcon:482918650102415380> __**${batteriesname}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Total Usage:**__ ${total.toLocaleString('en')}`)
+          .addField("Profile:", `__**Nickname:**__ ${username} \n \n__**Rank:**__ ${rank} \n__**Active Premium:**__ ${premium} \n \n__**Supplies Usages:**__ \n \n${emoji3} __**${name3}:**__ ${repairs.toLocaleString('en')} \n \n${emoji0} __**${name0}:**__ ${armour.toLocaleString('en')} \n \n${emoji1} __**${name1}:**__ ${damage.toLocaleString('en')} \n \n${emoji5} __**${name5}:**__ ${speed.toLocaleString('en')} \n \n${emoji2} __**${name2}:**__ ${mines.toLocaleString('en')} \n \n${emoji4} __**${name4}:**__ ${golds.toLocaleString('en')} \n \n${emoji6} __**${name6}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Total Usage:**__ ${total.toLocaleString('en')}`)
         message.channel.send(sEmbed);}
         message.react(`a:animatedtick:482541833805627412`)
 
