@@ -350,8 +350,9 @@ bot.on("guildMemberAdd", (member) => {
     try {
         if (member.guild.id == '323206382147076096') {
             member.guild.channels.get("477585260457230336").send(`<a:PARTY:463006559446892555> **Welcome to ${member.guild.name} ${member.user} You are the ${last} Member! :tada:** \nPlease read the <#477584677339660308> and stay out of trouble!`);
-            member.send(`Hello ${member.user.username} if this is your first time joining the server then, welcome, if not and you've come back because you were kicked from the bot that was hacked and you had roles other than members then either pm my master Ahsan#3247 (<@321673115891531787>) or pm a moderator in the server that can give it back to you if you lie to us we will know and you will be banned so don't try anything \nThanks \n \nBot owner, Server owner ~ Ahsan.`)
-            
+            member.guild.channels.get("477585601105887242").send(`<a:PARTY:463006559446892555> Hello ${member.user} welcome to Ahsan's Server to become a member please go to <#483266115783622668> and react with <a:animatedtick:482541833805627412> to obtain the role \`MEMBERS\` and have full access to the rest of the server! \nThanks for your co-operation`)
+            member.send(`Welcome to Ahsan's Server to become a member please go to <#483266115783622668> and react with <a:animatedtick:482541833805627412> to obtain the role and have full access to the rest of the server! \nThanks for your co-operation`)
+         
         }
         //leos server
         else if (member.guild.id == '294142702151270402') {
