@@ -19,10 +19,9 @@ exports.run = (client, message, args) => {
     .addField("Notes:", `Please refrane from kicking/banning anyone. If you need to use theses commands u must put a reason otherwise they wont work`)
     .addField("Purge", `Example -purge 10`)
     .addField("Warn", `Example: -warn ${message.author} breaking the rules! {prntscn/proof}`)
-    .addField("Mute", `Example: -mute ${message.author} breaking the rules! {prntscn/proof}`)
+    .addField("Mute", `Example: -mute ${message.author} 10h breaking the rules! {prntscn/proof}`)
     .addField("Unmute", `Example: -unmute ${message.author} time is up! {prntscn/proof}`)
     .addField("Kick", `Example: -kick ${message.author} breaking the rules! {prntscn/proof}`)
     .addField("Ban", `Example: -ban ${message.author} breaking the rules! {prntscn/proof}`)
-    .addField("One last final thing", `Mute command doesnt have a timer and i wont add one so u must unmute them manually when u think that is enough please make sure u dont leave them muted forever!`)
     message.channel.send(warnedMsg);
 }
