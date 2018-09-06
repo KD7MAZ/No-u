@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 const weather = require('weather-js')
 const fs = require('fs')
-const snekfetch = require('snekfetch')
+var request = require("superagent");
 const prefix = '-'
 const owner = '321673115891531787'
 const myserver = '323206382147076096'
@@ -16,6 +16,17 @@ bot.on('ready', () => {
     bot.user.setStatus('Online')
 
     bot.user.setActivity(`-help | Serving ${bot.users.size} users | ${bot.guilds.size} servers`);
+    
+    request
+        .post(`https://discordbots.org/api/bots/${client.user.id}/stats`)
+        .send(`{ "server_count": ${bot.guilds.size} }`)
+        .type('application/json')
+        .set('Authorization', process.env.API_TOKEN)
+        .set('Accept', 'application/json')
+        .end(err => {
+            if (err) return console.error(err);
+            console.log("Posted stats to discordbots.org!");
+});
 
 });
 
@@ -207,12 +218,16 @@ if (message.channel.type == 'dm') return;
 })
 
 bot.on("guildCreate", guild => {
- totalGuilds = { 'server_count': bot.guilds.size }
-snekfetch.post(`https://discordbots.org/api/bots/${bot.user.id}/stats`)
-  .set('Authorization', process.env.API_TOKEN)
-  .send(totalGuilds)
-  .then(console.log('Updated dbots.org status.'))
-  .catch(e => console.warn('dbots.org down spam @oliy'));
+    request
+        .post(`https://discordbots.org/api/bots/${client.user.id}/stats`)
+        .send(`{ "server_count": ${bot.guilds.size} }`)
+        .type('application/json')
+        .set('Authorization', process.env.API_TOKEN)
+        .set('Accept', 'application/json')
+        .end(err => {
+            if (err) return console.error(err);
+            console.log("Posted stats to discordbots.org!");
+});
  
     const embed= new Discord.RichEmbed()
      .setTitle("__**ServerAdded!**__")
@@ -233,12 +248,17 @@ snekfetch.post(`https://discordbots.org/api/bots/${bot.user.id}/stats`)
 
 bot.on("guildDelete", guild => {
  
-totalGuilds = { 'server_count': bot.guilds.size }
-snekfetch.post(`https://discordbots.org/api/bots/${bot.user.id}/stats`)
-  .set('Authorization', process.env.API_TOKEN)
-  .send(totalGuilds)
-  .then(console.log('Updated dbots.org status.'))
-  .catch(e => console.warn('dbots.org down spam @oliy'));
+
+    request
+        .post(`https://discordbots.org/api/bots/${client.user.id}/stats`)
+        .send(`{ "server_count": ${bot.guilds.size} }`)
+        .type('application/json')
+        .set('Authorization', process.env.API_TOKEN)
+        .set('Accept', 'application/json')
+        .end(err => {
+            if (err) return console.error(err);
+            console.log("Posted stats to discordbots.org!");
+});
  
     const embed = new Discord.RichEmbed()
       .setTitle("__**ServerRemoved!**__")
