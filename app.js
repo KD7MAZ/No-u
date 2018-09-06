@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 const weather = require('weather-js')
 const fs = require('fs')
-const { DiscordBotsList } = require('discordbots-api');
+const snekfetch = require('snekfetch')
 const DiscordBots = new DiscordBotsList(process.env.API_TOKEN);
 const prefix = '-'
 const owner = '321673115891531787'
@@ -10,9 +10,6 @@ const myserver = '323206382147076096'
 //const db = require('quick.db')
 var cmdCount = 0
 
-const servercount = bot.guilds.size
- //
-DiscordBots.postStats(servercount);
 
 bot.on('ready', () => {
     console.log(`Bot has started, with ${bot.users.size} users, in ${bot.channels.size} channels of ${bot.guilds.size} guilds. `);
@@ -211,6 +208,13 @@ if (message.channel.type == 'dm') return;
 })
 
 bot.on("guildCreate", guild => {
+ 
+snekfetch.post(`https://discordbots.org/api/bots/${bot.user.id}/stats`)
+  .set('Authorization', process.env.API_TOKEN)
+  .send({ server_count: bot.guilds.size })
+  .then(console.log('Updated dbots.org status.'))
+  .catch(e => console.warn('dbots.org down spam @oliy'));
+ 
     const embed= new Discord.RichEmbed()
      .setTitle("__**ServerAdded!**__")
      .setColor("#DCFF67")
@@ -229,6 +233,13 @@ bot.on("guildCreate", guild => {
 
 
 bot.on("guildDelete", guild => {
+ 
+snekfetch.post(`https://discordbots.org/api/bots/${bot.user.id}/stats`)
+  .set('Authorization', process.env.API_TOKEN)
+  .send({ server_count: bot.guilds.size })
+  .then(console.log('Updated dbots.org status.'))
+  .catch(e => console.warn('dbots.org down spam @oliy'));
+ 
     const embed = new Discord.RichEmbed()
       .setTitle("__**ServerRemoved!**__")
       .setColor("#FF5C00")
