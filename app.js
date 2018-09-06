@@ -16,7 +16,12 @@ bot.on('ready', () => {
     bot.user.setStatus('Online')
 
     bot.user.setActivity(`-help | Serving ${bot.users.size} users | ${bot.guilds.size} servers`);
-    
+    totalGuilds = { 'server_count': bot.guilds.size }
+snekfetch.post(`https://discordbots.org/api/bots/${bot.user.id}/stats`)
+  .set('Authorization', process.env.API_TOKEN)
+  .send(totalGuilds)
+  .then(console.log('Updated dbots.org status.'))
+.catch(e => console.warn('dbots.org down spam @oliy'));
 
 });
 
