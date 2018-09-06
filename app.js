@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 const weather = require('weather-js')
 const fs = require('fs')
-var request = require("superagent");
+const snekfetch = require('snekfetch')
 const prefix = '-'
 const owner = '321673115891531787'
 const myserver = '323206382147076096'
@@ -17,16 +17,13 @@ bot.on('ready', () => {
 
     bot.user.setActivity(`-help | Serving ${bot.users.size} users | ${bot.guilds.size} servers`);
     
-    request
-        .post(`https://discordbots.org/api/bots/451417687294345216/stats`)
-        .send(`{ "server_count": ${bot.guilds.size} }`)
-        .type('application/json')
-        .set('Authorization', process.env.API_TOKEN)
-        .set('Accept', 'application/json')
-        .end(err => {
-            if (err) return console.error(err);
-            console.log("Posted stats to discordbots.org!");
-});
+snekfetch
+		.post(`https://discordbots.org/api/bots/451417687294345216/stats`)
+		.set('Authorization', bot.dblist)
+		.send({
+			'server_count': bot.guilds.size
+		})
+.then(console.log('Updated dbots status.'))
 
 });
 
@@ -218,16 +215,13 @@ if (message.channel.type == 'dm') return;
 })
 
 bot.on("guildCreate", guild => {
-    request
-        .post(`https://discordbots.org/api/bots/451417687294345216/stats`)
-        .send(`{ "server_count": ${bot.guilds.size} }`)
-        .type('application/json')
-        .set('Authorization', process.env.API_TOKEN)
-        .set('Accept', 'application/json')
-        .end(err => {
-            if (err) return console.error(err);
-            console.log("Posted stats to discordbots.org!");
-});
+snekfetch
+		.post(`https://discordbots.org/api/bots/451417687294345216/stats`)
+		.set('Authorization', bot.dblist)
+		.send({
+			'server_count': bot.guilds.size
+		})
+.then(console.log('Updated dbots status.'))
  
     const embed= new Discord.RichEmbed()
      .setTitle("__**ServerAdded!**__")
@@ -249,16 +243,13 @@ bot.on("guildCreate", guild => {
 bot.on("guildDelete", guild => {
  
 
-    request
-        .post(`https://discordbots.org/api/bots/451417687294345216/stats`)
-        .send(`{ "server_count": ${bot.guilds.size} }`)
-        .type('application/json')
-        .set('Authorization', process.env.API_TOKEN)
-        .set('Accept', 'application/json')
-        .end(err => {
-            if (err) return console.error(err);
-            console.log("Posted stats to discordbots.org!");
-});
+snekfetch
+		.post(`https://discordbots.org/api/bots/451417687294345216/stats`)
+		.set('Authorization', bot.dblist)
+		.send({
+			'server_count': bot.guilds.size
+		})
+.then(console.log('Updated dbots status.'))
  
     const embed = new Discord.RichEmbed()
       .setTitle("__**ServerRemoved!**__")
