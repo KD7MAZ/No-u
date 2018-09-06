@@ -2,24 +2,18 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 const weather = require('weather-js')
 const fs = require('fs')
-const dbl = require("dblposter");
-const ddddllll = process.env.API_TOKEN;
-const DBLPoster = new dbl(`${process.env.API_TOKEN}`,bot);
+const { DiscordBotsList } = require('discordbots-api');
+const DiscordBots = new DiscordBotsList(process.env.API_TOKEN);
 const prefix = '-'
 const owner = '321673115891531787'
 const myserver = '323206382147076096'
 //const db = require('quick.db')
 var cmdCount = 0
-DBLPoster.bind(bot.guilds.size);
-bot.DBLPoster.on("posted", () => {
-	console.log("Woop! My stats were posted");
-});
 
-bot.DBLPoster.on("error", err => {
-	// We recommend you check what the error was.
-	// Access the status, and body property from the err object.
-	console.log("Oh noes! I got an error!", err);
-});
+const servercount = bot.guilds.size
+ 
+DiscordBots.postStats(servercount);
+
 bot.on('ready', () => {
     console.log(`Bot has started, with ${bot.users.size} users, in ${bot.channels.size} channels of ${bot.guilds.size} guilds. `);
 
