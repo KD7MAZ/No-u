@@ -11,7 +11,7 @@ const myserver = '323206382147076096'
 var cmdCount = 0
 
 const servercount = bot.guilds.size
- 
+ //
 DiscordBots.postStats(servercount);
 
 bot.on('ready', () => {
