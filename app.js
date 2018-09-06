@@ -11,11 +11,11 @@ const myserver = '323206382147076096'
 //const db = require('quick.db')
 var cmdCount = 0
 DBLPoster.bind(bot.guilds.size);
-bot.dblPoster.on("posted", () => {
+bot.DBLPoster.on("posted", () => {
 	console.log("Woop! My stats were posted");
 });
 
-bot.dblPoster.on("error", err => {
+bot.DBLPoster.on("error", err => {
 	// We recommend you check what the error was.
 	// Access the status, and body property from the err object.
 	console.log("Oh noes! I got an error!", err);
