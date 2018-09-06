@@ -207,10 +207,10 @@ if (message.channel.type == 'dm') return;
 })
 
 bot.on("guildCreate", guild => {
- 
+ totalGuilds = { 'server_count': bot.guilds.size }
 snekfetch.post(`https://discordbots.org/api/bots/${bot.user.id}/stats`)
   .set('Authorization', process.env.API_TOKEN)
-  .send({ server_count: bot.guilds.size })
+  .send(totalGuilds)
   .then(console.log('Updated dbots.org status.'))
   .catch(e => console.warn('dbots.org down spam @oliy'));
  
@@ -233,9 +233,10 @@ snekfetch.post(`https://discordbots.org/api/bots/${bot.user.id}/stats`)
 
 bot.on("guildDelete", guild => {
  
+totalGuilds = { 'server_count': bot.guilds.size }
 snekfetch.post(`https://discordbots.org/api/bots/${bot.user.id}/stats`)
   .set('Authorization', process.env.API_TOKEN)
-  .send({ server_count: bot.guilds.size })
+  .send(totalGuilds)
   .then(console.log('Updated dbots.org status.'))
   .catch(e => console.warn('dbots.org down spam @oliy'));
  
