@@ -17,13 +17,6 @@ bot.on('ready', () => {
 
     bot.user.setActivity(`-help | Serving ${bot.users.size} users | ${bot.guilds.size} servers`);
     
-snekfetch
-		.post(`https://discordbots.org/api/bots/451417687294345216/stats`)
-		.set('Authorization', process.env.API_TOKEN)
-		.send({
-			'server_count': bot.guilds.size
-		})
-.then(console.log('Updated dbots status.'))
 
 });
 
@@ -215,13 +208,7 @@ if (message.channel.type == 'dm') return;
 })
 
 bot.on("guildCreate", guild => {
-snekfetch
-		.post(`https://discordbots.org/api/bots/451417687294345216/stats`)
-		.set('Authorization', process.env.API_TOKEN)
-		.send({
-			'server_count': bot.guilds.size
-		})
-.then(console.log('Updated dbots status.'))
+
  
     const embed= new Discord.RichEmbed()
      .setTitle("__**ServerAdded!**__")
@@ -242,14 +229,6 @@ snekfetch
 
 bot.on("guildDelete", guild => {
  
-
-snekfetch
-		.post(`https://discordbots.org/api/bots/451417687294345216/stats`)
-		.set('Authorization', process.env.API_TOKEN)
-		.send({
-			'server_count': bot.guilds.size
-		})
-.then(console.log('Updated dbots status.'))
  
     const embed = new Discord.RichEmbed()
       .setTitle("__**ServerRemoved!**__")
