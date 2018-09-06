@@ -4,13 +4,13 @@ const weather = require('weather-js')
 const fs = require('fs')
 const dbl = require("dblposter");
 const dblapitok = process.env.API_TOKEN
-const DBLPoster = new dbl(`${dblapitok}`,client);
+const DBLPoster = new dbl(`${dblapitok}`,bot);
 const prefix = '-'
 const owner = '321673115891531787'
 const myserver = '323206382147076096'
 //const db = require('quick.db')
 var cmdCount = 0
-DBLPoster.bind(bot);
+DBLPoster.bind(bot.guilds.size);
 bot.on('ready', () => {
     console.log(`Bot has started, with ${bot.users.size} users, in ${bot.channels.size} channels of ${bot.guilds.size} guilds. `);
 
