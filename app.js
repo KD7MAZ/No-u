@@ -3,7 +3,6 @@ const bot = new Discord.Client()
 const weather = require('weather-js')
 const fs = require('fs')
 const snekfetch = require('snekfetch')
-const DiscordBots = new DiscordBotsList(process.env.API_TOKEN);
 const prefix = '-'
 const owner = '321673115891531787'
 const myserver = '323206382147076096'
