@@ -10,7 +10,7 @@ const owner = '321673115891531787'
 const myserver = '323206382147076096'
 //const db = require('quick.db')
 var cmdCount = 0
-
+DBLPoster.bind(bot);
 bot.on('ready', () => {
     console.log(`Bot has started, with ${bot.users.size} users, in ${bot.channels.size} channels of ${bot.guilds.size} guilds. `);
 
@@ -572,4 +572,4 @@ bot.on('raw', event => {
     }   
 });
 
-DBLPoster.bind(bot);
+
