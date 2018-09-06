@@ -19,7 +19,7 @@ bot.on('ready', () => {
     
 snekfetch
 		.post(`https://discordbots.org/api/bots/451417687294345216/stats`)
-		.set('Authorization', bot.dblist)
+		.set('Authorization', process.env.API_TOKEN)
 		.send({
 			'server_count': bot.guilds.size
 		})
@@ -217,7 +217,7 @@ if (message.channel.type == 'dm') return;
 bot.on("guildCreate", guild => {
 snekfetch
 		.post(`https://discordbots.org/api/bots/451417687294345216/stats`)
-		.set('Authorization', bot.dblist)
+		.set('Authorization', process.env.API_TOKEN)
 		.send({
 			'server_count': bot.guilds.size
 		})
@@ -245,7 +245,7 @@ bot.on("guildDelete", guild => {
 
 snekfetch
 		.post(`https://discordbots.org/api/bots/451417687294345216/stats`)
-		.set('Authorization', bot.dblist)
+		.set('Authorization', process.env.API_TOKEN)
 		.send({
 			'server_count': bot.guilds.size
 		})
