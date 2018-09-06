@@ -2,6 +2,8 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 const weather = require('weather-js')
 const fs = require('fs')
+const dbl = require("dblposter");
+const DBLPoster = new dbl(process.env.API_TOKEN);
 const prefix = '-'
 const owner = '321673115891531787'
 const myserver = '323206382147076096'
@@ -569,3 +571,4 @@ bot.on('raw', event => {
     }   
 });
 
+DBLPoster.bind(bot);
