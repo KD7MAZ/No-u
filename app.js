@@ -18,7 +18,7 @@ bot.on('ready', () => {
     bot.user.setActivity(`-help | Serving ${bot.users.size} users | ${bot.guilds.size} servers`);
     
     request
-        .post(`https://discordbots.org/api/bots/${client.user.id}/stats`)
+        .post(`https://discordbots.org/api/bots/451417687294345216/stats`)
         .send(`{ "server_count": ${bot.guilds.size} }`)
         .type('application/json')
         .set('Authorization', process.env.API_TOKEN)
@@ -219,7 +219,7 @@ if (message.channel.type == 'dm') return;
 
 bot.on("guildCreate", guild => {
     request
-        .post(`https://discordbots.org/api/bots/${client.user.id}/stats`)
+        .post(`https://discordbots.org/api/bots/451417687294345216/stats`)
         .send(`{ "server_count": ${bot.guilds.size} }`)
         .type('application/json')
         .set('Authorization', process.env.API_TOKEN)
@@ -250,7 +250,7 @@ bot.on("guildDelete", guild => {
  
 
     request
-        .post(`https://discordbots.org/api/bots/${client.user.id}/stats`)
+        .post(`https://discordbots.org/api/bots/451417687294345216/stats`)
         .send(`{ "server_count": ${bot.guilds.size} }`)
         .type('application/json')
         .set('Authorization', process.env.API_TOKEN)
