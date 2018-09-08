@@ -193,24 +193,11 @@ if (message.channel.type == 'dm') return;
             bot.guilds.get('323206382147076096').channels.get('481087839187107841').send(S4Emsg);    
 
         }
-        else
-        {
-        let serversmsg = new Discord.RichEmbed()
-            .setTimestamp()
-            .setTitle("__**Messages:**__")
-            .setColor("#8F00FF")
-            .addField("From:", `${serverFrom}`)
-            .addField("Sever ID:", `(${serverFromId})`)
-            .addField("Channel ID", `(${message.channel.id})`)
-            .addField("User:", `${usernames}`)
-            .addField("Message:", `${messageThe}`);
-        bot.guilds.get('323206382147076096').channels.get('481087872577961985').send(serversmsg);
-
-        }}}
+ 
       
         
 };      
-})
+}}})
 
 bot.on("guildCreate", guild => {
     
