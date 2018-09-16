@@ -888,9 +888,9 @@ if (message.content === prefix + 'открыть контейнер'){
         .setFooter(`${message.author.username} получил ${rareity} пункт!`, message.author.displayAvatarURL)
     message.channel.send(embed)
     
-}}}}}
+}}}}};
 talkedRecently.add(message.author.id);
         setTimeout(() => {
           talkedRecently.delete(message.author.id);
         }, 2000);
-}}}
+}}};
