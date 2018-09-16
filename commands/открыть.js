@@ -709,7 +709,7 @@ if (message.content === prefix + 'открыть контейнер'){
     const legendarypaint = Math.floor(Math.random() * 100) + 1;
             
     if ((legendarypaint) < 85 ) {   
-        let legendaryitem = Math.floor(Math.random() * 29) + 1;
+        let legendaryitem = Math.floor(Math.random() * 32) + 1;
         if ((legendaryitem) == 1){
         var paintimg = 'https://i.imgur.com/lMaHubB.png'
         var paintname = 'Луноход краска'}
@@ -834,7 +834,7 @@ if (message.content === prefix + 'открыть контейнер'){
     const exoticS = Math.floor(Math.random() * 100) + 1;
             
     if ((exoticS) < 85 ) {   
-         let exoticitem = Math.floor(Math.random() * 10) + 1;
+         let exoticitem = Math.floor(Math.random() * 11) + 1;
          if ((exoticitem) == 1){
          var xtimg = 'https://i.imgur.com/sNKCyDf.png'
          var xtname = 'pельса XT'}
