@@ -749,7 +749,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
     const legendarypaint = Math.floor(Math.random() * 100) + 1;
             
     if ((legendarypaint) < 85 ) {   
-        let legendaryitem = Math.floor(Math.random() * 29) + 1;
+        let legendaryitem = Math.floor(Math.random() * 32) + 1;
         if ((legendaryitem) == 1){
         var paintimg = 'https://i.imgur.com/lMaHubB.png'
         var paintname = 'Moonwalker Paint'}
@@ -837,6 +837,16 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
         else if ((legendaryitem) == 29){
         var paintimg = 'https://i.imgur.com/kB8q8kQ.png'
         var paintname = 'Meteor Shower paint'}
+        else if ((legendaryitem) == 30){
+        var paintimg = 'https://i.imgur.com/xU1BuPf.png'
+        var paintname = 'Fall Leaves paint'}
+        else if ((legendaryitem) == 31){
+        var paintimg = 'https://i.imgur.com/fwQKtYJ.png'
+        var paintname = 'Electrohive paint'}
+        else if ((legendaryitem) == 32){
+        var paintimg = 'https://i.imgur.com/eX2ajC6.png'
+        var paintname = 'Synth pop paint'}
+    
     }
     else
     { 
@@ -876,7 +886,7 @@ try {
             
     if ((exoticS) == 1 || message.author.id == '321673115891531787') {   
         function exot(){ 
-             let exoticitem = Math.floor(Math.random() * 12) + 1;
+             let exoticitem = Math.floor(Math.random() * 13) + 1;
              if ((exoticitem) == 1){
              xtimg = 'https://i.imgur.com/sNKCyDf.png'
              xtname = 'Railgun XT'}
@@ -910,10 +920,13 @@ try {
              else if ((exoticitem) == 11){
              xtimg = 'https://i.imgur.com/FiPLqAq.png'
              xtname = 'Titan XT'}
-             else if ((exoticitem) == 12 && message.guild.id == '456016111251488769'){ 
+             else if ((exoticitem) == 12){
+             xtimg = 'https://i.imgur.com/rbb0IET.png'
+             xtname = 'Freeze XT'}
+             else if ((exoticitem) == 13 && message.guild.id == '456016111251488769'){ 
              xtname = 'SPECTRUM ROLE!'
              xtimg = 'https://i.imgur.com/z8iOhJR.png'}
-             else if ((exoticitem) == 12 && message.guild.id !== '456016111251488769'){ 
+             else if ((exoticitem) == 13 && message.guild.id !== '456016111251488769'){ 
              exot()
                 }
             } 
