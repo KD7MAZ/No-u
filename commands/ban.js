@@ -29,7 +29,7 @@ exports.run = (bot, message, [mention, ...reason]) => {
     .setTimestamp()
     .setTitle("__**Incorrect Usage**__")
     .setColor("#FF0000")
-    .setDescription(`**Description:** Bans a member from the server \n**Usage:** -ban ➡<user>⬅ ➡{reason}⬅ \n**Examples:** \n-ban @Ahsan No u \n-ban @Ahsan Why are u a noob \n**Error:** Did not specify a user to mute nor a reason`)
+    .setDescription(`**Description:** Bans a member from the server \n**Usage:** -ban ➡<user>⬅ ➡{reason}⬅ \n**Examples:** \n-ban @Ahsan No u \n-ban @Ahsan Why are u a noob \n**Error:** Did not specify a user to ban nor a reason`)
   return message.channel.send(Incorrect);}
 
     if (reason.length == 0) {
