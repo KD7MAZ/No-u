@@ -797,6 +797,16 @@ if (message.content === prefix + 'открыть контейнер'){
         else if ((legendaryitem) == 29){
         var paintimg = 'https://i.imgur.com/kB8q8kQ.png'
         var paintname = 'Звездопад краска'}
+        else if ((legendaryitem) == 30){
+        var paintimg = 'https://i.imgur.com/xU1BuPf.png'
+        var paintname = 'Осенняя листва краска'}
+        else if ((legendaryitem) == 31){
+        var paintimg = 'https://i.imgur.com/fwQKtYJ.png'
+        var paintname = 'Электрическийулей краска'}
+        else if ((legendaryitem) == 32){
+        var paintimg = 'https://i.imgur.com/eX2ajC6.png'
+        var paintname = 'synth pop краска'}
+    
     }
     else
     { 
@@ -855,7 +865,10 @@ if (message.content === prefix + 'открыть контейнер'){
          else if ((exoticitem) == 10){
          var xtimg = "https://i.imgur.com/FiPLqAq.png"
          var xtname = 'Титан XT'}
-      
+         else if ((exoticitem) == 11){
+         var xtimg = "https://i.imgur.com/rbb0IET.png"
+         var xtname = 'замерзать XT'}
+         
  
     }
     else
