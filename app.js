@@ -381,12 +381,12 @@ bot.on("guildMemberAdd", (member) => {
             .setDescription(`<a:PARTY:463006559446892555> **Hello ${member.user.username}#${member.user.discriminator} Welcome to ${member.guild.name} please join the following server to show your support** <a:PARTY:463006559446892555> **:** \n[Click here to join the support server!](https://discord.gg/D4UqdWh) \n \n\n **Also add me to your server for cool  new perks!** \n[Click here to invite me!](https://discordapp.com/oauth2/authorize?client_id=451417687294345216&scope=bot&permissions=2146958591) `)
         member.send(embed)
         }
-        //mattys other server
-        else if (member.guild.id == '468839234275639305') {
-            member.guild.channels.get("468839234275639326").send(`<a:PARTY:463006559446892555> **Welcome to ${member.guild.name} ${member.user} You are the ${last} Member! :tada:** \nPlease read the <#469265572681613312> and stay out of trouble!`);
-            let embed = new Discord.RichEmbed()
-            .setDescription(`<a:PARTY:463006559446892555> **Hello ${member.user.username}#${member.user.discriminator} Welcome to ${member.guild.name} please join the following server to show your support** <a:PARTY:463006559446892555> **:** \n[Click here to join the support server!](https://discord.gg/D4UqdWh) \n \n\n **Also add me to your server for cool  new perks!** \n[Click here to invite me!](https://discordapp.com/oauth2/authorize?client_id=451417687294345216&scope=bot&permissions=2146958591) `)
-        member.send(embed)
+        //manos' server
+        else if (member.guild.id == '446365173586853889') {
+            member.guild.channels.get("446365173586853891").send(`<a:PARTY:463006559446892555> **Welcome to ${member.guild.name} ${member.user} You are the ${last} Member! :tada:** \nPlease read the <#469265572681613312> and stay out of trouble!`);
+      const role = member.guild.roles.find("name", "People")
+   
+        member.addRole(role)
         }
 
         //scanners server
