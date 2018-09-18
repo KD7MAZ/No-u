@@ -383,7 +383,7 @@ bot.on("guildMemberAdd", (member) => {
         }
         //manos' server
         else if (member.guild.id == '446365173586853889') {
-            member.guild.channels.get("446365173586853891").send(`<a:PARTY:463006559446892555> **Welcome to ${member.guild.name} ${member.user} You are the ${last} Member! :tada:** \nPlease read the <#469265572681613312> and stay out of trouble!`);
+            member.guild.channels.get("446365173586853891").send(`<a:PARTY:463006559446892555> **Welcome to ${member.guild.name} ${member.user} You are the ${last} Member! :tada:** \nPlease read the <#455129298345525248> and stay out of trouble!`);
       const role = member.guild.roles.find("name", "People")
    
         member.addRole(role)
