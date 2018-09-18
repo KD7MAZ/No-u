@@ -344,13 +344,13 @@ else if (body.response.suppliesUsage[6].name == "Battery") {
             var rankimg = "https://imgur.com/qK6onnG.png"}
         
         var premium = 'Yes'
-          let aEmbed = new Discord.RichEmbed()
+        var gif = `<a:Premium_ranks:491698442729422851>` 
+        let aEmbed = new Discord.RichEmbed()
           .setTitle("Stats for " + (body.response.name))
           .setColor('#FFFF00')
           .setThumbnail(rankimg)
           .setURL("http://ratings.tankionline.com/en/user/" + (body.response.name) + "/")
-          .addField("Profile:", `__**Nickname:**__ ${username} \n \n__**Rank:**__ ${rank} \n__**Active Premium:**__ ${premium} \n \n__**Supplies Usages:**__ \n \n${emoji3} __**${name3}:**__ ${repairs.toLocaleString('en')} \n \n${emoji0} __**${name0}:**__ ${armour.toLocaleString('en')} \n \n${emoji1} __**${name1}:**__ ${damage.toLocaleString('en')} \n \n${emoji5} __**${name5}:**__ ${speed.toLocaleString('en')} \n \n${emoji2} __**${name2}:**__ ${mines.toLocaleString('en')} \n \n${emoji4} __**${name4}:**__ ${golds.toLocaleString('en')} \n \n${emoji6} __**${name6}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Total Usage:**__ ${total.toLocaleString('en')}`)
-        message.channel.send(aEmbed);}
+.addField("Profile:", `<:Nickname:490985268531298304> __**Nickname:**__ ${username} \n \n ${gif} __**Rank:**__ ${rank} \n \n<:Premium:490264864053526537> __**Active Premium:**__ ${premium} \n \n__**Supplies Usages:**__ \n \n${emoji3} __**${name3}:**__ ${repairs.toLocaleString('en')} \n \n${emoji0} __**${name0}:**__ ${armour.toLocaleString('en')} \n \n${emoji1} __**${name1}:**__ ${damage.toLocaleString('en')} \n \n${emoji5} __**${name5}:**__ ${speed.toLocaleString('en')} \n \n${emoji2} __**${name2}:**__ ${mines.toLocaleString('en')} \n \n${emoji4} __**${name4}:**__ ${golds.toLocaleString('en')} \n \n${emoji6} __**${name6}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Total Usage:**__ ${total.toLocaleString('en')}`)        message.channel.send(aEmbed);}
         message.react(`a:animatedtick:482541833805627412`)
             
       if ((body.response.hasPremium) == false) {
@@ -454,14 +454,15 @@ else if (body.response.suppliesUsage[6].name == "Battery") {
             var rank = "Legend"
             var rankimg = "https://i.imgur.com/NahcZQ9.png"}
         
-        
+    
         var premium = 'No'
-          let sEmbed = new Discord.RichEmbed()
+        var gif = `<a:Ranks:491697106441207849>` 
+        let sEmbed = new Discord.RichEmbed()
           .setTitle("Stats for " + (body.response.name))
           .setColor('#8F00FF')
           .setThumbnail(rankimg)
           .setURL("http://ratings.tankionline.com/en/user/" + (body.response.name) + "/")
-          .addField("Profile:", `__**Nickname:**__ ${username} \n \n__**Rank:**__ ${rank} \n__**Active Premium:**__ ${premium} \n \n__**Supplies Usages:**__ \n \n${emoji3} __**${name3}:**__ ${repairs.toLocaleString('en')} \n \n${emoji0} __**${name0}:**__ ${armour.toLocaleString('en')} \n \n${emoji1} __**${name1}:**__ ${damage.toLocaleString('en')} \n \n${emoji5} __**${name5}:**__ ${speed.toLocaleString('en')} \n \n${emoji2} __**${name2}:**__ ${mines.toLocaleString('en')} \n \n${emoji4} __**${name4}:**__ ${golds.toLocaleString('en')} \n \n${emoji6} __**${name6}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Total Usage:**__ ${total.toLocaleString('en')}`)
+          .addField("Profile:", `<:Nickname:490985268531298304> __**Nickname:**__ ${username} \n \n ${gif} __**Rank:**__ ${rank} \n \n<:Premium:490264864053526537> __**Active Premium:**__ ${premium} \n \n__**Supplies Usages:**__ \n \n${emoji3} __**${name3}:**__ ${repairs.toLocaleString('en')} \n \n${emoji0} __**${name0}:**__ ${armour.toLocaleString('en')} \n \n${emoji1} __**${name1}:**__ ${damage.toLocaleString('en')} \n \n${emoji5} __**${name5}:**__ ${speed.toLocaleString('en')} \n \n${emoji2} __**${name2}:**__ ${mines.toLocaleString('en')} \n \n${emoji4} __**${name4}:**__ ${golds.toLocaleString('en')} \n \n${emoji6} __**${name6}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Total Usage:**__ ${total.toLocaleString('en')}`)
         message.channel.send(sEmbed);}
         message.react(`a:animatedtick:482541833805627412`)
 
