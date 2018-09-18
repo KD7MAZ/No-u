@@ -245,12 +245,13 @@ exports.run = (client, message, args) => {
             var rankimg = "https://imgur.com/qK6onnG.png"}
         
         var premium = 'Yes'
-          let aEmbed = new Discord.RichEmbed()
+        var gif = `<a:Premium_ranks:491698442729422851>` 
+        let aEmbed = new Discord.RichEmbed()
           .setTitle("Stats for " + (body.response.name))
           .setColor('#FFFF00')
           .setThumbnail(rankimg)
           .setURL("http://ratings.tankionline.com/en/user/" + (body.response.name) + "/")
-          .addField("Profile:", `__**Nickname:**__ ${name} \n \n__**Rank:**__ ${rank} \n \n__**Exp:**__ ${exp} \n \n__**Next rank:**__ ${expleftcommas}xp \n \n__**Active Premium:**__ ${premium} \n \n__**Crystals Obtained:**__ ${crys} \n \n__**Golds Caught:**__ ${golds} \n \n__**Kills:**__ ${kills}      __**Deaths:**__ ${deaths}      __**K/D:**__ ${kd}`)
+          .addField("Profile:", `__**Nickname:**__ ${name} \n \n${gif} __**Rank:**__ ${rank} \n \n<:Exp:490604143195717632> __**Exp:**__ ${exp} \n \n<:Arrow:490612308108902441> __**Next rank:**__ ${expleftcommas}xp \n \n<:Premium:490264864053526537> __**Active Premium:**__ ${premium} \n \n<:Crystals:490265165892157461> __**Crystals Obtained:**__ ${crys} \n \n<:Goldbox:490264893673439233> __**Golds Caught:**__ ${golds} \n \n<:Kills:490268704181977089> __**Kills:**__ ${kills}      <:Deaths:490268689715822623> __**Deaths:**__ ${deaths}      <:KD:490605628616867860> __**K/D:**__ ${kd}`)
         message.channel.send(aEmbed);}
         
         
@@ -357,12 +358,13 @@ exports.run = (client, message, args) => {
         
         
         var premium = 'No'
-          let sEmbed = new Discord.RichEmbed()
+        var gif = `<a:Ranks:491697106441207849>`
+        let sEmbed = new Discord.RichEmbed()
           .setTitle("Stats for " + (body.response.name))
           .setColor('#8F00FF')
           .setThumbnail(rankimg)
           .setURL("http://ratings.tankionline.com/en/user/" + (body.response.name) + "/")
-          .addField("Profile:", `__**Nickname:**__ ${name} \n \n__**Rank:**__ ${rank} \n \n__**Exp:**__ ${exp} \n \n__**Next rank:**__ ${expleftcommas}xp \n \n__**Active Premium:**__ ${premium} \n \n__**Crystals Obtained:**__ ${crys} \n \n__**Golds Caught:**__ ${golds} \n \n__**Kills:**__ ${kills}      __**Deaths:**__ ${deaths}      __**K/D:**__ ${kd}`)
+          .addField("Profile:", `<:Nickname:490985268531298304> __**Nickname:**__ ${name} \n \n ${gif} __**Rank:**__ ${rank} \n \n<:Exp:490604143195717632> __**Exp:**__ ${exp} \n \n<:Arrow:490612308108902441> __**Next rank:**__ ${expleftcommas}xp \n \n<:Premium:490264864053526537> __**Active Premium:**__ ${premium} \n \n<:Crystals:490265165892157461> __**Crystals Obtained:**__ ${crys} \n \n<:Goldbox:490264893673439233> __**Golds Caught:**__ ${golds} \n \n<:Kills:490268704181977089> __**Kills:**__ ${kills}      <:Deaths:490268689715822623> __**Deaths:**__ ${deaths}      <:KD:490605628616867860> __**K/D:**__ ${kd}`)
         message.channel.send(sEmbed);}
 
 
