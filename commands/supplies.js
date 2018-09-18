@@ -16,9 +16,8 @@ exports.run = (client, message, args) => {
  var username = parts[1];
 
   if (message.content === '-supplies') {
-   message.channel.send(`<a:animatedx:482541818886750218> ${message.author} Please mention a valid nickname!`) 
-    return message.react(`a:animatedx:482541818886750218`)
-  }
+
+  
   request('https://ratings.tankionline.com/api/eu/profile/?user=' + (username), { json: true }, (err, res, body) => {
     
   
@@ -469,4 +468,4 @@ else if (body.response.suppliesUsage[6].name == "Battery") {
   }  catch (err) {
     if (err) {
     message.channel.send(`<a:animatedx:482541818886750218> ${message.author} Player Not Found!`); }
-}})};
+}})}};
