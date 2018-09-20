@@ -586,7 +586,7 @@ bot.on("message", async message => {
     if (message.channel.id == "455122876677357569") return;
     if(message.author.bot) return;
 
-const swearWords = ["http", "https", "Http", "Https", "HTTP", "HTTPS"];
+const swearWords = ["http", "https", "Http", "Https", "HTTP", "HTTPS", "HTtp", "HTtp", "HTTps", "HTTPs", "hTtp", "hTtps", "hTTp", "hTTps", "hTTP", "hTPPs", "hTTPS", "HtTp", "HtTps", "HtTP", "HtTPS"];
 if (message.author.id === `446364321681768459`) return;
 if (message.author.id === owner) return;
     if  (swearWords.some(word => message.content.includes(word)) ) {
@@ -602,7 +602,7 @@ bot.on("message", async message => {
     if (message.channel.id == "479205588031635476") return;
     if(message.author.bot) return;
 
-const swearWords = ["http", "https", "Http", "Https", "HTTP", "HTTPS"];
+const swearWords = ["http", "https", "Http", "Https", "HTTP", "HTTPS", "HTtp", "HTtp", "HTTps", "HTTPs", "hTtp", "hTtps", "hTTp", "hTTps", "hTTP", "hTPPs", "hTTPS", "HtTp", "HtTps", "HtTP", "HtTPS"];
 if (message.author.id === `446364321681768459`) return;
 if (message.author.id === owner) return;
     if  (swearWords.some(word => message.content.includes(word)) ) {
