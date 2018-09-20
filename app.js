@@ -579,3 +579,35 @@ bot.on('raw', event => {
 });
 
 
+bot.on("message", async message => {
+    if (message.channel.type == 'dm') return;
+    
+    if (message.guild.id !== '446365173586853889') return;
+    if (message.channel.id == "455122876677357569") return;
+    if(message.author.bot) return;
+
+const swearWords = ["http", "https", "Http", "Https", "HTTP", "HTTPS"];
+if (message.author.id === `446364321681768459`) return;
+if (message.author.id === owner) return;
+    if  (swearWords.some(word => message.content.includes(word)) ) {
+        message.delete().catch(err => console.log(err));
+        message.channel.send(`${message.author} Please do not send any links!`);
+}})
+
+bot.on("message", async message => {
+    if (message.channel.type == 'dm') return;
+    
+    if (message.guild.id !== '323206382147076096') return;
+    if (message.channel.id == "477585294766374912") return;
+    if (message.channel.id == "479205588031635476") return;
+    if(message.author.bot) return;
+
+const swearWords = ["http", "https", "Http", "Https", "HTTP", "HTTPS"];
+if (message.author.id === `446364321681768459`) return;
+if (message.author.id === owner) return;
+    if  (swearWords.some(word => message.content.includes(word)) ) {
+        message.delete().catch(err => console.log(err));
+        message.channel.send(`${message.author} Please do not send any links!`);
+}})
+
+
