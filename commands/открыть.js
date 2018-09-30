@@ -868,7 +868,7 @@ if (message.content === prefix + 'открыть контейнер'){
          else if ((exoticitem) == 11){
          var xtimg = "https://i.imgur.com/rbb0IET.png"
          var xtname = 'Фриз XT'} //freeze
-         else if ((exoticitem) == 12{
+         else if ((exoticitem) == 12){
          var xtimg = "https://imgur.com/X0mT8Gs.png"
          var xtname = 'Рикошет XT'} //ricochet
  
