@@ -15,9 +15,8 @@ if (message.content === prefix + 'open'){
     return message.channel.send(`:x: ${message.author} I think you meant ${a}-open container${a}`)   
 }
 if (talkedRecently.has(321673115891531787)) {
-return;
-}
-if (talkedRecently.has(message.author.id)) {
+var geop = "gay"
+} else if (talkedRecently.has(message.author.id)) {
             message.channel.send(`:x: ${message.author} There is a 2 second cool down please wait!`);
     } else {
 if (message.content === prefix + 'open container'){      
