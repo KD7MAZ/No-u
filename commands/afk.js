@@ -14,7 +14,7 @@ if (message.author.id === owner) return;
     if  (swearWords.some(word => message.content.includes(word)) ) {
         message.delete().catch(err => console.log(err));
         message.channel.send(`${message.author} Please do not send any links!`);
-}}   
+} 
    else{
     
     message.delete();
