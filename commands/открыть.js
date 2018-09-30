@@ -712,7 +712,7 @@ if (message.content === prefix + 'открыть контейнер'){
     const legendarypaint = Math.floor(Math.random() * 100) + 1;
             
     if ((legendarypaint) < 85 ) {   
-        let legendaryitem = Math.floor(Math.random() * 32) + 1;
+        let legendaryitem = Math.floor(Math.random() * 33) + 1;
         if ((legendaryitem) == 1){
         var paintimg = 'https://i.imgur.com/lMaHubB.png'
         var paintname = 'Луноход краска'}
@@ -808,8 +808,11 @@ if (message.content === prefix + 'открыть контейнер'){
         var paintname = 'Электрическийулей краска'}
         else if ((legendaryitem) == 32){
         var paintimg = 'https://i.imgur.com/eX2ajC6.png'
-        var paintname = 'synth pop краска'}
-    
+        var paintname = 'синт поп краска'}
+        else if ((legendaryitem) == 33){
+        var paintimg = 'https://imgur.com/EPqJ3BI.png'
+        var paintname = 'руны краска'}
+     
     }
     else
     { 
