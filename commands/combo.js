@@ -174,7 +174,7 @@ moduleRandomizer();
     var hullpic = `https://i.imgur.com/8PbhVYp.png`
     var hullname = `Hornet`}
     else if (hullrnd == 3) {
-    var hullpic = `https://i.imgur.com/OpVRs3QL.png`
+    var hullpic = `https://i.imgur.com/OpVRs3Q.png`
     var hullname = `Viking`}
     else if (hullrnd == 4) {
     var hullpic = `https://i.imgur.com/FiPLqAq.png`
@@ -838,7 +838,7 @@ moduleRandomizer();
          .setTitle(`${message.author.username} You chose a random combo`)
          .setThumbnail(paintpic)
          .setColor("#caaffd")
-         .setDescription(`The random combo that we have generated for u consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname} paint \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
+         .setDescription(`The random combo that we have generated for you consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname}  \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
          .setImage(turretpic)
      message.channel.send(embed)
      
@@ -858,7 +858,7 @@ moduleRandomizer();
         .setTitle(`${message.author.username} You chose a random combo`)
         .setThumbnail(paintpic)
         .setColor("#caaffd")
-        .setDescription(`The random combo that we have generated for u consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname} paint \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
+        .setDescription(`The random combo that we have generated for you consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname}  \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
         .setImage(turretpic)
     message.channel.send(embed)
     
@@ -1706,7 +1706,7 @@ moduleRandomizer();
          .setTitle(`${message.author.username} You chose a random combo`)
          .setThumbnail(paintpic)
          .setColor("#caaffd")
-         .setDescription(`The random combo that we have generated for u consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname} paint \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
+         .setDescription(`The random combo that we have generated for you consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname}  \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
          .setImage(turretpic)
      message.channel.send(embed)
      
@@ -1726,7 +1726,7 @@ moduleRandomizer();
         .setTitle(`${message.author.username} You chose a random combo`)
         .setThumbnail(paintpic)
         .setColor("#caaffd")
-        .setDescription(`The random combo that we have generated for u consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname} paint \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
+        .setDescription(`The random combo that we have generated for you consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname}  \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
         .setImage(turretpic)
     message.channel.send(embed)
     
@@ -2578,7 +2578,7 @@ moduleRandomizer();
          .setTitle(`${message.author.username} You chose a random combo`)
          .setThumbnail(paintpic)
          .setColor("#caaffd")
-         .setDescription(`The random combo that we have generated for u consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname} paint \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
+         .setDescription(`The random combo that we have generated for you consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname}  \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
          .setImage(turretpic)
      message.channel.send(embed)
      
@@ -2598,7 +2598,7 @@ moduleRandomizer();
         .setTitle(`${message.author.username} You chose a random combo`)
         .setThumbnail(paintpic)
         .setColor("#caaffd")
-        .setDescription(`The random combo that we have generated for u consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname} paint \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
+        .setDescription(`The random combo that we have generated for you consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname}  \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
         .setImage(turretpic)
     message.channel.send(embed)
     
@@ -3450,7 +3450,7 @@ moduleRandomizer();
          .setTitle(`${message.author.username} You chose a random combo`)
          .setThumbnail(paintpic)
          .setColor("#caaffd")
-         .setDescription(`The random combo that we have generated for u consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname} paint \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
+         .setDescription(`The random combo that we have generated for you consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname}  \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
          .setImage(turretpic)
      message.channel.send(embed)
      
@@ -3470,7 +3470,7 @@ moduleRandomizer();
         .setTitle(`${message.author.username} You chose a random combo`)
         .setThumbnail(paintpic)
         .setColor("#caaffd")
-        .setDescription(`The random combo that we have generated for u consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname} paint \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
+        .setDescription(`The random combo that we have generated for you consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname}  \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
         .setImage(turretpic)
     message.channel.send(embed)
     
@@ -4322,7 +4322,7 @@ moduleRandomizer();
          .setTitle(`${message.author.username} You chose a random combo`)
          .setThumbnail(paintpic)
          .setColor("#caaffd")
-         .setDescription(`The random combo that we have generated for u consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname} paint \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
+         .setDescription(`The random combo that we have generated for you consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname}  \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
          .setImage(turretpic)
      message.channel.send(embed)
      
@@ -4342,7 +4342,7 @@ moduleRandomizer();
         .setTitle(`${message.author.username} You chose a random combo`)
         .setThumbnail(paintpic)
         .setColor("#caaffd")
-        .setDescription(`The random combo that we have generated for u consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname} paint \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
+        .setDescription(`The random combo that we have generated for you consists of the following: \n•${turretname} turret \n•${hullname} hull   \n•${paintname}  \n•${dronename} drone \n•${module1name}, ${module2name} and ${module3name} protection modules! \n${module1} ${module2} ${module3}`)  
         .setImage(turretpic)
     message.channel.send(embed)
     
