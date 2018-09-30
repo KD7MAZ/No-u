@@ -437,103 +437,103 @@ moduleRandomizer();
          var paintname = 'Picasso Paint'}
          else if ((paintrnd) == 77){
          var paintpic = 'https://i.imgur.com/oPsUaQS.png'
-         var paintname = 'Argentina'}
+         var paintname = 'Argentina Paint'}
          else if ((paintrnd) == 78){
          var paintpic = 'https://i.imgur.com/reDTcBH.png'
-         var paintname = 'Australia'}
+         var paintname = 'Australia Paint'}
          else if ((paintrnd) == 79){
          var paintpic = 'https://i.imgur.com/AJQrwyi.png'
-         var paintname = 'Belgium'}
+         var paintname = 'Belgium Paint'}
          else if ((paintrnd) == 80){
          var paintpic = 'https://i.imgur.com/958evYX.png'
-         var paintname = 'Brazil'}
+         var paintname = 'Brazil Paint'}
          else if ((paintrnd) == 81){
          var paintpic = 'https://i.imgur.com/7Jt63vS.png'
-         var paintname = 'Colombia'}
+         var paintname = 'Colombia Paint'}
          else if ((paintrnd) == 82){
          var paintpic = 'https://i.imgur.com/iVNsjXY.png'
-         var paintname = 'South Korea'}
+         var paintname = 'South Korea Paint'}
          else if ((paintrnd) == 83){
          var paintpic = 'https://i.imgur.com/PYRmJIp.png'
-         var paintname = 'Denmark'}
+         var paintname = 'Denmark Paint'}
          else if ((paintrnd) == 84){
          var paintpic = 'https://i.imgur.com/7cYZu1I.png'
-         var paintname = 'Croatia'}
+         var paintname = 'Croatia Paint'}
          else if ((paintrnd) == 85){
          var paintpic = 'https://i.imgur.com/wvYQSXa.png'
-         var paintname = 'Costa Rica'}
+         var paintname = 'Costa Rica Paint'}
          else if ((paintrnd) == 86){
          var paintpic = 'https://i.imgur.com/NVIdw9e.png'
-         var paintname = 'Egypt'}
+         var paintname = 'Egypt Paint'}
          else if ((paintrnd) == 87){
          var paintpic = 'https://i.imgur.com/Jn5mrQI.png'
-         var paintname = 'England'}
+         var paintname = 'England Paint'}
          else if ((paintrnd) == 88){
          var paintpic = 'https://i.imgur.com/XVrmTAE.png'
-         var paintname = 'France'}
+         var paintname = 'France Paint'}
          else if ((paintrnd) == 89){
          var paintpic = 'https://i.imgur.com/7IU5kHG.png'
-         var paintname = 'Iceland'}
+         var paintname = 'Iceland Paint'}
          else if ((paintrnd) == 90){
          var paintpic = 'https://i.imgur.com/JCTfffl.png'
-         var paintname = 'Germany'}
+         var paintname = 'Germany Paint'}
          else if ((paintrnd) == 91){
          var paintpic = 'https://i.imgur.com/0KgtBsx.png'
-         var paintname = 'Iran'}
+         var paintname = 'Iran Paint'}
          else if ((paintrnd) == 92){
          var paintpic = 'https://i.imgur.com/6RzUNAy.png'
-         var paintname = 'Japan'}
+         var paintname = 'Japan Paint'}
          else if ((paintrnd) == 93){
          var paintpic = 'https://i.imgur.com/ifrbtMe.png'
-         var paintname = 'Mexico'}
+         var paintname = 'Mexico Paint'}
          else if ((paintrnd) == 94){
          var paintpic = 'https://i.imgur.com/DPA9Bil.png'
-         var paintname = 'Morocco'}
+         var paintname = 'Morocco Paint'}
          else if ((paintrnd) == 95){
          var paintpic = 'https://i.imgur.com/bqxX9er.png'
-         var paintname = 'Panama'}
+         var paintname = 'Panama Paint'}
          else if ((paintrnd) == 96){
          var paintpic = 'https://i.imgur.com/ZQLGlOC.png'
-         var paintname = 'Nigeria'}
+         var paintname = 'Nigeria Paint'}
          else if ((paintrnd) == 97){
          var paintpic = 'https://i.imgur.com/lkZmpvy.png'
-         var paintname = 'Peru'}
+         var paintname = 'Peru Paint'}
          else if ((paintrnd) == 98){
          var paintpic = 'https://i.imgur.com/rF67XB7.png'
-         var paintname = 'Portugal'}
+         var paintname = 'Portugal Paint'}
          else if ((paintrnd) == 99){
          var paintpic = 'https://i.imgur.com/32jmRY5.png'
-         var paintname = 'Poland'}
+         var paintname = 'Poland Paint'}
          else if ((paintrnd) == 100){
          var paintpic = 'https://i.imgur.com/aSyZVyl.png'
-         var paintname = 'Russia'}
+         var paintname = 'Russia Paint'}
          else if ((paintrnd) == 101){
          var paintpic = 'https://i.imgur.com/0pZ8POK.png'
-         var paintname = 'Saudi Arabia'}
+         var paintname = 'Saudi Arabia Paint'}
          else if ((paintrnd) == 102){
          var paintpic = 'https://i.imgur.com/cvBh12Z.png'
-         var paintname = 'Senagal'}
+         var paintname = 'Senagal Paint'}
          else if ((paintrnd) == 103){
          var paintpic = 'https://i.imgur.com/Xp5wtvv.png'
-         var paintname = 'Serbia'}
+         var paintname = 'Serbia Paint'}
          else if ((paintrnd) == 104){
          var paintpic = 'https://i.imgur.com/o7dBXh6.png'
-         var paintname = 'Sweden'}
+         var paintname = 'Sweden Paint'}
          else if ((paintrnd) == 105){
          var paintpic = 'https://i.imgur.com/PkWhBUK.png'
-         var paintname = 'Spain'}
+         var paintname = 'Spain Paint'}
          else if ((paintrnd) == 106){
          var paintpic = 'https://i.imgur.com/xYYxCTR.png'
-         var paintname = 'Denmark'}
+         var paintname = 'Denmark Paint'}
          else if ((paintrnd) == 107){
          var paintpic = 'https://i.imgur.com/59R91Q0.png'
-         var paintname = 'Tunisa'}
+         var paintname = 'Tunisa Paint'}
          else if ((paintrnd) == 108){
          var paintpic = 'https://i.imgur.com/3LRdNAn.png'
-         var paintname = 'Uruguay'}
+         var paintname = 'Uruguay Paint'}
          else if ((paintrnd) == 109){
          var paintpic = 'https://i.imgur.com/x2nlYUX.png'
-         var paintname = 'Space Paint'}
+         var paintname = 'Space  Paint'}
          else if ((paintrnd) == 110){
          var paintpic = 'https://i.imgur.com/wW7ycng.png'
          var paintname = 'Frost Paint'}
@@ -1303,102 +1303,99 @@ moduleRandomizer();
          else if ((paintrnd) == 76){
          var paintpic = 'https://i.imgur.com/ggGlJGu.png'
          var paintname = 'Picasso Paint'}
-         else if ((paintrnd) == 77){
-         var paintpic = 'https://i.imgur.com/oPsUaQS.png'
-         var paintname = 'Argentina'}
          else if ((paintrnd) == 78){
          var paintpic = 'https://i.imgur.com/reDTcBH.png'
-         var paintname = 'Australia'}
+         var paintname = 'Australia Paint'}
          else if ((paintrnd) == 79){
          var paintpic = 'https://i.imgur.com/AJQrwyi.png'
-         var paintname = 'Belgium'}
+         var paintname = 'Belgium Paint'}
          else if ((paintrnd) == 80){
          var paintpic = 'https://i.imgur.com/958evYX.png'
-         var paintname = 'Brazil'}
+         var paintname = 'Brazil Paint'}
          else if ((paintrnd) == 81){
          var paintpic = 'https://i.imgur.com/7Jt63vS.png'
-         var paintname = 'Colombia'}
+         var paintname = 'Colombia Paint'}
          else if ((paintrnd) == 82){
          var paintpic = 'https://i.imgur.com/iVNsjXY.png'
-         var paintname = 'South Korea'}
+         var paintname = 'South Korea Paint'}
          else if ((paintrnd) == 83){
          var paintpic = 'https://i.imgur.com/PYRmJIp.png'
-         var paintname = 'Denmark'}
+         var paintname = 'Denmark Paint'}
          else if ((paintrnd) == 84){
          var paintpic = 'https://i.imgur.com/7cYZu1I.png'
-         var paintname = 'Croatia'}
+         var paintname = 'Croatia Paint'}
          else if ((paintrnd) == 85){
          var paintpic = 'https://i.imgur.com/wvYQSXa.png'
-         var paintname = 'Costa Rica'}
+         var paintname = 'Costa Rica Paint'}
          else if ((paintrnd) == 86){
          var paintpic = 'https://i.imgur.com/NVIdw9e.png'
-         var paintname = 'Egypt'}
+         var paintname = 'Egypt Paint'}
          else if ((paintrnd) == 87){
          var paintpic = 'https://i.imgur.com/Jn5mrQI.png'
-         var paintname = 'England'}
+         var paintname = 'England Paint'}
          else if ((paintrnd) == 88){
          var paintpic = 'https://i.imgur.com/XVrmTAE.png'
-         var paintname = 'France'}
+         var paintname = 'France Paint'}
          else if ((paintrnd) == 89){
          var paintpic = 'https://i.imgur.com/7IU5kHG.png'
-         var paintname = 'Iceland'}
+         var paintname = 'Iceland Paint'}
          else if ((paintrnd) == 90){
          var paintpic = 'https://i.imgur.com/JCTfffl.png'
-         var paintname = 'Germany'}
+         var paintname = 'Germany Paint'}
          else if ((paintrnd) == 91){
          var paintpic = 'https://i.imgur.com/0KgtBsx.png'
-         var paintname = 'Iran'}
+         var paintname = 'Iran Paint'}
          else if ((paintrnd) == 92){
          var paintpic = 'https://i.imgur.com/6RzUNAy.png'
-         var paintname = 'Japan'}
+         var paintname = 'Japan Paint'}
          else if ((paintrnd) == 93){
          var paintpic = 'https://i.imgur.com/ifrbtMe.png'
-         var paintname = 'Mexico'}
+         var paintname = 'Mexico Paint'}
          else if ((paintrnd) == 94){
          var paintpic = 'https://i.imgur.com/DPA9Bil.png'
-         var paintname = 'Morocco'}
+         var paintname = 'Morocco Paint'}
          else if ((paintrnd) == 95){
          var paintpic = 'https://i.imgur.com/bqxX9er.png'
-         var paintname = 'Panama'}
+         var paintname = 'Panama Paint'}
          else if ((paintrnd) == 96){
          var paintpic = 'https://i.imgur.com/ZQLGlOC.png'
-         var paintname = 'Nigeria'}
+         var paintname = 'Nigeria Paint'}
          else if ((paintrnd) == 97){
          var paintpic = 'https://i.imgur.com/lkZmpvy.png'
-         var paintname = 'Peru'}
+         var paintname = 'Peru Paint'}
          else if ((paintrnd) == 98){
          var paintpic = 'https://i.imgur.com/rF67XB7.png'
-         var paintname = 'Portugal'}
+         var paintname = 'Portugal Paint'}
          else if ((paintrnd) == 99){
          var paintpic = 'https://i.imgur.com/32jmRY5.png'
-         var paintname = 'Poland'}
+         var paintname = 'Poland Paint'}
          else if ((paintrnd) == 100){
          var paintpic = 'https://i.imgur.com/aSyZVyl.png'
-         var paintname = 'Russia'}
+         var paintname = 'Russia Paint'}
          else if ((paintrnd) == 101){
          var paintpic = 'https://i.imgur.com/0pZ8POK.png'
-         var paintname = 'Saudi Arabia'}
+         var paintname = 'Saudi Arabia Paint'}
          else if ((paintrnd) == 102){
          var paintpic = 'https://i.imgur.com/cvBh12Z.png'
-         var paintname = 'Senagal'}
+         var paintname = 'Senagal Paint'}
          else if ((paintrnd) == 103){
          var paintpic = 'https://i.imgur.com/Xp5wtvv.png'
-         var paintname = 'Serbia'}
+         var paintname = 'Serbia Paint'}
          else if ((paintrnd) == 104){
          var paintpic = 'https://i.imgur.com/o7dBXh6.png'
-         var paintname = 'Sweden'}
+         var paintname = 'Sweden Paint'}
          else if ((paintrnd) == 105){
          var paintpic = 'https://i.imgur.com/PkWhBUK.png'
-         var paintname = 'Spain'}
+         var paintname = 'Spain Paint'}
          else if ((paintrnd) == 106){
          var paintpic = 'https://i.imgur.com/xYYxCTR.png'
-         var paintname = 'Denmark'}
+         var paintname = 'Denmark Paint'}
          else if ((paintrnd) == 107){
          var paintpic = 'https://i.imgur.com/59R91Q0.png'
-         var paintname = 'Tunisa'}
+         var paintname = 'Tunisa Paint'}
          else if ((paintrnd) == 108){
          var paintpic = 'https://i.imgur.com/3LRdNAn.png'
-         var paintname = 'Uruguay'}
+         var paintname = 'Uruguay Paint'}
          else if ((paintrnd) == 109){
          var paintpic = 'https://i.imgur.com/x2nlYUX.png'
          var paintname = 'Space Paint'}
@@ -2180,97 +2177,97 @@ moduleRandomizer();
          var paintname = 'Argentina'}
          else if ((paintrnd) == 78){
          var paintpic = 'https://i.imgur.com/reDTcBH.png'
-         var paintname = 'Australia'}
+         var paintname = 'Australia Paint'}
          else if ((paintrnd) == 79){
          var paintpic = 'https://i.imgur.com/AJQrwyi.png'
-         var paintname = 'Belgium'}
+         var paintname = 'Belgium Paint'}
          else if ((paintrnd) == 80){
          var paintpic = 'https://i.imgur.com/958evYX.png'
-         var paintname = 'Brazil'}
+         var paintname = 'Brazil Paint'}
          else if ((paintrnd) == 81){
          var paintpic = 'https://i.imgur.com/7Jt63vS.png'
-         var paintname = 'Colombia'}
+         var paintname = 'Colombia Paint'}
          else if ((paintrnd) == 82){
          var paintpic = 'https://i.imgur.com/iVNsjXY.png'
-         var paintname = 'South Korea'}
+         var paintname = 'South Korea Paint'}
          else if ((paintrnd) == 83){
          var paintpic = 'https://i.imgur.com/PYRmJIp.png'
-         var paintname = 'Denmark'}
+         var paintname = 'Denmark Paint'}
          else if ((paintrnd) == 84){
          var paintpic = 'https://i.imgur.com/7cYZu1I.png'
-         var paintname = 'Croatia'}
+         var paintname = 'Croatia Paint'}
          else if ((paintrnd) == 85){
          var paintpic = 'https://i.imgur.com/wvYQSXa.png'
-         var paintname = 'Costa Rica'}
+         var paintname = 'Costa Rica Paint'}
          else if ((paintrnd) == 86){
          var paintpic = 'https://i.imgur.com/NVIdw9e.png'
-         var paintname = 'Egypt'}
+         var paintname = 'Egypt Paint'}
          else if ((paintrnd) == 87){
          var paintpic = 'https://i.imgur.com/Jn5mrQI.png'
-         var paintname = 'England'}
+         var paintname = 'England Paint'}
          else if ((paintrnd) == 88){
          var paintpic = 'https://i.imgur.com/XVrmTAE.png'
-         var paintname = 'France'}
+         var paintname = 'France Paint'}
          else if ((paintrnd) == 89){
          var paintpic = 'https://i.imgur.com/7IU5kHG.png'
-         var paintname = 'Iceland'}
+         var paintname = 'Iceland Paint'}
          else if ((paintrnd) == 90){
          var paintpic = 'https://i.imgur.com/JCTfffl.png'
-         var paintname = 'Germany'}
+         var paintname = 'Germany Paint'}
          else if ((paintrnd) == 91){
          var paintpic = 'https://i.imgur.com/0KgtBsx.png'
-         var paintname = 'Iran'}
+         var paintname = 'Iran Paint'}
          else if ((paintrnd) == 92){
          var paintpic = 'https://i.imgur.com/6RzUNAy.png'
-         var paintname = 'Japan'}
+         var paintname = 'Japan Paint'}
          else if ((paintrnd) == 93){
          var paintpic = 'https://i.imgur.com/ifrbtMe.png'
-         var paintname = 'Mexico'}
+         var paintname = 'Mexico Paint'}
          else if ((paintrnd) == 94){
          var paintpic = 'https://i.imgur.com/DPA9Bil.png'
-         var paintname = 'Morocco'}
+         var paintname = 'Morocco Paint'}
          else if ((paintrnd) == 95){
          var paintpic = 'https://i.imgur.com/bqxX9er.png'
-         var paintname = 'Panama'}
+         var paintname = 'Panama Paint'}
          else if ((paintrnd) == 96){
          var paintpic = 'https://i.imgur.com/ZQLGlOC.png'
-         var paintname = 'Nigeria'}
+         var paintname = 'Nigeria Paint'}
          else if ((paintrnd) == 97){
          var paintpic = 'https://i.imgur.com/lkZmpvy.png'
-         var paintname = 'Peru'}
+         var paintname = 'Peru Paint'}
          else if ((paintrnd) == 98){
          var paintpic = 'https://i.imgur.com/rF67XB7.png'
-         var paintname = 'Portugal'}
+         var paintname = 'Portugal Paint'}
          else if ((paintrnd) == 99){
          var paintpic = 'https://i.imgur.com/32jmRY5.png'
-         var paintname = 'Poland'}
+         var paintname = 'Poland Paint'}
          else if ((paintrnd) == 100){
          var paintpic = 'https://i.imgur.com/aSyZVyl.png'
-         var paintname = 'Russia'}
+         var paintname = 'Russia Paint'}
          else if ((paintrnd) == 101){
          var paintpic = 'https://i.imgur.com/0pZ8POK.png'
-         var paintname = 'Saudi Arabia'}
+         var paintname = 'Saudi Arabia Paint'}
          else if ((paintrnd) == 102){
          var paintpic = 'https://i.imgur.com/cvBh12Z.png'
-         var paintname = 'Senagal'}
+         var paintname = 'Senagal Paint'}
          else if ((paintrnd) == 103){
          var paintpic = 'https://i.imgur.com/Xp5wtvv.png'
-         var paintname = 'Serbia'}
+         var paintname = 'Serbia Paint'}
          else if ((paintrnd) == 104){
          var paintpic = 'https://i.imgur.com/o7dBXh6.png'
-         var paintname = 'Sweden'}
+         var paintname = 'Sweden Paint'}
          else if ((paintrnd) == 105){
          var paintpic = 'https://i.imgur.com/PkWhBUK.png'
-         var paintname = 'Spain'}
+         var paintname = 'Spain Paint'}
          else if ((paintrnd) == 106){
          var paintpic = 'https://i.imgur.com/xYYxCTR.png'
-         var paintname = 'Denmark'}
+         var paintname = 'Denmark Paint'}
          else if ((paintrnd) == 107){
          var paintpic = 'https://i.imgur.com/59R91Q0.png'
-         var paintname = 'Tunisa'}
+         var paintname = 'Tunisa Paint'}
          else if ((paintrnd) == 108){
          var paintpic = 'https://i.imgur.com/3LRdNAn.png'
-         var paintname = 'Uruguay'}
+         var paintname = 'Uruguay Paint'}
          else if ((paintrnd) == 109){
          var paintpic = 'https://i.imgur.com/x2nlYUX.png'
          var paintname = 'Space Paint'}
@@ -3047,102 +3044,99 @@ moduleRandomizer();
          else if ((paintrnd) == 76){
          var paintpic = 'https://i.imgur.com/ggGlJGu.png'
          var paintname = 'Picasso Paint'}
-         else if ((paintrnd) == 77){
-         var paintpic = 'https://i.imgur.com/oPsUaQS.png'
-         var paintname = 'Argentina'}
          else if ((paintrnd) == 78){
          var paintpic = 'https://i.imgur.com/reDTcBH.png'
-         var paintname = 'Australia'}
+         var paintname = 'Australia Paint'}
          else if ((paintrnd) == 79){
          var paintpic = 'https://i.imgur.com/AJQrwyi.png'
-         var paintname = 'Belgium'}
+         var paintname = 'Belgium Paint'}
          else if ((paintrnd) == 80){
          var paintpic = 'https://i.imgur.com/958evYX.png'
-         var paintname = 'Brazil'}
+         var paintname = 'Brazil Paint'}
          else if ((paintrnd) == 81){
          var paintpic = 'https://i.imgur.com/7Jt63vS.png'
-         var paintname = 'Colombia'}
+         var paintname = 'Colombia Paint'}
          else if ((paintrnd) == 82){
          var paintpic = 'https://i.imgur.com/iVNsjXY.png'
-         var paintname = 'South Korea'}
+         var paintname = 'South Korea Paint'}
          else if ((paintrnd) == 83){
          var paintpic = 'https://i.imgur.com/PYRmJIp.png'
-         var paintname = 'Denmark'}
+         var paintname = 'Denmark Paint'}
          else if ((paintrnd) == 84){
          var paintpic = 'https://i.imgur.com/7cYZu1I.png'
-         var paintname = 'Croatia'}
+         var paintname = 'Croatia Paint'}
          else if ((paintrnd) == 85){
          var paintpic = 'https://i.imgur.com/wvYQSXa.png'
-         var paintname = 'Costa Rica'}
+         var paintname = 'Costa Rica Paint'}
          else if ((paintrnd) == 86){
          var paintpic = 'https://i.imgur.com/NVIdw9e.png'
-         var paintname = 'Egypt'}
+         var paintname = 'Egypt Paint'}
          else if ((paintrnd) == 87){
          var paintpic = 'https://i.imgur.com/Jn5mrQI.png'
-         var paintname = 'England'}
+         var paintname = 'England Paint'}
          else if ((paintrnd) == 88){
          var paintpic = 'https://i.imgur.com/XVrmTAE.png'
-         var paintname = 'France'}
+         var paintname = 'France Paint'}
          else if ((paintrnd) == 89){
          var paintpic = 'https://i.imgur.com/7IU5kHG.png'
-         var paintname = 'Iceland'}
+         var paintname = 'Iceland Paint'}
          else if ((paintrnd) == 90){
          var paintpic = 'https://i.imgur.com/JCTfffl.png'
-         var paintname = 'Germany'}
+         var paintname = 'Germany Paint'}
          else if ((paintrnd) == 91){
          var paintpic = 'https://i.imgur.com/0KgtBsx.png'
-         var paintname = 'Iran'}
+         var paintname = 'Iran Paint'}
          else if ((paintrnd) == 92){
          var paintpic = 'https://i.imgur.com/6RzUNAy.png'
-         var paintname = 'Japan'}
+         var paintname = 'Japan Paint'}
          else if ((paintrnd) == 93){
          var paintpic = 'https://i.imgur.com/ifrbtMe.png'
-         var paintname = 'Mexico'}
+         var paintname = 'Mexico Paint'}
          else if ((paintrnd) == 94){
          var paintpic = 'https://i.imgur.com/DPA9Bil.png'
-         var paintname = 'Morocco'}
+         var paintname = 'Morocco Paint'}
          else if ((paintrnd) == 95){
          var paintpic = 'https://i.imgur.com/bqxX9er.png'
-         var paintname = 'Panama'}
+         var paintname = 'Panama Paint'}
          else if ((paintrnd) == 96){
          var paintpic = 'https://i.imgur.com/ZQLGlOC.png'
-         var paintname = 'Nigeria'}
+         var paintname = 'Nigeria Paint'}
          else if ((paintrnd) == 97){
          var paintpic = 'https://i.imgur.com/lkZmpvy.png'
-         var paintname = 'Peru'}
+         var paintname = 'Peru Paint'}
          else if ((paintrnd) == 98){
          var paintpic = 'https://i.imgur.com/rF67XB7.png'
-         var paintname = 'Portugal'}
+         var paintname = 'Portugal Paint'}
          else if ((paintrnd) == 99){
          var paintpic = 'https://i.imgur.com/32jmRY5.png'
-         var paintname = 'Poland'}
+         var paintname = 'Poland Paint'}
          else if ((paintrnd) == 100){
          var paintpic = 'https://i.imgur.com/aSyZVyl.png'
-         var paintname = 'Russia'}
+         var paintname = 'Russia Paint'}
          else if ((paintrnd) == 101){
          var paintpic = 'https://i.imgur.com/0pZ8POK.png'
-         var paintname = 'Saudi Arabia'}
+         var paintname = 'Saudi Arabia Paint'}
          else if ((paintrnd) == 102){
          var paintpic = 'https://i.imgur.com/cvBh12Z.png'
-         var paintname = 'Senagal'}
+         var paintname = 'Senagal Paint'}
          else if ((paintrnd) == 103){
          var paintpic = 'https://i.imgur.com/Xp5wtvv.png'
-         var paintname = 'Serbia'}
+         var paintname = 'Serbia Paint'}
          else if ((paintrnd) == 104){
          var paintpic = 'https://i.imgur.com/o7dBXh6.png'
-         var paintname = 'Sweden'}
+         var paintname = 'Sweden Paint'}
          else if ((paintrnd) == 105){
          var paintpic = 'https://i.imgur.com/PkWhBUK.png'
-         var paintname = 'Spain'}
+         var paintname = 'Spain Paint'}
          else if ((paintrnd) == 106){
          var paintpic = 'https://i.imgur.com/xYYxCTR.png'
-         var paintname = 'Denmark'}
+         var paintname = 'Denmark Paint'}
          else if ((paintrnd) == 107){
          var paintpic = 'https://i.imgur.com/59R91Q0.png'
-         var paintname = 'Tunisa'}
+         var paintname = 'Tunisa Paint'}
          else if ((paintrnd) == 108){
          var paintpic = 'https://i.imgur.com/3LRdNAn.png'
-         var paintname = 'Uruguay'}
+         var paintname = 'Uruguay Paint'}
          else if ((paintrnd) == 109){
          var paintpic = 'https://i.imgur.com/x2nlYUX.png'
          var paintname = 'Space Paint'}
@@ -3924,97 +3918,97 @@ moduleRandomizer();
          var paintname = 'Argentina'}
          else if ((paintrnd) == 78){
          var paintpic = 'https://i.imgur.com/reDTcBH.png'
-         var paintname = 'Australia'}
+         var paintname = 'Australia Paint'}
          else if ((paintrnd) == 79){
          var paintpic = 'https://i.imgur.com/AJQrwyi.png'
-         var paintname = 'Belgium'}
+         var paintname = 'Belgium Paint'}
          else if ((paintrnd) == 80){
          var paintpic = 'https://i.imgur.com/958evYX.png'
-         var paintname = 'Brazil'}
+         var paintname = 'Brazil Paint'}
          else if ((paintrnd) == 81){
          var paintpic = 'https://i.imgur.com/7Jt63vS.png'
-         var paintname = 'Colombia'}
+         var paintname = 'Colombia Paint'}
          else if ((paintrnd) == 82){
          var paintpic = 'https://i.imgur.com/iVNsjXY.png'
-         var paintname = 'South Korea'}
+         var paintname = 'South Korea Paint'}
          else if ((paintrnd) == 83){
          var paintpic = 'https://i.imgur.com/PYRmJIp.png'
-         var paintname = 'Denmark'}
+         var paintname = 'Denmark Paint'}
          else if ((paintrnd) == 84){
          var paintpic = 'https://i.imgur.com/7cYZu1I.png'
-         var paintname = 'Croatia'}
+         var paintname = 'Croatia Paint'}
          else if ((paintrnd) == 85){
          var paintpic = 'https://i.imgur.com/wvYQSXa.png'
-         var paintname = 'Costa Rica'}
+         var paintname = 'Costa Rica Paint'}
          else if ((paintrnd) == 86){
          var paintpic = 'https://i.imgur.com/NVIdw9e.png'
-         var paintname = 'Egypt'}
+         var paintname = 'Egypt Paint'}
          else if ((paintrnd) == 87){
          var paintpic = 'https://i.imgur.com/Jn5mrQI.png'
-         var paintname = 'England'}
+         var paintname = 'England Paint'}
          else if ((paintrnd) == 88){
          var paintpic = 'https://i.imgur.com/XVrmTAE.png'
-         var paintname = 'France'}
+         var paintname = 'France Paint'}
          else if ((paintrnd) == 89){
          var paintpic = 'https://i.imgur.com/7IU5kHG.png'
-         var paintname = 'Iceland'}
+         var paintname = 'Iceland Paint'}
          else if ((paintrnd) == 90){
          var paintpic = 'https://i.imgur.com/JCTfffl.png'
-         var paintname = 'Germany'}
+         var paintname = 'Germany Paint'}
          else if ((paintrnd) == 91){
          var paintpic = 'https://i.imgur.com/0KgtBsx.png'
-         var paintname = 'Iran'}
+         var paintname = 'Iran Paint'}
          else if ((paintrnd) == 92){
          var paintpic = 'https://i.imgur.com/6RzUNAy.png'
-         var paintname = 'Japan'}
+         var paintname = 'Japan Paint'}
          else if ((paintrnd) == 93){
          var paintpic = 'https://i.imgur.com/ifrbtMe.png'
-         var paintname = 'Mexico'}
+         var paintname = 'Mexico Paint'}
          else if ((paintrnd) == 94){
          var paintpic = 'https://i.imgur.com/DPA9Bil.png'
-         var paintname = 'Morocco'}
+         var paintname = 'Morocco Paint'}
          else if ((paintrnd) == 95){
          var paintpic = 'https://i.imgur.com/bqxX9er.png'
-         var paintname = 'Panama'}
+         var paintname = 'Panama Paint'}
          else if ((paintrnd) == 96){
          var paintpic = 'https://i.imgur.com/ZQLGlOC.png'
-         var paintname = 'Nigeria'}
+         var paintname = 'Nigeria Paint'}
          else if ((paintrnd) == 97){
          var paintpic = 'https://i.imgur.com/lkZmpvy.png'
-         var paintname = 'Peru'}
+         var paintname = 'Peru Paint'}
          else if ((paintrnd) == 98){
          var paintpic = 'https://i.imgur.com/rF67XB7.png'
-         var paintname = 'Portugal'}
+         var paintname = 'Portugal Paint'}
          else if ((paintrnd) == 99){
          var paintpic = 'https://i.imgur.com/32jmRY5.png'
-         var paintname = 'Poland'}
+         var paintname = 'Poland Paint'}
          else if ((paintrnd) == 100){
          var paintpic = 'https://i.imgur.com/aSyZVyl.png'
-         var paintname = 'Russia'}
+         var paintname = 'Russia Paint'}
          else if ((paintrnd) == 101){
          var paintpic = 'https://i.imgur.com/0pZ8POK.png'
-         var paintname = 'Saudi Arabia'}
+         var paintname = 'Saudi Arabia Paint'}
          else if ((paintrnd) == 102){
          var paintpic = 'https://i.imgur.com/cvBh12Z.png'
-         var paintname = 'Senagal'}
+         var paintname = 'Senagal Paint'}
          else if ((paintrnd) == 103){
          var paintpic = 'https://i.imgur.com/Xp5wtvv.png'
-         var paintname = 'Serbia'}
+         var paintname = 'Serbia Paint'}
          else if ((paintrnd) == 104){
          var paintpic = 'https://i.imgur.com/o7dBXh6.png'
-         var paintname = 'Sweden'}
+         var paintname = 'Sweden Paint'}
          else if ((paintrnd) == 105){
          var paintpic = 'https://i.imgur.com/PkWhBUK.png'
-         var paintname = 'Spain'}
+         var paintname = 'Spain Paint'}
          else if ((paintrnd) == 106){
          var paintpic = 'https://i.imgur.com/xYYxCTR.png'
-         var paintname = 'Denmark'}
+         var paintname = 'Denmark Paint'}
          else if ((paintrnd) == 107){
          var paintpic = 'https://i.imgur.com/59R91Q0.png'
-         var paintname = 'Tunisa'}
+         var paintname = 'Tunisa Paint'}
          else if ((paintrnd) == 108){
          var paintpic = 'https://i.imgur.com/3LRdNAn.png'
-         var paintname = 'Uruguay'}
+         var paintname = 'Uruguay Paint'}
          else if ((paintrnd) == 109){
          var paintpic = 'https://i.imgur.com/x2nlYUX.png'
          var paintname = 'Space Paint'}
