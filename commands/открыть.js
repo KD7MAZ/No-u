@@ -16,6 +16,9 @@ if (message.content === prefix + 'открыть'){
     message.channel.send(`:x: ${message.author} я думаю вы имели в виду ${a}-oткрыть контейнер${a}`)
 
 }
+if (talkedRecently.has(321673115891531787)) {
+return;
+}
 if (talkedRecently.has(message.author.id)) {
             message.channel.send(`:x: ${message.author} Есть 2 секунды, чтобы остыть, пожалуйста, подождите!`);
 } else {
