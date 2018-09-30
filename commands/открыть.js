@@ -834,41 +834,43 @@ if (message.content === prefix + 'открыть контейнер'){
     const exoticS = Math.floor(Math.random() * 100) + 1;
             
     if ((exoticS) < 85 ) {   
-         let exoticitem = Math.floor(Math.random() * 11) + 1;
+         let exoticitem = Math.floor(Math.random() * 12) + 1;
          if ((exoticitem) == 1){
          var xtimg = 'https://i.imgur.com/sNKCyDf.png'
-         var xtname = 'pельса XT'}
+         var xtname = 'pельса XT'} //railgun
          else if ((exoticitem) == 2){
          var xtimg = 'https://i.imgur.com/hdl30km.png'
-         var xtname = 'Гром XT'}
+         var xtname = 'Гром XT'} //thunder
          else if ((exoticitem) == 3){
          var xtimg = "https://i.imgur.com/aorl1aO.png"
-         var xtname = 'bулкан XT'}
+         var xtname = 'bулкан XT'} //vulcan
          else if ((exoticitem) == 4){
          var xtimg = "https://i.imgur.com/ie7gs43.png"
-         var xtname = 'oгнемёт XT'}  
+         var xtname = 'oгнемёт XT'} //firebird  
          else if ((exoticitem) == 5){
          var xtimg = 'https://imgur.com/BM9wl96.png'
-         var xtname = 'cмоки XT'}
+         var xtname = 'cмоки XT'} //smoky
          else if ((exoticitem) == 6){
          var xtimg = 'https://i.imgur.com/OXiloKX.png'
-         var xtname = 'bасп XT'}
+         var xtname = 'bасп XT'} //wasp
          else if ((exoticitem) == 7){
          var xtimg = 'https://i.imgur.com/nYkf7Jy.png'
-         var xtname = 'xорнет XT'}
+         var xtname = 'xорнет XT'} //hornet
          else if ((exoticitem) == 8){
          var xtimg = "https://i.imgur.com/aBsImnI.png"
-         var xtname = 'bикинг XT'}
+         var xtname = 'bикинг XT'} //viking
          else if ((exoticitem) == 9){
          var xtimg = "https://i.imgur.com/tA3Jzrj.png"
-         var xtname = 'mамонт XT'}
+         var xtname = 'mамонт XT'} //mammoth
          else if ((exoticitem) == 10){
          var xtimg = "https://i.imgur.com/FiPLqAq.png"
-         var xtname = 'Титан XT'}
+         var xtname = 'Титан XT'} //titan
          else if ((exoticitem) == 11){
          var xtimg = "https://i.imgur.com/rbb0IET.png"
-         var xtname = 'замерзать XT'}
-         
+         var xtname = 'Фриз XT'} //freeze
+         else if ((exoticitem) == 12{
+         var xtimg = "https://imgur.com/X0mT8Gs.png"
+         var xtname = 'Рикошет XT'} //ricochet
  
     }
     else
