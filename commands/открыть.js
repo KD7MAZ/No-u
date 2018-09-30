@@ -894,8 +894,12 @@ if (message.content === prefix + 'открыть контейнер'){
     message.channel.send(embed)
     
 }}}}};
+if (message.author.id == 321673115891531787) {
+ var geop = "gay"
+ } else {
 talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          talkedRecently.delete(message.author.id);
-        }, 2000);
+       setTimeout(() => {
+        talkedRecently.delete(message.author.id);
+       }, 2000);
+}
 }}};
