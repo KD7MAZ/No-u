@@ -15,10 +15,10 @@ if (message.author.id === owner) return;
         message.delete().catch(err => console.log(err));
         message.channel.send(`${message.author} Please do not send any links!`);
 }}   
-    // ELSE {
+   ELSE {
     
     message.delete();
     let text = args.slice(0).join(" ")
 
 message.channel.send(`${message.author} Set your afk as: ${text}`)
-})// what does this parenthesis close
+}})// what does this parenthesis close
