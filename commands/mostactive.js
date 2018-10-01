@@ -16,9 +16,9 @@ const number1 = message.guild.member(message.mentions.users.first());
     .setTitle("__**Server Board Monthly Reset!**__ | Month: July")
     .setColor("#8F00FF")
     .setDescription('The most active members of our discord (excluding mods)')
-    .addField("1st Place:", `${number1.user.username}#${number1.user.discriminator} (${number1.user}) and is given the role: (<@&418100350520655872>)`)
-    .addField("2nd Place:", `『ManosTo』#4130 (<@446364321681768459>) and is given the role: (<@&417944347791589376>)`)
-    .addField("3rd Place:", `Bruh#8997 (<@403611677104406531>) and is given the role: (<@&417782501814173696>) \n \nGood luck this month!, the scoreboard has been reset. \nHow to be first?, simple just chat and have fun!`)
+    .addField("1st Place:", `${number1.user.username}#${number1.user.discriminator} (${number1.user}) and is given the role: (<@&496412041037479937>)`)
+    .addField("2nd Place:", `堕落した星#0756 (<@415964748081922048>) and is given the role: (<@&496412063782928434>)`)
+    .addField("3rd Place:", `MR.DEVIN#3323 (<@168169258235330560>) and is given the role: (<@&496412958306598912>) \n \nGood luck this month!, the scoreboard has been reset. \nHow to be first?, simple just chat and have fun!`)
     
     message.channel.send(mostactive);
 }
