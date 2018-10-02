@@ -9,6 +9,7 @@ const owner = '321673115891531787'
 const myserver = '323206382147076096'
 const a = '`'
 const talkedRecently = new Set();
+const logoru = `https://i.imgur.com/NWlz5bf.png`
 
 exports.run = (client, message, args) => {
  
@@ -92,6 +93,7 @@ if (message.content === prefix + 'открыть контейнер'){
          .setTitle(`${message.author.username} открыл контейнер`)
          .setColor("#696969")
          .setDescription(`вы получили товар : ${common}${paintname}${common}`)  
+         .setThumbnail(logoru)
          .setImage(paintimg)
          .setFooter(`${message.author.username} получил ${rareity} пункт!`, message.author.displayAvatarURL)
      message.channel.send(embed)
@@ -131,6 +133,7 @@ if (message.content === prefix + 'открыть контейнер'){
          .setTitle(`${message.author.username} открыл контейнер`)
          .setColor("#5ae03a")
          .setDescription(`вы получили товар : ${uncommon}${supplyname}${uncommon}`) 
+         .setThumbnail(logoru)
          .setImage(supplyimg)
          .setFooter(`${message.author.username} получил ${rareity} пункт!`, message.author.displayAvatarURL)      
      message.channel.send(embed)
@@ -469,6 +472,7 @@ if (message.content === prefix + 'открыть контейнер'){
          .setTitle(`${message.author.username} открыл контейнер`)
          .setColor("#2de5ff")
          .setDescription(`вы получили товар : ${rare}${paintname}${rare}`)  
+         .setThumbnail(logoru)
          .setImage(paintimg)
          .setFooter(`${message.author.username} получил ${rareity} пункт!`, message.author.displayAvatarURL)
      message.channel.send(embed)
@@ -699,6 +703,7 @@ if (message.content === prefix + 'открыть контейнер'){
          .setTitle(`${message.author.username} открыл контейнер`)
          .setColor("#ff00e0")
          .setDescription(`вы получили товар : ${epic}${paintname}${epic}`) 
+         .setThumbnail(logoru)
          .setImage(paintimg)
          .setFooter(`${message.author.username} получил ${rareity} пункт!`, message.author.displayAvatarURL)        
         message.channel.send(embed)
@@ -828,6 +833,7 @@ if (message.content === prefix + 'открыть контейнер'){
          .setTitle(`${message.author.username} открыл контейнер`)
          .setColor("#ffff00")
          .setDescription(`вы получили товар : ${legendary}${paintname}${legendary}`) 
+         .setThumbnail(logoru)
          .setImage(paintimg)
          .setFooter(`${message.author.username} получил ${rareity} пункт!`, message.author.displayAvatarURL)
         message.channel.send(embed)
@@ -892,8 +898,9 @@ if (message.content === prefix + 'открыть контейнер'){
          .setTitle(`${message.author.username} открыл контейнер`)
          .setColor("#ff5f00")
          .setDescription(`вы получили товар : ${exotic}${xtname}${exotic}`) 
+         .setThumbnail(logoru)
          .setImage(xtimg)
-        .setFooter(`${message.author.username} получил ${rareity} пункт!`, message.author.displayAvatarURL)
+         .setFooter(`${message.author.username} получил ${rareity} пункт!`, message.author.displayAvatarURL)
     message.channel.send(embed)
     
 }}}}};
