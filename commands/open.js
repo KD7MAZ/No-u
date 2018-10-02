@@ -7,7 +7,7 @@ const owner = '321673115891531787'
 const myserver = '323206382147076096'
 const a = '`'
 const talkedRecently = new Set();
-
+const logo = `https://i.imgur.com/ZG74n3j.png`
 
 exports.run = (client, message, args) => {
  
@@ -95,6 +95,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setTitle(`${message.author.username} opened a container`)
          .setColor("#696969")
          .setDescription(`You obtained the item : ${common}${paintname}${common}`)  
+         .setThumbnail(logo)
          .setImage(paintimg)
          .setFooter(`${message.author.username} got a ${rareity} item!`, `https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png`)
      message.channel.send(embed)
@@ -134,6 +135,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
             .setTitle(`${message.author.username} opened a container`)
             .setColor("#5ae03a")
             .setDescription(`You obtained the item : ${uncommon}${supplyname}${uncommon}`) 
+            .setThumbnail(logo)
             .setImage(supplyimg)
             .setFooter(`${message.author.username} got an ${rareity} item!`, message.author.displayAvatarURL)      
         message.channel.send(embed)
@@ -146,6 +148,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
                         .setColor("#5ae03a")
                         .setDescription(`You obtained the item : ${uncommon}${supplyname}${uncommon}`) 
                         .setImage(supplyimg)
+                        .setThumbnail(logo)
                         .setFooter(`${message.author.username} got an ${rareity} item!`, `https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png`)      
                     message.channel.send(embed)
                 }
@@ -486,6 +489,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setTitle(`${message.author.username} opened a container`)
          .setColor("#2de5ff")
          .setDescription(`You obtained the item : ${rare}${paintname}${rare}`)  
+         .setThumbnail(logo)
          .setImage(paintimg)
          .setFooter(`${message.author.username} got a ${rareity} item!`, message.author.displayAvatarURL)
      message.channel.send(embed)
@@ -496,6 +500,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setTitle(`${message.author.username} opened a container`)
          .setColor("#2de5ff")
          .setDescription(`You obtained the item : ${rare}${paintname}${rare}`)  
+         .setThumbnail(logo)
          .setImage(paintimg)
          .setFooter(`${message.author.username} got a ${rareity} item!`, `https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png`)
      message.channel.send(embed)
@@ -726,6 +731,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setTitle(`${message.author.username} opened a container`)
          .setColor("#ff00e0")
          .setDescription(`You obtained the item : ${epic}${paintname}${epic}`) 
+         .setThumbnail(logo)
          .setImage(paintimg)
          .setFooter(`${message.author.username} got an ${rareity} item!`, message.author.displayAvatarURL)        
         message.channel.send(embed)
@@ -736,6 +742,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setTitle(`${message.author.username} opened a container`)
          .setColor("#ff00e0")
          .setDescription(`You obtained the item : ${epic}${paintname}${epic}`) 
+         .setThumbnail(logo)
          .setImage(paintimg)
          .setFooter(`${message.author.username} got an ${rareity} item!`, `https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png`)        
         message.channel.send(embed)
@@ -867,6 +874,7 @@ try {
          .setTitle(`${message.author.username} opened a container`)
          .setColor("#ffff00")
          .setDescription(`You obtained the item : ${legendary}${paintname}${legendary}`) 
+         .setThumbnail(logo)
          .setImage(paintimg)
          .setFooter(`${message.author.username} got a ${rareity} item!`, message.author.displayAvatarURL)
         message.channel.send(embed)
@@ -877,6 +885,7 @@ try {
          .setTitle(`${message.author.username} opened a container`)
          .setColor("#ffff00")
          .setDescription(`You obtained the item : ${legendary}${paintname}${legendary}`) 
+         .setThumbnail(logo)
          .setImage(paintimg)
          .setFooter(`${message.author.username} got a ${rareity} item!`, `https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png`)
         message.channel.send(embed)
@@ -945,6 +954,7 @@ try {
          .setTitle(`${message.author.username} opened a container`)
          .setColor("#ff5f00")
          .setDescription(`You obtained the item : ${exotic}${xtname}${exotic}`) 
+         .setThumbnail(logo)
          .setImage(xtimg)
         .setFooter(`${message.author.username} got an ${rareity} item!`, message.author.displayAvatarURL)
     message.channel.send(embed)
@@ -955,6 +965,7 @@ try {
          .setTitle(`${message.author.username} opened a container`)
          .setColor("#ff5f00")
          .setDescription(`You obtained the item : ${exotic}${xtname}${exotic}`) 
+         .setThumbnail(logo)
          .setImage(xtimg)
         .setFooter(`${message.author.username} got an ${rareity} item!`, `https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png`)
     message.channel.send(embed)
