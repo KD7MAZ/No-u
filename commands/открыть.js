@@ -9,7 +9,7 @@ const owner = '321673115891531787'
 const myserver = '323206382147076096'
 const a = '`'
 const talkedRecently = new Set();
-const logoru = `https://i.imgur.com/NWlz5bf.png`
+const logoru = `https://i.imgur.com/QeLZWUp.png`
 
 exports.run = (client, message, args) => {
  
