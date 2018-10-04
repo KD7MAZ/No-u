@@ -7,7 +7,16 @@ const owner = '321673115891531787'
 const request = require('request')
 
 exports.run = (client, message, args) => {
- 
+const nickemoji = `<:Nickname:490985268531298304>`
+const expemoji = `<:Exp:490604143195717632>`
+const nextrankemoji = `<:Arrow:490612308108902441>`
+const premiumemoji = `<:Premium:490264864053526537>`
+const crysemoji = `<:Crystals:490265165892157461>`
+const goldemoji = `<:Goldbox:490264893673439233>`
+const killsemoji = `<:Kills:490268704181977089> `
+const deathemoji = `<:Deaths:490268689715822623>`
+const kdemoji = `<:KD:490605628616867860>`
+
 
  
  
@@ -17,7 +26,7 @@ exports.run = (client, message, args) => {
 
   if (message.content === '-ratings') return message.channel.send(`:x: Please mention a valid nickname!`)
 
-  request('https://ratings.tankionline.com/api/eu/profile/?user=' + (username), { json: true }, (err, res, body) => {
+  request('http://ratings.tankionline.com/get_stat/profile/?user=' + (username) + '&lang=en', { json: true }, (err, res, body) => {
     
   
   
@@ -93,7 +102,7 @@ exports.run = (client, message, args) => {
           let zEmbed = new Discord.RichEmbed()
           .setTitle("Stats for Ahsan") 
           .setColor('#FFFF00')
-          .setThumbnail('https://i.imgur.com/qK6onnG.png')
+          .setThumbnail('https://i.imgur.com/NahcZQ9.png')
           .setURL("http://ratings.tankionline.com/en/user/Ahsantank/")
           .addField("Profile:", `**Nickname:** Ahsan (Also know as God) \n \n**Rank:** Legend 999 \n \n**Exp**: 999,999,999 \n \n**Next rank:** 1xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 999,999,999 \n \n**Golds Caught:** 999,999,999 \n \n**Kills:** 999,999,999      **Deaths:** 0      **K/D:** -`)
         return message.channel.send(zEmbed);}
@@ -102,7 +111,7 @@ exports.run = (client, message, args) => {
           let lEmbed = new Discord.RichEmbed()
           .setTitle("Stats for Ahsan") 
           .setColor('#FFFF00')
-          .setThumbnail('https://i.imgur.com/qK6onnG.png')
+          .setThumbnail('https://i.imgur.com/NahcZQ9.png')
           .setURL("http://ratings.tankionline.com/en/user/Ahsantank/")
           .addField("Profile:", `**Nickname:** Ahsan (Also know as God) \n \n**Rank:** Legend 999 \n \n**Exp**: 999,999,999 \n \n**Next rank:** 1xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 999,999,999 \n \n**Golds Caught:** 999,999,999 \n \n**Kills:** 999,999,999      **Deaths:** 0      **K/D:** - `)
         return message.channel.send(lEmbed);}
@@ -111,7 +120,7 @@ exports.run = (client, message, args) => {
           let lEmbed = new Discord.RichEmbed()
           .setTitle("Stats for Leo") 
           .setColor('#FFFF00')
-          .setThumbnail('https://i.imgur.com/qK6onnG.png')
+          .setThumbnail('https://i.imgur.com/NahcZQ9.png')
           .setURL("http://ratings.tankionline.com/en/user/Ahsantank/")
           .addField("Profile:", `**Nickname:** Leo (Also know as the best Youtber) \n \n**Rank:** Legend 69 \n \n**Exp**: 69 \n \n**Next rank:** 31xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 69 \n \n**Golds Caught:** 69 \n \n**Kills:** 69      **Deaths:** 0      **K/D:** -`)
         return message.channel.send(lEmbed);}
@@ -120,27 +129,27 @@ exports.run = (client, message, args) => {
           let xEmbed = new Discord.RichEmbed()
           .setTitle("Stats for Leo") 
           .setColor('#FFFF00')
-          .setThumbnail('https://i.imgur.com/qK6onnG.png')
+          .setThumbnail('https://i.imgur.com/NahcZQ9.png')
           .setURL("http://ratings.tankionline.com/en/user/Ahsantank/")
           .addField("Profile:", `**Nickname:** Leo (Also know as the best Youtuber) \n \n**Rank:** Legend 69 \n \n**Exp**: 69 \n \n**Next rank:** 31xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 69 \n \n**Golds Caught:** 69 \n \n**Kills:** 69      **Deaths:** 0      **K/D:** - `)
         return message.channel.send(xEmbed);}
 
-      if (message.content == '-ratings andyisawesomeyt') {
+      if (message.content == '-ratings andy') {
           let fEmbed = new Discord.RichEmbed()
-          .setTitle("Stats for andyisawesomeyt") 
+          .setTitle("Stats for Andy") 
           .setColor('#FFFF00')
-          .setThumbnail('https://i.imgur.com/qK6onnG.png')
+          .setThumbnail('https://i.imgur.com/NahcZQ9.png')
           .setURL("http://ratings.tankionline.com/en/user/Ahsantank/")
-          .addField("Profile:", `**Nickname:** AndyisAwesomeYT (Also know as Hacker) \n \n**Rank:** Legend 0000000 \n \n**Exp**: 0000000 \n \n**Next rank:** 0xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 0000000 \n \n**Golds Caught:** 0000000 \n \n**Kills:** 0000000     **Deaths:** 0      **K/D:** -`)
+          .addField("Profile:", `**Nickname:** andy (Also know as Hacker) \n \n**Rank:** Legend 0000000 \n \n**Exp**: 0000000 \n \n**Next rank:** 0xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 0000000 \n \n**Golds Caught:** 0000000 \n \n**Kills:** 0000000     **Deaths:** 0      **K/D:** -`)
         return message.channel.send(fEmbed);}
       
-        if (message.content == '-ratings AndyisAwesomeYT') {
+        if (message.content == '-ratings Andy') {
           let dEmbed = new Discord.RichEmbed()
-          .setTitle("Stats for AndyisAwesomeYT") 
+          .setTitle("Stats for Andy") 
           .setColor('#FFFF00')
-          .setThumbnail('https://i.imgur.com/qK6onnG.png')
+          .setThumbnail('https://i.imgur.com/NahcZQ9.png')
           .setURL("http://ratings.tankionline.com/en/user/Ahsantank/")
-          .addField("Profile:", `**Nickname:** AndyisAwesomeYT (Also know as Hacker) \n \n**Rank:** Legend 0000000 \n \n**Exp**: 0000000 \n \n**Next rank:** 0xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 0000000 \n \n**Golds Caught:** 0000000 \n \n**Kills:** 0000000     **Deaths:** 0      **K/D:** -`)
+          .addField("Profile:", `**Nickname:** andy (Also know as Hacker) \n \n**Rank:** Legend 0000000 \n \n**Exp**: 0000000 \n \n**Next rank:** 0xp \n \n**Active Premium:** Yes \n \n**Crystals Obtained:** 0000000 \n \n**Golds Caught:** 0000000 \n \n**Kills:** 0000000     **Deaths:** 0      **K/D:** -`)
         return message.channel.send(dEmbed);}    
 
       if ((body.response.hasPremium) == true) {
@@ -251,7 +260,7 @@ exports.run = (client, message, args) => {
           .setColor('#FFFF00')
           .setThumbnail(rankimg)
           .setURL("http://ratings.tankionline.com/en/user/" + (body.response.name) + "/")
-          .addField("Profile:", `__**Nickname:**__ ${name} \n \n${gif} __**Rank:**__ ${rank} \n \n<:Exp:490604143195717632> __**Exp:**__ ${exp} \n \n<:Arrow:490612308108902441> __**Next rank:**__ ${expleftcommas}xp \n \n<:Premium:490264864053526537> __**Active Premium:**__ ${premium} \n \n<:Crystals:490265165892157461> __**Crystals Obtained:**__ ${crys} \n \n<:Goldbox:490264893673439233> __**Golds Caught:**__ ${golds} \n \n<:Kills:490268704181977089> __**Kills:**__ ${kills}      <:Deaths:490268689715822623> __**Deaths:**__ ${deaths}      <:KD:490605628616867860> __**K/D:**__ ${kd}`)
+          .addField("Profile:", `${nickemoji} __**Nickname:**__ ${name} \n \n ${gif} __**Rank:**__ ${rank} \n \n${expemoji} __**Exp:**__ ${exp} \n \n${nextrankemoji} __**Next rank:**__ ${expleftcommas}xp \n \n${premiumemoji} __**Active Premium:**__ ${premium} \n \n${crysemoji} __**Crystals Obtained:**__ ${crys} \n \n${goldemoji} __**Golds Caught:**__ ${golds} \n \n${killsemoji} __**Kills:**__ ${kills}      ${deathemoji} __**Deaths:**__ ${deaths}      ${kdemoji} __**K/D:**__ ${kd}`)
         message.channel.send(aEmbed);}
         
         
@@ -364,7 +373,7 @@ exports.run = (client, message, args) => {
           .setColor('#8F00FF')
           .setThumbnail(rankimg)
           .setURL("http://ratings.tankionline.com/en/user/" + (body.response.name) + "/")
-          .addField("Profile:", `<:Nickname:490985268531298304> __**Nickname:**__ ${name} \n \n ${gif} __**Rank:**__ ${rank} \n \n<:Exp:490604143195717632> __**Exp:**__ ${exp} \n \n<:Arrow:490612308108902441> __**Next rank:**__ ${expleftcommas}xp \n \n<:Premium:490264864053526537> __**Active Premium:**__ ${premium} \n \n<:Crystals:490265165892157461> __**Crystals Obtained:**__ ${crys} \n \n<:Goldbox:490264893673439233> __**Golds Caught:**__ ${golds} \n \n<:Kills:490268704181977089> __**Kills:**__ ${kills}      <:Deaths:490268689715822623> __**Deaths:**__ ${deaths}      <:KD:490605628616867860> __**K/D:**__ ${kd}`)
+          .addField("Profile:", `${nickemoji} __**Nickname:**__ ${name} \n \n ${gif} __**Rank:**__ ${rank} \n \n${expemoji} __**Exp:**__ ${exp} \n \n${nextrankemoji} __**Next rank:**__ ${expleftcommas}xp \n \n${premiumemoji} __**Active Premium:**__ ${premium} \n \n${crysemoji} __**Crystals Obtained:**__ ${crys} \n \n${goldemoji} __**Golds Caught:**__ ${golds} \n \n${killsemoji} __**Kills:**__ ${kills}      ${deathemoji} __**Deaths:**__ ${deaths}      ${kdemoji} __**K/D:**__ ${kd}`)
         message.channel.send(sEmbed);}
 
 
