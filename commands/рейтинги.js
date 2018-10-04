@@ -2,14 +2,21 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 const weather = require('weather-js')
 const fs = require('fs')
-const prefix = '.'
+const prefix = '-'
 const owner = '321673115891531787'
 const request = require('request')
 
 exports.run = (client, message, args) => {
- 
+const nickemoji = `<:Nickname:490985268531298304>`
+const expemoji = `<:Exp:490604143195717632>`
+const nextrankemoji = `<:Arrow:490612308108902441>`
+const premiumemoji = `<:Premium:490264864053526537>`
+const crysemoji = `<:Crystals:490265165892157461>`
+const goldemoji = `<:Goldbox:490264893673439233>`
+const killsemoji = `<:Kills:490268704181977089> `
+const deathemoji = `<:Deaths:490268689715822623>`
+const kdemoji = `<:KD:490605628616867860>`
 
- 
  
  var content = message.content 
  var parts = content.split(" "); 
@@ -245,12 +252,13 @@ exports.run = (client, message, args) => {
             var rankimg = "https://imgur.com/qK6onnG.png"}
         
         var premium = 'да'
-          let aEmbed = new Discord.RichEmbed()
+        var gif = `<a:Premium_ranks:491698442729422851>`  
+        let aEmbed = new Discord.RichEmbed()
           .setTitle("Статистика для " + (body.response.name))
           .setColor('#FFFF00')
           .setThumbnail(rankimg)
           .setURL("http://ratings.tankionline.com/en/user/" + (body.response.name) + "/")
-          .addField("профиль:", `__**прозвище:**__ ${name} \n \n__**ранг:**__ ${rank} \n \n__**опыт:**__ ${exp} \n \n__**Следующий рейтинг:**__ ${expleftcommas}опыт \n \n__**Aктивный Премиум:**__ ${premium} \n \n__**Полученные кристаллы:**__ ${crys} \n \n__**пойманный Золото:**__ ${golds} \n \n__**убийств:**__ ${kills}      __**смертей:**__ ${deaths}      __**к / д:**__ ${kd}`)
+          .addField("профиль:", `${nickemoji} __**кличка:**__ ${name} \n \n ${gif} __**Ранг:**__ ${rank} \n \n${expemoji} __**опыт:**__ ${exp} \n \n${nextrankemoji} __**Следующий рейтинг:**__ ${expleftcommas}xp \n \n${premiumemoji} __**Aктивный Премиум:**__ ${premium} \n \n${crysemoji} __**Полученные кристаллы:**__ ${crys} \n \n${goldemoji} __**поймал золото:**__ ${golds} \n \n${killsemoji} __**Убийства:**__ ${kills}      ${deathemoji} __**смертей:**__ ${deaths}      ${kdemoji} __**к/д:**__ ${kd}`)
         message.channel.send(aEmbed);}
         
         
@@ -357,12 +365,13 @@ exports.run = (client, message, args) => {
         
         
         var premium = 'нет'
-          let sEmbed = new Discord.RichEmbed()
+        var gif = `<a:Ranks:491697106441207849>`  
+        let sEmbed = new Discord.RichEmbed()
           .setTitle("Статистика для " + (body.response.name))
           .setColor('#8F00FF')
           .setThumbnail(rankimg)
           .setURL("http://ratings.tankionline.com/en/user/" + (body.response.name) + "/")
-          .addField("профиль:", `__**кличка:**__ ${name} \n \n__**Ранг:**__ ${rank} \n \n__**опыт:**__ ${exp} \n \n__**Следующий рейтинг:**__ ${expleftcommas}опыт \n \n__**Aктивный Премиум:**__ ${premium} \n \n__**Полученные кристаллы:**__ ${crys} \n \n__**поймал золото:**__ ${golds} \n \n__**Убийства:**__ ${kills}      __**смертей:**__ ${deaths}      __**к / д:**__ ${kd}`)
+          .addField("профиль:", `${nickemoji} __**кличка:**__ ${name} \n \n ${gif} __**Ранг:**__ ${rank} \n \n${expemoji} __**опыт:**__ ${exp} \n \n${nextrankemoji} __**Следующий рейтинг:**__ ${expleftcommas}xp \n \n${premiumemoji} __**Aктивный Премиум:**__ ${premium} \n \n${crysemoji} __**Полученные кристаллы:**__ ${crys} \n \n${goldemoji} __**поймал золото:**__ ${golds} \n \n${killsemoji} __**Убийства:**__ ${kills}      ${deathemoji} __**смертей:**__ ${deaths}      ${kdemoji} __**к/д:**__ ${kd}`)
         message.channel.send(sEmbed);}
 
 
