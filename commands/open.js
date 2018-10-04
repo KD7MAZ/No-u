@@ -85,6 +85,7 @@ const crarity = Math.floor(Math.random() * 1000) + 1;
          .setTitle(`${message.author.username} opened a container`)
          .setColor("#696969")
          .setDescription(`You obtained the item : ${common}${paintname}${common}`)  
+         .setThumbnail(logo)
          .setImage(paintimg)
          .setFooter(`${message.author.username} got a ${rareity} item!`, message.author.displayAvatarURL)
      message.channel.send(embed)
