@@ -59,22 +59,22 @@ if(message.content.indexOf(prefix) !== 0) return;
       cmdCount += 1
     
     if (message.author.id == '198876820727267330')
-        return message.channel.send(`**:x: ${message.author} You are blacklisted you may not use commands from this bot!**`)      
+        return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)      
        
     if (message.author.id == '447658649758990349')
-        return message.channel.send(`**:x: ${message.author} You are blacklisted you may not use commands from this bot!**`)   
+        return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)   
      
     if (message.author.id == '376283876487593987')
-        return message.channel.send(`**:x: ${message.author} You are blacklisted you may not use commands from this bot!**`)     
+        return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)     
     
     if (message.author.id == '326366976853409803')
-        return message.channel.send(`**:x: ${message.author} You are blacklisted you may not use commands from this bot!**`)     
+        return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)     
         
     if (message.author.id == '380426456955617283')
-        return message.channel.send(`**:x: ${message.author} You are blacklisted you may not use commands from this bot!**`)     
+        return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)     
     
      if (message.author.id == '428305289817620481')
-                 return message.channel.send(`**:x: ${message.author} You are blacklisted you may not use commands from this bot!**`)   
+                 return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)   
         commandFile.run(bot, message, args);
       
     
