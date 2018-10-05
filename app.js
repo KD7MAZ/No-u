@@ -72,7 +72,10 @@ if(message.content.indexOf(prefix) !== 0) return;
         
     if (message.author.id == '380426456955617283')
         return message.channel.send(`**:x: ${message.author} You are blacklisted you may not use commands from this bot!**`)     
-    commandFile.run(bot, message, args);
+    
+     if (message.author.id == '428305289817620481')
+                 return message.channel.send(`**:x: ${message.author} You are blacklisted you may not use commands from this bot!**`)   
+        commandFile.run(bot, message, args);
       
     
     } catch (err) {
@@ -604,7 +607,7 @@ bot.on("message", async message => {
     if(message.author.bot) return;
 
 const swearWords = ["http", "https", "Http", "Https", "HTTP", "HTTPS", "HTtp", "HTtp", "HTTps", "HTTPs", "hTtp", "hTtps", "hTTp", "hTTps", "hTTP", "hTPPs", "hTTPS", "HtTp", "HtTps", "HtTP", "HtTPS"];
-if (message.author.id === `446364321681768459`) return;
+
 if (message.author.id === owner) return;
     if  (swearWords.some(word => message.content.includes(word)) ) {
         message.delete().catch(err => console.log(err));
