@@ -24,7 +24,7 @@ const kdemoji = `<:KD:490605628616867860>`
 
   if (message.content === '-рейтинги') return message.channel.send(`:x: ${message.author} Введите действительный псевдоним!`)
 
-   request('https://ratings.tankionline.com/api/eu/profile/?user=' + (username), { json: true }, (err, res, body) => {
+   request('https://ratings.tankionline.com/api/ru/profile/?user=' + (username), { json: true }, (err, res, body) => {
     
   
   
@@ -371,7 +371,7 @@ const kdemoji = `<:KD:490605628616867860>`
           .setColor('#8F00FF')
           .setThumbnail(rankimg)
           .setURL("http://ratings.tankionline.com/en/user/" + (body.response.name) + "/")
-          .addField("профиль:", `${nickemoji} __**кличка:**__ ${name} \n \n ${gif} __**Ранг:**__ ${rank} \n \n${expemoji} __**опыт:**__ ${exp} \n \n${nextrankemoji} __**Следующий рейтинг:**__ ${expleftcommas}xp \n \n${premiumemoji} __**Aктивный Премиум:**__ ${premium} \n \n${crysemoji} __**Полученные кристаллы:**__ ${crys} \n \n${goldemoji} __**поймал золото:**__ ${golds} \n \n${killsemoji} __**Убийства:**__ ${kills}      ${deathemoji} __**смертей:**__ ${deaths}      ${kdemoji} __**к/д:**__ ${kd}`)
+          .addField("профиль:", `${nickemoji} __**Ник:**__ ${name} \n \n ${gif} __**Ранг:**__ ${rank} \n \n${expemoji} __**опыт:**__ ${exp} \n \n${nextrankemoji} __**Следующее звание через:**__ ${expleftcommas}xp \n \n${premiumemoji} __**Aктивный Премиум:**__ ${premium} \n \n${crysemoji} __**Заработанные кристаллы:**__ ${crys} \n \n${goldemoji} __**поймал золото:**__ ${golds} \n \n${killsemoji} __**Уничтожил:**__ ${kills}      ${deathemoji} __**Подбит:**__ ${deaths}      ${kdemoji} __**У/П:**__ ${kd}`)
         message.channel.send(sEmbed);}
 
 
