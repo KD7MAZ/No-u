@@ -258,7 +258,7 @@ const kdemoji = `<:KD:490605628616867860>`
           .setColor('#FFFF00')
           .setThumbnail(rankimg)
           .setURL("http://ratings.tankionline.com/ru/user/" + (body.response.name) + "/")
-          .addField("Профиль:", `${nickemoji} __**Ник:**__ ${name} \n \n ${gif} __**Звание:**__ ${rank} \n \n${expemoji} __**Опыт:**__ ${exp} \n \n${nextrankemoji} __**Следующее звание через:**__ ${expleftcommas}xp \n \n${premiumemoji} __**Aктивный Премиум:**__ ${premium} \n \n${crysemoji} __**Заработано кристаллов**__ ${crys} \n \n${goldemoji} __**Поймано золотых ящиков:**__ ${golds} \n \n${killsemoji} __** Уничтожил:**__ ${kills}      ${deathemoji} __**Подбит:**__ ${deaths}      ${kdemoji} __**У/П:**__ ${kd}`)
+          .addField("Профиль:", `${nickemoji} __**Ник:**__ ${name} \n \n ${gif} __**Звание:**__ ${rank} \n \n${expemoji} __**Опыт:**__ ${exp} \n \n${nextrankemoji} __**Следующее звание через:**__ ${expleftcommas}xp \n \n${premiumemoji} __**Aктивный Премиум:**__ ${premium} \n \n${crysemoji} __**Заработано кристаллов:**__ ${crys} \n \n${goldemoji} __**Поймано золотых ящиков:**__ ${golds} \n \n${killsemoji} __** Уничтожил:**__ ${kills}      ${deathemoji} __**Подбит:**__ ${deaths}      ${kdemoji} __**У/П:**__ ${kd}`)
         message.channel.send(aEmbed);}
         
         
@@ -371,7 +371,7 @@ const kdemoji = `<:KD:490605628616867860>`
           .setColor('#8F00FF')
           .setThumbnail(rankimg)
           .setURL("http://ratings.tankionline.com/ru/user/" + (body.response.name) + "/")
-          .addField("Профиль:", `${nickemoji} __**Ник:**__ ${name} \n \n ${gif} __**Звание:**__ ${rank} \n \n${expemoji} __**Опыт:**__ ${exp} \n \n${nextrankemoji} __**Следующее звание через:**__ ${expleftcommas}xp \n \n${premiumemoji} __**Aктивный Премиум:**__ ${premium} \n \n${crysemoji} __**Заработано кристаллов**__ ${crys} \n \n${goldemoji} __**Поймано золотых ящиков:**__ ${golds} \n \n${killsemoji} __** Уничтожил:**__ ${kills}      ${deathemoji} __**Подбит:**__ ${deaths}      ${kdemoji} __**У/П:**__ ${kd}`)
+          .addField("Профиль:", `${nickemoji} __**Ник:**__ ${name} \n \n ${gif} __**Звание:**__ ${rank} \n \n${expemoji} __**Опыт:**__ ${exp} \n \n${nextrankemoji} __**Следующее звание через:**__ ${expleftcommas}xp \n \n${premiumemoji} __**Aктивный Премиум:**__ ${premium} \n \n${crysemoji} __**Заработано кристаллов:**__ ${crys} \n \n${goldemoji} __**Поймано золотых ящиков:**__ ${golds} \n \n${killsemoji} __** Уничтожил:**__ ${kills}      ${deathemoji} __**Подбит:**__ ${deaths}      ${kdemoji} __**У/П:**__ ${kd}`)
         message.channel.send(sEmbed);}
 
 
