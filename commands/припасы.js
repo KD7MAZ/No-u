@@ -16,8 +16,8 @@ exports.run = (client, message, args) => {
  var username = parts[1];
 
   if (message.content === '-припасы') {
-   message.channel.send(`<a:animatedx:482541818886750218> ${message.author} Введите действительный псевдоним!`) 
-    return message.react(`a:animatedx:482541818886750218`)
+   message.channel.send(`:x: ${message.author} Введите действительный псевдоним!`) 
+    return 
   }
   request('https://ratings.tankionline.com/api/eu/profile/?user=' + (username) + '&lang=ru', { json: true }, (err, res, body) => {
     
@@ -346,15 +346,15 @@ else if (body.response.suppliesUsage[6].name == "Батарея") {
             var rank = "Легенда"
             var rankimg = "https://imgur.com/qK6onnG.png"}
         
-        var premium = 'да'
+        var premium = 'Да'
           let aEmbed = new Discord.RichEmbed()
           .setTitle("Статистика для " + (body.response.name))
           .setColor('#FFFF00')
           .setThumbnail(rankimg)
           .setURL("http://ratings.tankionline.com/ru/user/" + (body.response.name) + "/")
-          .addField("профиль:", `__**Ник:**__ ${username} \n \n__**Ранг:**__ ${rank} \n__**Aктивный Премиум:**__ ${premium} \n \n__**Использованные припасы:**__ \n \n${emoji3} __**${name3}:**__ ${repairs.toLocaleString('en')} \n \n${emoji0} __**${name0}:**__ ${armour.toLocaleString('en')} \n \n${emoji1} __**${name1}:**__ ${damage.toLocaleString('en')} \n \n${emoji5} __**${name5}:**__ ${speed.toLocaleString('en')} \n \n${emoji2} __**${name2}:**__ ${mines.toLocaleString('en')} \n \n${emoji4} __**${name4}:**__ ${golds.toLocaleString('en')} \n \n${emoji6} __**${name6}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Всего использовано:**__ ${total.toLocaleString('en')}`)
+          .addField("профиль:", `__**Ник:**__ ${username} \n \n__**Звание:**__ ${rank} \n__**Aктивный Премиум:**__ ${premium} \n \n__**Использованные припасы:**__ \n \n${emoji3} __**${name3}:**__ ${repairs.toLocaleString('en')} \n \n${emoji0} __**${name0}:**__ ${armour.toLocaleString('en')} \n \n${emoji1} __**${name1}:**__ ${damage.toLocaleString('en')} \n \n${emoji5} __**${name5}:**__ ${speed.toLocaleString('en')} \n \n${emoji2} __**${name2}:**__ ${mines.toLocaleString('en')} \n \n${emoji4} __**${name4}:**__ ${golds.toLocaleString('en')} \n \n${emoji6} __**${name6}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Всего использовано:**__ ${total.toLocaleString('en')}`)
         message.channel.send(aEmbed);}
-        message.react(`a:animatedtick:482541833805627412`)
+        
             
         if ((body.response.hasPremium) == false) {
         
@@ -458,18 +458,18 @@ else if (body.response.suppliesUsage[6].name == "Батарея") {
                 var rankimg = "https://i.imgur.com/NahcZQ9.png"}
         
         
-        var premium = 'нет'
+        var premium = 'Нет'
           let sEmbed = new Discord.RichEmbed()
           .setTitle("Статистика для " + (body.response.name))
           .setColor('#8F00FF')
           .setThumbnail(rankimg)
           .setURL("http://ratings.tankionline.com/ru/user/" + (body.response.name) + "/")
-          .addField("профиль:", `__**Ник:**__ ${username} \n \n__**Ранг:**__ ${rank} \n__**Aктивный Премиум:**__ ${premium} \n \n__**Использованные припасы:**__ \n \n${emoji3} __**${name3}:**__ ${repairs.toLocaleString('en')} \n \n${emoji0} __**${name0}:**__ ${armour.toLocaleString('en')} \n \n${emoji1} __**${name1}:**__ ${damage.toLocaleString('en')} \n \n${emoji5} __**${name5}:**__ ${speed.toLocaleString('en')} \n \n${emoji2} __**${name2}:**__ ${mines.toLocaleString('en')} \n \n${emoji4} __**${name4}:**__ ${golds.toLocaleString('en')} \n \n${emoji6} __**${name6}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Всего использовано:**__ ${total.toLocaleString('en')}`)
+          .addField("профиль:", `__**Ник:**__ ${username} \n \n__**Звание:**__ ${rank} \n__**Aктивный Премиум:**__ ${premium} \n \n__**Использованные припасы:**__ \n \n${emoji3} __**${name3}:**__ ${repairs.toLocaleString('en')} \n \n${emoji0} __**${name0}:**__ ${armour.toLocaleString('en')} \n \n${emoji1} __**${name1}:**__ ${damage.toLocaleString('en')} \n \n${emoji5} __**${name5}:**__ ${speed.toLocaleString('en')} \n \n${emoji2} __**${name2}:**__ ${mines.toLocaleString('en')} \n \n${emoji4} __**${name4}:**__ ${golds.toLocaleString('en')} \n \n${emoji6} __**${name6}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Всего использовано:**__ ${total.toLocaleString('en')}`)
         message.channel.send(sEmbed);}
-        message.react(`a:animatedtick:482541833805627412`)
+        
 
   }  catch (err) {
     if (err) {
-    message.react(`a:animatedx:482541818886750218`)
+    
     message.channel.send(`<a:animatedx:482541818886750218> ${message.author} Игрок не найден!`); }
 }})};
