@@ -24,7 +24,7 @@ const kdemoji = `<:KD:490605628616867860>`
 
   if (message.content === '-рейтинги') return message.channel.send(`:x: ${message.author} Введите действительный псевдоним!`)
 
-   request('https://ratings.tankionline.com/api/en/profile/?user=' + (username), { json: true }, (err, res, body) => {
+   request('https://ratings.tankionline.com/api/eu/profile/?user=' + (username), { json: true }, (err, res, body) => {
     
   
   
@@ -257,8 +257,8 @@ const kdemoji = `<:KD:490605628616867860>`
           .setTitle("Статистика для " + (body.response.name))
           .setColor('#FFFF00')
           .setThumbnail(rankimg)
-          .setURL("http://ratings.tankionline.com/en/user/" + (body.response.name) + "/")
-          .addField("профиль:", `${nickemoji} __**кличка:**__ ${name} \n \n ${gif} __**Ранг:**__ ${rank} \n \n${expemoji} __**опыт:**__ ${exp} \n \n${nextrankemoji} __**Следующий рейтинг:**__ ${expleftcommas}xp \n \n${premiumemoji} __**Aктивный Премиум:**__ ${premium} \n \n${crysemoji} __**Полученные кристаллы:**__ ${crys} \n \n${goldemoji} __**поймал золото:**__ ${golds} \n \n${killsemoji} __**Убийства:**__ ${kills}      ${deathemoji} __**смертей:**__ ${deaths}      ${kdemoji} __**к/д:**__ ${kd}`)
+          .setURL("http://ratings.tankionline.com/ru/user/" + (body.response.name) + "/")
+          .addField("Профиль:", `${nickemoji} __**Ник:**__ ${name} \n \n ${gif} __**Звание:**__ ${rank} \n \n${expemoji} __**Опыт:**__ ${exp} \n \n${nextrankemoji} __**Следующее звание через:**__ ${expleftcommas}xp \n \n${premiumemoji} __**Aктивный Премиум:**__ ${premium} \n \n${crysemoji} __**Заработано кристаллов**__ ${crys} \n \n${goldemoji} __**Поймано золотых ящиков:**__ ${golds} \n \n${killsemoji} __** Уничтожил:**__ ${kills}      ${deathemoji} __**Подбит:**__ ${deaths}      ${kdemoji} __**У/П:**__ ${kd}`)
         message.channel.send(aEmbed);}
         
         
@@ -364,14 +364,14 @@ const kdemoji = `<:KD:490605628616867860>`
             var rankimg = "https://i.imgur.com/NahcZQ9.png"}
         
         
-        var premium = 'нет'
+        var premium = 'Нет'
         var gif = `<a:Ranks:491697106441207849>`  
         let sEmbed = new Discord.RichEmbed()
           .setTitle("Статистика для " + (body.response.name))
           .setColor('#8F00FF')
           .setThumbnail(rankimg)
-          .setURL("http://ratings.tankionline.com/en/user/" + (body.response.name) + "/")
-          .addField("профиль:", `${nickemoji} __**Ник:**__ ${name} \n \n ${gif} __**Ранг:**__ ${rank} \n \n${expemoji} __**опыт:**__ ${exp} \n \n${nextrankemoji} __**Следующее звание через:**__ ${expleftcommas}xp \n \n${premiumemoji} __**Aктивный Премиум:**__ ${premium} \n \n${crysemoji} __**Заработанные кристаллы:**__ ${crys} \n \n${goldemoji} __**поймал золото:**__ ${golds} \n \n${killsemoji} __**Уничтожил:**__ ${kills}      ${deathemoji} __**Подбит:**__ ${deaths}      ${kdemoji} __**У/П:**__ ${kd}`)
+          .setURL("http://ratings.tankionline.com/ru/user/" + (body.response.name) + "/")
+          .addField("Профиль:", `${nickemoji} __**Ник:**__ ${name} \n \n ${gif} __**Звание:**__ ${rank} \n \n${expemoji} __**Опыт:**__ ${exp} \n \n${nextrankemoji} __**Следующее звание через:**__ ${expleftcommas}xp \n \n${premiumemoji} __**Aктивный Премиум:**__ ${premium} \n \n${crysemoji} __**Заработано кристаллов**__ ${crys} \n \n${goldemoji} __**Поймано золотых ящиков:**__ ${golds} \n \n${killsemoji} __** Уничтожил:**__ ${kills}      ${deathemoji} __**Подбит:**__ ${deaths}      ${kdemoji} __**У/П:**__ ${kd}`)
         message.channel.send(sEmbed);}
 
 
