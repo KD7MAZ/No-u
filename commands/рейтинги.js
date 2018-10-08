@@ -24,7 +24,7 @@ const kdemoji = `<:KD:490605628616867860>`
 
   if (message.content === '-рейтинги') return message.channel.send(`:x: ${message.author} Введите действительный псевдоним!`)
 
-   request('https://ratings.tankionline.com/api/ru/profile/?user=' + (username), { json: true }, (err, res, body) => {
+   request('https://ratings.tankionline.com/api/en/profile/?user=' + (username), { json: true }, (err, res, body) => {
     
   
   
