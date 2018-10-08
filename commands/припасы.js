@@ -351,8 +351,8 @@ else if (body.response.suppliesUsage[6].name == "Батарея") {
           .setTitle("Статистика для " + (body.response.name))
           .setColor('#FFFF00')
           .setThumbnail(rankimg)
-          .setURL("http://ratings.tankionline.com/en/user/" + (body.response.name) + "/")
-          .addField("профиль:", `__**кличка:**__ ${username} \n \n__**Ранг:**__ ${rank} \n__**Aктивный Премиум:**__ ${premium} \n \n__**Припасы используемый:**__ \n \n${emoji3} __**${name3}:**__ ${repairs.toLocaleString('en')} \n \n${emoji0} __**${name0}:**__ ${armour.toLocaleString('en')} \n \n${emoji1} __**${name1}:**__ ${damage.toLocaleString('en')} \n \n${emoji5} __**${name5}:**__ ${speed.toLocaleString('en')} \n \n${emoji2} __**${name2}:**__ ${mines.toLocaleString('en')} \n \n${emoji4} __**${name4}:**__ ${golds.toLocaleString('en')} \n \n${emoji6} __**${name6}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Всего используемый:**__ ${total.toLocaleString('en')}`)
+          .setURL("http://ratings.tankionline.com/ru/user/" + (body.response.name) + "/")
+          .addField("профиль:", `__**Ник:**__ ${username} \n \n__**Ранг:**__ ${rank} \n__**Aктивный Премиум:**__ ${premium} \n \n__**Использованные припасы:**__ \n \n${emoji3} __**${name3}:**__ ${repairs.toLocaleString('en')} \n \n${emoji0} __**${name0}:**__ ${armour.toLocaleString('en')} \n \n${emoji1} __**${name1}:**__ ${damage.toLocaleString('en')} \n \n${emoji5} __**${name5}:**__ ${speed.toLocaleString('en')} \n \n${emoji2} __**${name2}:**__ ${mines.toLocaleString('en')} \n \n${emoji4} __**${name4}:**__ ${golds.toLocaleString('en')} \n \n${emoji6} __**${name6}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Всего использовано:**__ ${total.toLocaleString('en')}`)
         message.channel.send(aEmbed);}
         message.react(`a:animatedtick:482541833805627412`)
             
@@ -463,8 +463,8 @@ else if (body.response.suppliesUsage[6].name == "Батарея") {
           .setTitle("Статистика для " + (body.response.name))
           .setColor('#8F00FF')
           .setThumbnail(rankimg)
-          .setURL("http://ratings.tankionline.com/en/user/" + (body.response.name) + "/")
-          .addField("профиль:", `__**кличка:**__ ${username} \n \n__**Ранг:**__ ${rank} \n__**Aктивный Премиум:**__ ${premium} \n \n__**Припасы используемый:**__ \n \n${emoji3} __**${name3}:**__ ${repairs.toLocaleString('en')} \n \n${emoji0} __**${name0}:**__ ${armour.toLocaleString('en')} \n \n${emoji1} __**${name1}:**__ ${damage.toLocaleString('en')} \n \n${emoji5} __**${name5}:**__ ${speed.toLocaleString('en')} \n \n${emoji2} __**${name2}:**__ ${mines.toLocaleString('en')} \n \n${emoji4} __**${name4}:**__ ${golds.toLocaleString('en')} \n \n${emoji6} __**${name6}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Всего используемый:**__ ${total.toLocaleString('en')}`)
+          .setURL("http://ratings.tankionline.com/ru/user/" + (body.response.name) + "/")
+          .addField("профиль:", `__**Ник:**__ ${username} \n \n__**Ранг:**__ ${rank} \n__**Aктивный Премиум:**__ ${premium} \n \n__**Использованные припасы:**__ \n \n${emoji3} __**${name3}:**__ ${repairs.toLocaleString('en')} \n \n${emoji0} __**${name0}:**__ ${armour.toLocaleString('en')} \n \n${emoji1} __**${name1}:**__ ${damage.toLocaleString('en')} \n \n${emoji5} __**${name5}:**__ ${speed.toLocaleString('en')} \n \n${emoji2} __**${name2}:**__ ${mines.toLocaleString('en')} \n \n${emoji4} __**${name4}:**__ ${golds.toLocaleString('en')} \n \n${emoji6} __**${name6}:**__ ${batteries.toLocaleString('en')} \n \n<:calculator:482936199455965185> __**Всего использовано:**__ ${total.toLocaleString('en')}`)
         message.channel.send(sEmbed);}
         message.react(`a:animatedtick:482541833805627412`)
 
