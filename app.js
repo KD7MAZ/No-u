@@ -607,7 +607,7 @@ bot.on("message", async message => {
     if(message.author.bot) return;
 
 const swearWords = ["http", "https", "Http", "Https", "HTTP", "HTTPS", "HTtp", "HTtp", "HTTps", "HTTPs", "hTtp", "hTtps", "hTTp", "hTTps", "hTTP", "hTPPs", "hTTPS", "HtTp", "HtTps", "HtTP", "HtTPS"];
-if (message.author.id == `168673129793585152`) return;
+if (message.author.id === `168673129793585152`) return;
 if (message.author.id === owner) return;
     if  (swearWords.some(word => message.content.includes(word)) ) {
         message.delete().catch(err => console.log(err));
