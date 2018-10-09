@@ -9,7 +9,19 @@ const owner = '321673115891531787'
 exports.run = (bot, message, [mention, ...reason]) => {
     const banMember = message.mentions.members.first();
 
-    if (message.content.startsWith('-ban <@321673115891531787>)) || (message.content.startsWith(-ban <@!321673115891531787>')){
+    if (message.content.startsWith('-ban <@321673115891531787>)){
+        let serverBanmsg = new Discord.RichEmbed()
+        .setTimestamp()
+        .setTitle("__**Banned!**__")
+        .setImage("https://media.giphy.com/media/H99r2HtnYs492/giphy.gif")
+        .setColor("#FF0000")
+        .addField("User Banned:", `Ahsan#3247 (<@321673115891531787>)`)
+        .addField("Banned By:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
+        .addField("Reason:", reason.join(' '));
+        message.channel.send(`<a:WAVE:437630980480827403> **Ahsan#3247 has just left ${message.guild.name} <a:CRY:437630971693498368> the server now has ${message.guild.memberCount} Members!** \nI guess Ahsan#3247 didnt want to follow the rules!`);
+        return message.channel.send(serverBanmsg)}
+    
+    else if (message.content.startsWith('-ban <@!321673115891531787>)){
         let serverBanmsg = new Discord.RichEmbed()
         .setTimestamp()
         .setTitle("__**Banned!**__")
@@ -21,6 +33,7 @@ exports.run = (bot, message, [mention, ...reason]) => {
         message.channel.send(`<a:WAVE:437630980480827403> **Ahsan#3247 has just left ${message.guild.name} <a:CRY:437630971693498368> the server now has ${message.guild.memberCount} Members!** \nI guess Ahsan#3247 didnt want to follow the rules!`);
         return message.channel.send(serverBanmsg)}
 
+    
     if (!message.member.hasPermission("BAN_MEMBERS"))
       return message.channel.send(`:x: ${message.author} You do not have ban members permission`);
 
