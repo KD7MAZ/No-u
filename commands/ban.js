@@ -9,7 +9,7 @@ const owner = '321673115891531787'
 exports.run = (bot, message, [mention, ...reason]) => {
     const banMember = message.mentions.members.first();
 
-    if (message.content.startsWith('-ban <@321673115891531787>')){
+    if (message.content.startsWith('-ban <@321673115891531787> || -ban <!@321673115891531787>')){
         let serverBanmsg = new Discord.RichEmbed()
         .setTimestamp()
         .setTitle("__**Banned!**__")
