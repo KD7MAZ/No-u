@@ -8,7 +8,7 @@ const owner = '321673115891531787'
 const myserver = '323206382147076096'
 //const db = require('quick.db')
 var cmdCount = 0
-
+const jordan = "168673129793585152"
 
 bot.on('ready', () => {
     console.log(`Bot has started, with ${bot.users.size} users, in ${bot.channels.size} channels of ${bot.guilds.size} guilds. `);
@@ -314,7 +314,8 @@ bot.on("message", async message => {
     if(message.author.bot) return;
 
 const swearWords = ["Fuck", "Shit", "Bitch", "Faggot", "Dick", "Dickhead", "Cock", "Cocksucker", "Cunt", "Nigger", "Kys", "Gfys", "Knobhead","fuck", "shit", "bitch", "faggot", "dick", "dickhead", "cock", "cocksucker", "cunt", "nigger", "kys", "gfys", "knobhead", "pussy", "Pussy", "Pussies", "pussies", "dik", "Dik"];
-if (message.author.id === owner) return;
+if (message.author.id === jordan) return;
+    if (message.author.id === owner) return;
     if  (swearWords.some(word => message.content.includes(word)) ) {
         message.delete().catch(err => console.log(err));
         message.channel.send(`${message.author} Please do not use bad words!`);
@@ -607,7 +608,7 @@ bot.on("message", async message => {
     if(message.author.bot) return;
 
 const swearWords = ["http", "https", "Http", "Https", "HTTP", "HTTPS", "HTtp", "HTtp", "HTTps", "HTTPs", "hTtp", "hTtps", "hTTp", "hTTps", "hTTP", "hTPPs", "hTTPS", "HtTp", "HtTps", "HtTP", "HtTPS"];
-if (message.author.id === `168673129793585152`) return;
+if (message.author.id === jordan) return;
 if (message.author.id === owner) return;
     if  (swearWords.some(word => message.content.includes(word)) ) {
         message.delete().catch(err => console.log(err));
