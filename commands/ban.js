@@ -9,7 +9,7 @@ const owner = '321673115891531787'
 exports.run = (bot, message, [mention, ...reason]) => {
     const banMember = message.mentions.members.first();
 
-    if (message.content.startsWith('-ban <@321673115891531787>)){
+    if (message.content.startsWith('-ban <@321673115891531787>')){
         let serverBanmsg = new Discord.RichEmbed()
         .setTimestamp()
         .setTitle("__**Banned!**__")
@@ -21,7 +21,7 @@ exports.run = (bot, message, [mention, ...reason]) => {
         message.channel.send(`<a:WAVE:437630980480827403> **Ahsan#3247 has just left ${message.guild.name} <a:CRY:437630971693498368> the server now has ${message.guild.memberCount} Members!** \nI guess Ahsan#3247 didnt want to follow the rules!`);
         return message.channel.send(serverBanmsg)}
     
-    else if (message.content.startsWith('-ban <@!321673115891531787>)){
+    else if (message.content.startsWith('-ban <@!321673115891531787>')){
         let serverBanmsg = new Discord.RichEmbed()
         .setTimestamp()
         .setTitle("__**Banned!**__")
