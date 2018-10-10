@@ -73,8 +73,6 @@ if(message.content.indexOf(prefix) !== 0) return;
     if (message.author.id == '380426456955617283')
         return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)     
     
-     if (message.author.id == '428305289817620481')
-                 return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)   
         commandFile.run(bot, message, args);
       
     
