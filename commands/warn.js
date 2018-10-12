@@ -7,7 +7,7 @@ const owner = '321673115891531787'
 
 
 exports.run = (bot, message, [mention, ...reason]) => {
-
+  const warnedMember = message.guild.member(message.mentions.users.first());
     const warnRole = message.guild.roles.find("name", "Warned");
 
     if (!warnRole)
@@ -15,18 +15,31 @@ exports.run = (bot, message, [mention, ...reason]) => {
 
     if (!message.member.hasPermission("MANAGE_MESSAGES"))
       return message.channel.send(`${message.author} You do not have manage messages permission`);
-
-    if (message.mentions.members.size === 0)
-      return message.channel.send(`${message.author} Please mention a valid user to warn`);
-  
+      
+    if (message.mentions.members.size === 0){
+        let Incorrect = new Discord.RichEmbed()
+        .setTimestamp()
+        .setTitle("__**Incorrect Usage**__")
+        .setColor("#00FFFF")
+        .setDescription(`**Description:** Warns a member in the server \n**Usage:** -warn ➡<user>⬅ ➡{reason}⬅ \n**Examples:** \n-warn @Ahsan No u \n-warn @Ahsan Why are u a noob\n-warn @Ahsan Spamming too much \n-warn @Ahsan Advertising via dms \n**Error:** Did not specify a user to warn nor a reason`)
+      return message.channel.send(Incorrect);}
+    
+      if (reason.length == 0) {
+        let Incorrect = new Discord.RichEmbed()
+        .setTimestamp()
+        .setTitle("__**Incorrect Usage**__")
+        .setColor("#00FFFF")
+        .setDescription(`**Description:** Warns a member in the server \n**Usage:** -warn <user> ➡{reason}⬅ \n**Examples:** \n-warn @Ahsan No u \n-warn @Ahsan Why are u a noob\n-warn @Ahsan Spamming too much \n-warn @Ahsan Advertising via dms \n**Error:** Did not specify a user to warn nor a reason`)
+      return message.channel.send(Incorrect);}
     if (message.content.startsWith('-warn <@321673115891531787>'))
-       return message.channel.send(`${message.author} Lol you thought i was gonna warn my own maker, nah m8`)    
+       return message.channel.send(`${message.author} i can not warn a God, sorry.`)    
+    if (message.content.startsWith('-warn <@!321673115891531787>'))
+       return message.channel.send(`${message.author} i can not warn a God, sorry.`)    
        
     if (message.author.id == message.mentions.users.first()) 
        return message.channel.send(`${message.author} You cannot do that to yourself, why did you try?`);
    
        message.delete()
-      const warnedMember = message.guild.member(message.mentions.users.first());
     warnedMember.addRole(warnRole).then(member => {
     let serverwarnedmsg = new Discord.RichEmbed()
         .setTimestamp()
@@ -37,25 +50,26 @@ exports.run = (bot, message, [mention, ...reason]) => {
         .addField("Reason:", reason.join(' '));
      message.channel.send(serverwarnedmsg);
     
-   const chanCheck = message.guild.channels.find("name", "logs");
-    if(!chanCheck) 
+ 
+   let warnedMsg = new Discord.RichEmbed()
+   .setTimestamp()
+   .setTitle("__**Warned!**__")
+   .setColor("#00FFFF")
+   .addField("Warned In:", `${message.guild.name}`)
+   .addField("Warned By:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
+   .addField("Reason:", reason.join(' '));
+  warnedMember.send(warnedMsg);
+
+  });
+const chanCheck = message.guild.channels.find("name", "logs");
+if(!chanCheck) 
       return
     let logsMsg = new Discord.RichEmbed()
             .setTimestamp()
             .setTitle("__**Warned!**__")
             .setColor("#00FFFF")
-            .addField("User Warned:", `${member.user.username}#${member.user.discriminator} (${member.user})`)
+            .addField("User Warned:", `${warnedMember.user.username}#${warnedMember.user.discriminator} (${warnedMember.user})`)
             .addField("Warned By:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
             .addField("Reason:", reason.join(' '));
     chanCheck.send(logsMsg);
-    });
-  let warnedMsg = new Discord.RichEmbed()
-    .setTimestamp()
-    .setTitle("__**Warned!**__")
-    .setColor("#00FFFF")
-    .addField("Warned In:", `${message.guild.name}`)
-    .addField("Warned By:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
-    .addField("Reason:", reason.join(' '));
-   warnedMember.send(warnedMsg);
-
-};
+}
