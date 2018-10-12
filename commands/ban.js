@@ -5,66 +5,77 @@ const fs = require('fs')
 const prefix = '-'
 const owner = '321673115891531787'
 
+
 exports.run = (bot, message, [mention, ...reason]) => {
-    const unmuteMember = message.mentions.members.first();
-    const muteRole = message.guild.roles.find("name", "Muted");
+    const banMember = message.mentions.members.first();
+    if (message.mentions.members.size === 0){
+      let Incorrect = new Discord.RichEmbed()
+      .setTimestamp()
+      .setTitle("__**Incorrect Usage**__")
+      .setColor("#FFFF00")
+      .setDescription(`**Description:** Bans a member from the server \n**Usage:** -ban ➡<user>⬅ ➡{reason}⬅ \n**Examples:** \n-ban @Ahsan No u \n-ban @Ahsan Why are u a noob \n-ban @Ahsan Spamming too much \n-ban @Ahsan Advertising via dms\n**Error:** Did not specify a user to ban nor a reason`)
+      return message.channel.send(Incorrect);}
    
-
-    if (!message.member.hasPermission("MANAGE_MESSAGES"))
-      return message.channel.send(`:x: ${message.author} You do not have manage messages permission`);
-      
-    if (message.member.roles.has(!muteRole.id))
-      return message.channel.send(`:x: ${message.author} That user isnt muted!`)
-
-      if (message.mentions.members.size === 0){
-        let Incorrect = new Discord.RichEmbed()
-        .setTimestamp()
-        .setTitle("__**Incorrect Usage**__")
-        .setColor("#FF0000")
-        .setDescription(`**Description:** Unmutes a member in the server \n**Usage:** -unwarn ➡<user>⬅ ➡{reason}⬅ \n**Examples:** \n-unmute @Ahsan No u \n-unwarn @Ahsan Why are u a noob \n-uwarn @Ahsan Spamming my dms \n-ban @Ahsan Not advertising  \n**Error:** Did not specify a user to unmute nor a reason`)
-      return message.channel.send(Incorrect);}
-    
-        if (reason.length == 0) {
-        let Incorrect = new Discord.RichEmbed()
-        .setTimestamp()
-        .setTitle("__**Incorrect Usage**__")
-        .setColor("#FF0000")
-        .setDescription(`**Description:** Unmutes a member in the server \n**Usage:** -unwarn <user> ➡{reason}⬅ \n**Examples:** \n-unmute @Ahsan No u \n-unwarn @Ahsan Why are u a noob \n-uwarn @Ahsan Spamming my dms \n-ban @Ahsan Not advertising  \n**Error:** Did not specify a reason`)
-      return message.channel.send(Incorrect);}
-    
-    message.delete()
-    unmuteMember.removeRole(muteRole).then(member => {
-        
-        let serverunmutedmsg = new Discord.RichEmbed()
-        .setTimestamp()
-        .setTitle("__**Unmuted!**__")
-        .setColor("#00FF00")
-        .addField("User Unmuted:", `${member.user.username}#${member.user.discriminator} (${member.user})`)
-        .addField("Unmuted By:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
-        .addField("Reason:", reason.join(' '));
-     message.channel.send(serverunmutedmsg);
-        
-  let unmutedMsg = new Discord.RichEmbed()
+    if (reason.length == 0) {
+    let Incorrect = new Discord.RichEmbed()
     .setTimestamp()
-    .setTitle("__**Unmuted!**__")
-    .setColor("#00FF00")
-    .addField("Unmuted In:", `${message.guild.name}`)
-    .addField("Unmuted By:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
-    .addField("Reason:", reason.join(' '));
-    unmuteMember.send(unmutedMsg);
+    .setTitle("__**Incorrect Usage**__")
+    .setColor("#FF0000")
+    .setDescription(`**Description:** Bans a member from the server \n**Usage:** -ban <user> ➡{reason}⬅ \n**Examples:** \n-ban @Ahsan No u \n-ban @Ahsan Why are u a noob \n-ban @Ahsan Spamming too much \n-ban @Ahsan Advertising via dms\n**Error:** Did not specify a reason`)
+  return message.channel.send(Incorrect);}
+  
+    if (message.author.id == message.mentions.users.first()) 
+      return message.channel.send(`:x: ${message.author} You cannot do that to yourself, why did you try?`);
+    
 
-  const chanCheck = message.guild.channels.find("name", "logs");
-  if(!chanCheck) 
-    return
-    let logsMsg = new Discord.RichEmbed()
-            .setTimestamp()
-            .setTitle("__**Unmuted!**__")
-            .setColor("#00FF00")
-            .addField("User Unmuted:", `${member.user.username}#${member.user.discriminator} (${member.user})`)
-            .addField("Unmuted By:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
-            .addField("Reason:", reason.join(' '));
-    chanCheck.send(logsMsg);
-  });
+
+      message.delete()
+      const ahsanbanMsgemBed = new Discord.RichEmbed()
+      .setTimestamp()
+      .setTitle("__**Banned!**__")
+      .setImage("https://media.giphy.com/media/H99r2HtnYs492/giphy.gif")
+      .setColor("#FF0000")
+      .addField("User Banned:", `Ahsan#3247 (<@321673115891531787>)`)
+      .addField("Banned By:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
+      .addField("Reason:", reason.join(' '));
+      message.channel.send(`<a:WAVE:437630980480827403> **Ahsan#3247 has just left ${message.guild.name} :CRY: the server now has ${message.guild.memberCount} Members!** \nI guess Ahsan#3247 didnt want to follow the rules!`);
+if (message.content.startsWith('-ban <@321673115891531787>')){
+  return message.channel.send(ahsanbanMsgemBed)}
+else if (message.content.startsWith('-ban <@!321673115891531787>')){
+  return message.channel.send(ahsanbanMsgemBed)}
+    banMember.ban(reason.join(" ")).then(member => {
+     let serverBanmsg = new Discord.RichEmbed()
+        .setTimestamp()
+        .setTitle("__**Banned!**__")
+        .setImage("https://media.giphy.com/media/H99r2HtnYs492/giphy.gif")
+        .setColor("#FF0000")
+        .addField("User Banned:", `${member.user.username}#${member.user.discriminator} (${member.user})`)
+        .addField("Banned By:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
+        .addField("Reason:", reason.join(' '));
+     message.channel.send(serverBanmsg );
+   
+     const chanCheck = message.guild.channels.find("name", "logs");
+  let bannedMsg = new Discord.RichEmbed()
+    .setTimestamp()
+    .setImage("https://media.giphy.com/media/H99r2HtnYs492/giphy.gif")
+    .setTitle("__**Banned!**__")
+    .setColor("#FF0000")
+    .addField("Banned From:", `${message.guild.name}`)
+    .addField("Banned By:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
+    .addField("Reason:", reason.join(' '));
+   banMember.send(bannedMsg);
+   if(!chanCheck) 
+   return;
+ let logsMsg = new Discord.RichEmbed()
+         .setTimestamp()
+         .setTitle("__**Banned!**__")
+         .setColor("FF0000")
+         .addField("User Banned:", `${member.user.username}#${member.user.discriminator} (${member.user})`)
+         .addField("Banned By:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
+         .addField("Reason:", reason.join(' '));
+ chanCheck.send(logsMsg);
+});
+
 
 
 
