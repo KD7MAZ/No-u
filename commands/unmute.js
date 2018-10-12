@@ -6,7 +6,7 @@ const prefix = '-'
 const owner = '321673115891531787'
 
 exports.run = (bot, message, [mention, ...reason]) => {
-    message.delete()
+    const unmuteMember = message.mentions.members.first();
     const muteRole = message.guild.roles.find("name", "Muted");
    
 
@@ -16,12 +16,25 @@ exports.run = (bot, message, [mention, ...reason]) => {
     if (message.member.roles.has(!muteRole.id))
       return message.channel.send(`:x: ${message.author} That user isnt muted!`)
 
-    if (message.mentions.members.size === 0)
-      return message.channel.send(`:x: ${message.author} Please mention a valid user to unmute`);
-  
-    const unmuteMember = message.mentions.members.first();
+      if (message.mentions.members.size === 0){
+        let Incorrect = new Discord.RichEmbed()
+        .setTimestamp()
+        .setTitle("__**Incorrect Usage**__")
+        .setColor("#FF0000")
+        .setDescription(`**Description:** Unmutes a member in the server \n**Usage:** -unwarn ➡<user>⬅ ➡{reason}⬅ \n**Examples:** \n-unmute @Ahsan No u \n-unmute @Ahsan Why are u a noob \n-unmute @Ahsan Spamming my dms \n-unmute @Ahsan Not advertising  \n**Error:** Did not specify a user to unmute nor a reason`)
+      return message.channel.send(Incorrect);}
     
+        if (reason.length == 0) {
+        let Incorrect = new Discord.RichEmbed()
+        .setTimestamp()
+        .setTitle("__**Incorrect Usage**__")
+        .setColor("#FF0000")
+        .setDescription(`**Description:** Unmutes a member in the server \n**Usage:** -unwarn <user> ➡{reason}⬅ \n**Examples:** \n-unmute @Ahsan No u \n-unmute @Ahsan Why are u a noob \n-unmute @Ahsan Spamming my dms \n-unmute @Ahsan Not advertising  \n**Error:** Did not specify a reason`)
+      return message.channel.send(Incorrect);}
+    
+    message.delete()
     unmuteMember.removeRole(muteRole).then(member => {
+        
         let serverunmutedmsg = new Discord.RichEmbed()
         .setTimestamp()
         .setTitle("__**Unmuted!**__")
@@ -56,5 +69,3 @@ exports.run = (bot, message, [mention, ...reason]) => {
 
 
 };
-
-
