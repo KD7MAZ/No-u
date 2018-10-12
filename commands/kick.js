@@ -43,7 +43,7 @@ exports.run = (bot, message, [mention, ...reason]) => {
         .setTimestamp()
         .setTitle("__**Incorrect Usage**__")
         .setColor("#FFFF00")
-        .setDescription(`**Description:** Kicks a member from the server \n**Usage:** -kick ➡<user>⬅ ➡{reason}⬅ \n**Examples:** \n-kick @Ahsan No u \n-kick @Ahsan Why are u a noob \n**Error:** Did not specify a user to kick nor a reason`)
+        .setDescription(`**Description:** Kicks a member from the server \n**Usage:** -kick ➡<user>⬅ ➡{reason}⬅ \n**Examples:** \n**Examples:** \n-kick @Ahsan No u \n-kick @Ahsan Why are u a noob\n-kick @Ahsan Spamming too much \n-kick @Ahsan Advertising via dms \n**Error:** Did not specify a user to kick nor a reason`)
       return message.channel.send(Incorrect);}
     
         if (reason.length == 0) {
@@ -51,7 +51,7 @@ exports.run = (bot, message, [mention, ...reason]) => {
         .setTimestamp()
         .setTitle("__**Incorrect Usage**__")
         .setColor("#FFFF00")
-        .setDescription(`**Description:** Kicks a member from the server \n**Usage:** -kick <user> ➡{reason}⬅ \n**Examples:** \n-kick @Ahsan No u \n-kick @Ahsan Why are u a noob \n**Error:** Did not specify a reason`)
+        .setDescription(`**Description:** Kicks a member from the server \n**Usage:** -kick <user> ➡{reason}⬅ \n**Examples:** \n**Examples:** \n-kick @Ahsan No u \n-kick @Ahsan Why are u a noob\n-kick @Ahsan Spamming too much \n-kick @Ahsan Advertising via dms \n**Error:** Did not specify a user to kick nor a reason`)
       return message.channel.send(Incorrect);}
       
   
