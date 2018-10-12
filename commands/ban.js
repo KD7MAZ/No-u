@@ -42,7 +42,7 @@ exports.run = (bot, message, [mention, ...reason]) => {
     .setTimestamp()
     .setTitle("__**Incorrect Usage**__")
     .setColor("#FF0000")
-    .setDescription(`**Description:** Bans a member from the server \n**Usage:** -ban ➡<user>⬅ ➡{reason}⬅ \n**Examples:** \n-ban @Ahsan No u \n-ban @Ahsan Why are u a noob \n**Error:** Did not specify a user to ban nor a reason`)
+    .setDescription(`**Description:** Bans a member from the server \n**Usage:** -ban ➡<user>⬅ ➡{reason}⬅ \n**Examples:** \n-ban @Ahsan No u \n-ban @Ahsan Why are u a noob \n-ban @Ahsan Spamming too much \n-ban @Ahsan Advertising via dms \n**Error:** Did not specify a user to ban nor a reason`)
   return message.channel.send(Incorrect);}
 
     if (reason.length == 0) {
@@ -50,7 +50,7 @@ exports.run = (bot, message, [mention, ...reason]) => {
     .setTimestamp()
     .setTitle("__**Incorrect Usage**__")
     .setColor("#FF0000")
-    .setDescription(`**Description:** Bans a member from the server \n**Usage:** -ban <user> ➡{reason}⬅ \n**Examples:** \n-ban @Ahsan No u \n-ban @Ahsan Why are u a noob \n**Error:** Did not specify a reason`)
+    .setDescription(`**Description:** Bans a member from the server \n**Usage:** -ban <user> ➡{reason}⬅ \n**Examples:** \n-ban @Ahsan No u \n-ban @Ahsan Why are u a noob \n-ban @Ahsan Spamming too much \n-ban @Ahsan Advertising via dms \n**Error:** Did not specify a user to ban nor a reason`)
   return message.channel.send(Incorrect);}
   
     if (message.author.id == message.mentions.users.first()) 
