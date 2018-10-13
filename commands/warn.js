@@ -21,7 +21,7 @@ exports.run = (bot, message, [mention, ...reason]) => {
         .setTimestamp()
         .setTitle("__**Incorrect Usage**__")
         .setColor("#00FFFF")
-        .setDescription(`**Description:** Warns a member in the server \n**Usage:** -warn ➡<user>⬅ ➡{reason}⬅ \n**Examples:** \n-warn @Ahsan No u \n-warn @Ahsan Why are u a noob\n-warn @Ahsan Spamming too much \n-warn @Ahsan Advertising via dms \n**Error:** Did not specify a user to warn nor a reason`)
+        .setDescription(`**Description:** Warns a member in the server \n**Usage:** ` + prefix + `warn ➡<user>⬅ ➡[reason]⬅ \n**Examples:** \n` + prefix + `warn @Ahsan No u \n` + prefix + `warn @Ahsan Why are u a noob\n` + prefix + `warn @Ahsan Spamming too much \n` + prefix + `warn @Ahsan Advertising via dms \n**Error:** Did not specify a user to warn nor a reason`)
       return message.channel.send(Incorrect);}
     
       if (reason.length == 0) {
@@ -29,11 +29,11 @@ exports.run = (bot, message, [mention, ...reason]) => {
         .setTimestamp()
         .setTitle("__**Incorrect Usage**__")
         .setColor("#00FFFF")
-        .setDescription(`**Description:** Warns a member in the server \n**Usage:** -warn <user> ➡{reason}⬅ \n**Examples:** \n-warn @Ahsan No u \n-warn @Ahsan Why are u a noob\n-warn @Ahsan Spamming too much \n-warn @Ahsan Advertising via dms \n**Error:** Did not specify a user to warn nor a reason`)
+        .setDescription(`**Description:** Warns a member in the server \n**Usage:** ` + prefix + `warn ➡<user>⬅ ➡[reason]⬅ \n**Examples:** \n` + prefix + `warn @Ahsan No u \n` + prefix + `warn @Ahsan Why are u a noob\n` + prefix + `warn @Ahsan Spamming too much \n` + prefix + `warn @Ahsan Advertising via dms \n**Error:** Did not specify a reason`)
       return message.channel.send(Incorrect);}
-    if (message.content.startsWith('-warn <@321673115891531787>'))
+    if (message.content.startsWith(prefix + 'warn <@321673115891531787>'))
        return message.channel.send(`${message.author} i can not warn a God, sorry.`)    
-    if (message.content.startsWith('-warn <@!321673115891531787>'))
+    if (message.content.startsWith(prefix + 'warn <@!321673115891531787>'))
        return message.channel.send(`${message.author} i can not warn a God, sorry.`)    
        
     if (message.author.id == message.mentions.users.first()) 
