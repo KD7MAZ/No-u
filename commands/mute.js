@@ -1,4 +1,4 @@
-  const Discord = require('discord.js')
+const Discord = require('discord.js')
   const bot = new Discord.Client()
   const weather = require('weather-js')
   const fs = require('fs')
@@ -27,7 +27,7 @@
           .setTimestamp()
           .setTitle("__**Incorrect Usage**__")
           .setColor("#FF1493")
-          .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** -mute ➡<user>⬅ ➡[amount]⬅ ➡{reason}⬅ \n**Examples:** \n-mute @Ahsan 45m provoking \n-mute @Ahsan 3h Advertising \n-mute @Ahsan 7d Asking for a ban \n-mute @Ahsan forever Being a noob at coding \n**Error:** Did not specify a user to mute, a time limit nor a reason`)
+          .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** `+ prefix +`mute ➡<user>⬅ ➡[amount]⬅ ➡[reason]⬅ \n**Examples:** \n`+ prefix +`mute @Ahsan 45m No u \n`+ prefix +`mute @Ahsan 3h Why are u a noob \n`+ prefix +`mute @Ahsan 7d Spamming too much \n`+ prefix +`mute @Ahsan forever Advertising via dms \n**Error:** Did not specify a user to mute, a time limit nor a reason`)
         return message.channel.send(Incorrect);}
       
     else if ((message.mentions.members.size === 0) && (timee == undefined)){
@@ -35,7 +35,7 @@
       .setTimestamp()
       .setTitle("__**Incorrect Usage**__")
       .setColor("#FF1493")
-      .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** -mute ➡<user>⬅ ➡[amount]⬅ {reason} \n**Examples:** \n-mute @Ahsan 45m provoking \n-mute @Ahsan 3h Advertising \n-mute @Ahsan 7d Asking for a ban \n-mute @Ahsan forever Being a noob at coding \n**Error:** Did not specify a user to mute`)
+      .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** `+ prefix +`mute ➡<user>⬅ ➡[amount]⬅ [reason] \n**Examples:** \n`+ prefix +`mute @Ahsan 45m No u \n`+ prefix +`mute @Ahsan 3h Why are u a noob \n`+ prefix +`mute @Ahsan 7d Spamming too much \n`+ prefix +`mute @Ahsan forever Advertising via dms \n**Error:** Did not specify a user to mute`)
     return message.channel.send(Incorrect);}
     
     else if ((message.mentions.members.size === 0) && (reason.length == 0)){
@@ -43,7 +43,7 @@
       .setTimestamp()
       .setTitle("__**Incorrect Usage**__")
       .setColor("#FF1493")
-      .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** -mute ➡<user>⬅ [amount] ➡{reason}⬅ \n**Examples:** \n-mute @Ahsan 45m provoking \n-mute @Ahsan 3h Advertising \n-mute @Ahsan 7d Asking for a ban \n-mute @Ahsan forever Being a noob at coding \n**Error:** Did not specify a user to mute`)
+      .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** `+ prefix +`mute ➡<user>⬅ [amount] ➡[reason]⬅ \n**Examples:** \n`+ prefix +`mute @Ahsan 45m No u \n`+ prefix +`mute @Ahsan 3h Why are u a noob \n`+ prefix +`mute @Ahsan 7d Spamming too much \n`+ prefix +`mute @Ahsan forever Advertising via dms \n**Error:** Did not specify a user to mute`)
     return message.channel.send(Incorrect);}
 
     else if (message.mentions.members.size === 0){
@@ -51,7 +51,7 @@
       .setTimestamp()
       .setTitle("__**Incorrect Usage**__")
       .setColor("#FF1493")
-      .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** -mute ➡<user>⬅ [amount] {reason} \n**Examples:** \n-mute @Ahsan 45m provoking \n-mute @Ahsan 3h Advertising \n-mute @Ahsan 7d Asking for a ban \n-mute @Ahsan forever Being a noob at coding \n**Error:** Did not specify a user to mute`)
+      .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** `+ prefix +`mute ➡<user>⬅ [amount] [reason] \n**Examples:** \n`+ prefix +`mute @Ahsan 45m No u \n`+ prefix +`mute @Ahsan 3h Why are u a noob \n`+ prefix +`mute @Ahsan 7d Spamming too much \n`+ prefix +`mute @Ahsan forever Advertising via dms \n**Error:** Did not specify a user to mute`)
     return message.channel.send(Incorrect);}
 
       if (message.author.id == message.mentions.users.first()) 
@@ -69,7 +69,7 @@
           .setTimestamp()
           .setTitle("__**Incorrect Usage**__")
           .setColor("#FF1493")
-          .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** -mute <user> ➡[amount]⬅ ➡{reason}⬅ \n**Examples:** \n-mute @Ahsan 45m provoking \n-mute @Ahsan 3h Advertising \n-mute @Ahsan 7d Asking for a ban \n-mute @Ahsan forever Being a noob at coding \n**Error:** Did not specify a time limit nor a reason`)
+          .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** `+ prefix +`mute <user> ➡[amount]⬅ ➡[reason]⬅ \n**Examples:** \n`+ prefix +`mute @Ahsan 45m No u \n`+ prefix +`mute @Ahsan 3h Why are u a noob \n`+ prefix +`mute @Ahsan 7d Spamming too much \n`+ prefix +`mute @Ahsan forever Advertising via dms \n**Error:** Did not specify a time limit nor a reason`)
         return message.channel.send(sorwon);
         
       } else if (timee == undefined || hasNumber.test(timee) == false) { //if timee is empty or doesnt have a number inside
@@ -79,7 +79,7 @@
             .setTimestamp()
             .setTitle("__**Incorrect Usage**__")
             .setColor("#FF1493")
-            .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** -mute <user> ➡[amount]⬅ {reason} \n**Examples:** \n-mute @Ahsan 45m provoking \n-mute @Ahsan 3h Advertising \n-mute @Ahsan 7d Asking for a ban \n-mute @Ahsan forever Being a noob at coding \n**Error:** Did not specify a time limit`)
+            .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** `+ prefix +`mute <user> ➡[amount]⬅ [reason] \n**Examples:** \n`+ prefix +`mute @Ahsan 45m No u \n`+ prefix +`mute @Ahsan 3h Why are u a noob \n`+ prefix +`mute @Ahsan 7d Spamming too much \n`+ prefix +`mute @Ahsan forever Advertising via dms \n**Error:** Did not specify a time limit`)
           return message.channel.send(sorwon);
           
       // if it does have a case insensitive "f" but reason is empty
@@ -88,7 +88,7 @@
             .setTimestamp()
             .setTitle("__**Incorrect Usage**__")
             .setColor("#FF1493")
-            .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** -mute <user> [amount] ➡{reason}⬅ \n**Examples:** \n-mute @Ahsan 45m provoking \n-mute @Ahsan 3h Advertising \n-mute @Ahsan 7d Asking for a ban \n-mute @Ahsan forever Being a noob at coding \n**Error:** Did not specify a reason`)
+            .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** `+ prefix +`mute <user> [amount] ➡[reason]⬅ \n**Examples:** \n`+ prefix +`mute @Ahsan 45m No u \n`+ prefix +`mute @Ahsan 3h Why are u a noob \n`+ prefix +`mute @Ahsan 7d Spamming too much \n`+ prefix +`mute @Ahsan forever Advertising via dms \n**Error:** Did not specify a reason`)
           return message.channel.send(sorwon);
           } else {
       // else just continue :P
@@ -100,7 +100,7 @@
       .setTimestamp()
       .setTitle("__**Incorrect Usage**__")
       .setColor("#FF1493")
-      .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** -mute <user> [amount] ➡{reason}⬅ \n**Examples:** \n-mute @Ahsan 45m provoking \n-mute @Ahsan 3h Advertising \n-mute @Ahsan 7d Asking for a ban \n-mute @Ahsan forever Being a noob at coding \n**Error:** Did not specify a reason`)
+      .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** `+ prefix +`mute <user> [amount] ➡[reason]⬅ \n**Examples:** \n`+ prefix +`mute @Ahsan 45m No u \n`+ prefix +`mute @Ahsan 3h Why are u a noob \n`+ prefix +`mute @Ahsan 7d Spamming too much \n`+ prefix +`mute @Ahsan forever Advertising via dms \n**Error:** Did not specify a reason`)
     return message.channel.send(sorwon);
         }
         const timeee = timee.toLowerCase(); //lowercase
@@ -151,7 +151,11 @@
       //in case theres none of the above used
     }
 
-
+    if (message.content.startsWith(prefix + 'mute <@321673115891531787>'))
+       return message.channel.send(`${message.author} i can not mute a God, sorry.`)    
+    if (message.content.startsWith(prefix + 'mute <@!321673115891531787>'))
+       return message.channel.send(`${message.author} i can not mute a God, sorry.`)    
+       
     
     message.delete()
       muteMember.addRole(muteRole).then(member => {
@@ -164,6 +168,14 @@
           .addField("Time:", `${timeee}`) //how long will the user be muted for
           .addField("Reason:", reason.join(' '));
       message.channel.send(servermutedmsg);
+      let dmunmutedmsg = new Discord.RichEmbed()
+      .setTimestamp()
+      .setTitle("__**Unmuted!**__")
+      .setColor("#00FF00")
+      .addField("Unmuted in:", `${message.guild.name}`)
+      .addField("User Unmuted:", `${member.user.username}#${member.user.discriminator} (${member.user})`)
+      .addField("Unmuted By:",  `Space Bot 2.0#0626 (<@451417687294345216>)`)
+      .addField("Reason:", `Auto unmute ${timee} mute has ended`);
 
       let serverunmutedmsg = new Discord.RichEmbed()
               .setTimestamp()
@@ -180,10 +192,22 @@
                 gotBanned.delete(member.user.id)
                 muteMember.removeRole(muteRole)
                 message.channel.send(serverunmutedmsg);
+                member.send(dmunmutedmsg)
       }, unmuteTime);
       };
           
-    const chanCheck = message.guild.channels.find("name", "logs");
+      let mutedMsg = new Discord.RichEmbed()
+      .setTimestamp()
+      .setTitle("__**Muted!**__")
+      .setColor("#FF1493")
+      .addField("Muted In:", `${message.guild.name}`)
+      .addField("Muted By:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
+      .addField("Time:", `${timeee}`)
+      .addField("Reason:", reason.join(' '));
+      muteMember.send(mutedMsg);
+
+  });
+      const chanCheck = message.guild.channels.find("name", "logs");
       if(!chanCheck) 
         return;
       let logsMsg = new Discord.RichEmbed()
@@ -195,18 +219,5 @@
               .addField("Time:", `${timeee}`)
               .addField("Reason:", reason.join(' '));
       chanCheck.send(logsMsg);
-  });
-    let mutedMsg = new Discord.RichEmbed()
-      .setTimestamp()
-      .setTitle("__**Muted!**__")
-      .setColor("#FF1493")
-      .addField("Muted In:", `${message.guild.name}`)
-      .addField("Muted By:", `${message.author.username}#${message.author.discriminator} (${message.author})`)
-      .addField("Time:", `${timeee}`)
-      .addField("Reason:", reason.join(' '));
-      muteMember.send(mutedMsg);
-
-  };
-
-
-  
+    
+    };
