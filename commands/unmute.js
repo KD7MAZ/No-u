@@ -20,16 +20,16 @@ exports.run = (bot, message, [mention, ...reason]) => {
         let Incorrect = new Discord.RichEmbed()
         .setTimestamp()
         .setTitle("__**Incorrect Usage**__")
-        .setColor("#FF0000")
-        .setDescription(`**Description:** Unmutes a member in the server \n**Usage:** -unwarn ➡<user>⬅ ➡{reason}⬅ \n**Examples:** \n-unmute @Ahsan No u \n-unmute @Ahsan Why are u a noob \n-unmute @Ahsan Spamming my dms \n-unmute @Ahsan Not advertising  \n**Error:** Did not specify a user to unmute nor a reason`)
+        .setColor("#00FF00")
+        .setDescription(`**Description:** Unmutes a member in the server \n**Usage:** `+ prefix + `unmute ➡<user>⬅ ➡[reason]⬅ \n**Examples:** \n`+ prefix + `unmute @Ahsan No u \n`+ prefix + `unmute @Ahsan Why are u a noob \n`+ prefix + `unmute @Ahsan Spamming my dms \n`+ prefix + `unmute @Ahsan Not advertising  \n**Error:** Did not specify a user to unmute nor a reason`)
       return message.channel.send(Incorrect);}
     
         if (reason.length == 0) {
         let Incorrect = new Discord.RichEmbed()
         .setTimestamp()
         .setTitle("__**Incorrect Usage**__")
-        .setColor("#FF0000")
-        .setDescription(`**Description:** Unmutes a member in the server \n**Usage:** -unwarn <user> ➡{reason}⬅ \n**Examples:** \n-unmute @Ahsan No u \n-unmute @Ahsan Why are u a noob \n-unmute @Ahsan Spamming my dms \n-unmute @Ahsan Not advertising  \n**Error:** Did not specify a reason`)
+        .setColor("#00FF00")
+        .setDescription(`**Description:** Unmutes a member in the server \n**Usage:** `+ prefix + `unmute <user> ➡[reason]⬅ \n**Examples:** \n`+ prefix + `unmute @Ahsan No u \n`+ prefix + `unmute @Ahsan Why are u a noob \n`+ prefix + `unmute @Ahsan Spamming my dms \n`+ prefix + `unmute @Ahsan Not advertising  \n**Error:** Did not specify a reason`)
       return message.channel.send(Incorrect);}
     
     message.delete()
