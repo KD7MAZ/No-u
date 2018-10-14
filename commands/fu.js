@@ -8,8 +8,8 @@ const owner = '321673115891531787'
 
 exports.run = (bot, message, [mention, ...reason]) => {
     message.delete()
-    
-const laugh = bot.emojis.find("name", 'MF')
+
+    const laugh = bot.emojis.find("name", 'MF')
     message.channel.send(`${laugh}`)
 
 };

@@ -6,19 +6,20 @@ const prefix = '-'
 const owner = '321673115891531787'
 
 exports.run = (client, message, args) => {
-if (message.author.bot) return;
-const swearWords = ["http", "https", "Http", "Https", "HTTP", "HTTPS", "HTtp", "HTtp", "HTTps", "HTTPs", "hTtp", "hTtps", "hTTp", "hTTps", "hTTP", "hTPPs", "hTTPS", "HtTp", "HtTps", "HtTP", "HtTPS"];
+    if (message.author.bot) return;
+    const swearWords = ["http", "https", "Http", "Https", "HTTP", "HTTPS", "HTtp", "HTtp", "HTTps", "HTTPs", "hTtp", "hTtps", "hTTp", "hTTps", "hTTP", "hTPPs", "hTTPS", "HtTp", "HtTps", "HtTP", "HtTPS"];
 
 
-if (message.author.id === owner) return;
-    if  (swearWords.some(word => message.content.includes(word)) ) {
+    if (message.author.id === owner) return;
+    if (swearWords.some(word => message.content.includes(word))) {
         message.delete().catch(err => console.log(err));
         message.channel.send(`${message.author} Please do not send any links!`);
-} 
-   else{
-    
-    message.delete();
-    let text = args.slice(0).join(" ")
+    }
+    else {
 
-message.channel.send(`${message.author} Set your afk as: ${text}`)
-}}
+        message.delete();
+        let text = args.slice(0).join(" ")
+
+        message.channel.send(`${message.author} Set your afk as: ${text}`)
+    }
+}

@@ -6,6 +6,6 @@ const prefix = '-'
 const owner = '321673115891531787'
 
 
-exports.run = (bot, message, [mention, ...reason]) => {   
+exports.run = (bot, message, [mention, ...reason]) => {
     message.reply('I would roast you, however ur not worth the time ')
 };

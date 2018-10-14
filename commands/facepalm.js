@@ -7,9 +7,9 @@ const owner = '321673115891531787'
 
 
 exports.run = (bot, message, [mention, ...reason]) => {
-    
+
     message.delete()
-   
+
     const faceplam = bot.emojis.get('398848980110409738')
     message.channel.send(`${faceplam}`)
 

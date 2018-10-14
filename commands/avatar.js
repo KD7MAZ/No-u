@@ -8,20 +8,22 @@ const owner = '321673115891531787'
 
 
 exports.run = async function (client, message, args) {
-    const loading = client.emojis.find("name", "BUFFER1")
-    const m = await message.channel.send(`Request is being proccessed. ${loading}`);
-    if (message.author.bot) return;
+  const loading = client.emojis.find("name", "BUFFER1")
+  const m = await message.channel.send(`Request is being proccessed. ${loading}`);
+  if (message.author.bot) return;
 
 
 
-    if (message.mentions.members.size === 0) {
-        setTimeout(function (){m.edit({embed: {
-        color: 6703856,
-        author: {
+  if (message.mentions.members.size === 0) {
+    setTimeout(function () {
+      m.edit({
+        embed: {
+          color: 6703856,
+          author: {
             name: "Space Bot 2.0",
             icon_url: client.user.avatarURL,
           },
-         
+
           image: {
             url: message.author.avatarURL,
             proxy_url: message.author.avatarURL,
@@ -31,26 +33,28 @@ exports.run = async function (client, message, args) {
           title: "Here you are, your avatar",
           description: `[Here is the link to this profile picture.](${message.author.avatarURL})`,
           timestamp: new Date(),
-        footer: {
+          footer: {
             icon_url: client.user.avatarURL,
             text: "Requested by " + message.author.username,
-    }
-    }
-    })
-    }), 4000}
-    else
-    {
+          }
+        }
+      })
+    }), 4000
+  }
+  else {
     const pfpmemb = message.mentions.members.first();
     const pfpurl = pfpmemb.user.avatarURL
-    setTimeout(function (){m.edit({embed: {
-        color: 6703856,
-        author: {
+    setTimeout(function () {
+      m.edit({
+        embed: {
+          color: 6703856,
+          author: {
             name: "Space Bot 2.0",
             icon_url: client.user.avatarURL,
           },
-          
-            
-         
+
+
+
           image: {
             url: pfpmemb.user.avatarURL,
             proxy_url: pfpmemb.user.avatarURL,
@@ -60,9 +64,12 @@ exports.run = async function (client, message, args) {
           title: `Here is this users avatar`,
           description: `[Here is the link to this profile picture.](${pfpurl})`,
           timestamp: new Date(),
-        footer: {
+          footer: {
             icon_url: client.user.avatarURL,
             text: "Requested by " + message.author.username,
-    }
-    }
-    })}), 4000}}
+          }
+        }
+      })
+    }), 4000
+  }
+}

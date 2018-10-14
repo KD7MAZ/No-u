@@ -2,14 +2,15 @@ const Discord = require("discord.js");
 
 exports.run = (client, msg, args) => {
 
-msg.channel.send({embed: {
-    color: '#8F00FF',
-    title: `:hash: Channel information:`,
+  msg.channel.send({
+    embed: {
+      color: '#8F00FF',
+      title: `:hash: Channel information:`,
       fields: [{
         name: "Name",
         value: `${msg.channel.name}`
       },
-          {
+      {
         name: "Created",
         value: `${msg.channel.createdAt}`
       },
@@ -23,9 +24,9 @@ msg.channel.send({embed: {
         value: `${msg.channel.id}`,
         inline: true
       },
-    ],
+      ],
     }
-});
-console.log(`Treating ${msg.content} by ${msg.author.tag} from ${msg.guild} as a command.`);
+  });
+  console.log(`Treating ${msg.content} by ${msg.author.tag} from ${msg.guild} as a command.`);
 };
-config: {}
+config: { }

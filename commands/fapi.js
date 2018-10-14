@@ -2,12 +2,12 @@ const request = require('request')
 
 module.exports = {
   // Find Stats off of the args sent
-  stats: function(msg, args){
+  stats: function (msg, args) {
     let platform = args[0]
-    if(platform) platform = platform.toLowerCase()
-    const username = args.slice(1,args.length).join('%20')
+    if (platform) platform = platform.toLowerCase()
+    const username = args.slice(1, args.length).join('%20')
 
-    if(platform !== 'psn' && platform !== 'pc' && platform !== 'xbl' || platform === undefined){
+    if (platform !== 'psn' && platform !== 'pc' && platform !== 'xbl' || platform === undefined) {
       msg.reply(`
       The platform was not set correctly.
       Please type in commands like so:
@@ -17,7 +17,7 @@ module.exports = {
       `)
       return null;
     }
-    else if(username === undefined){
+    else if (username === undefined) {
       msg.reply(`
       The username was not set.
       Please type in commands like so:
@@ -36,12 +36,12 @@ module.exports = {
     }
 
     request(options, (err, res, body) => {
-      if(err){
+      if (err) {
         console.error(err)
         msg.reply(`There was a problem getting stats for ${username.replace('%20', ' ')} on ${platform}.`)
         return null
       }
-      else if(res.statusCode === 200){
+      else if (res.statusCode === 200) {
         data = JSON.parse(body)
         let soloWins = 0
         let soloTime = '0h 0m'
@@ -54,27 +54,27 @@ module.exports = {
         let squadKd = 0
 
         // Player Not Found
-        if(data.error){
+        if (data.error) {
           msg.reply(`${data.error}`)
           return null
         }
 
         // Solo
-        if(data.stats.p2){
+        if (data.stats.p2) {
           soloWins = data.stats.p2.top1.displayValue
           soloTime = data.stats.p2.minutesPlayed.displayValue
           soloKd = data.stats.p2.kd.valueDec
         }
 
         // Duos
-        if(data.stats.p10){
+        if (data.stats.p10) {
           duoWins = data.stats.p10.top1.displayValue
           duoTime = data.stats.p10.minutesPlayed.displayValue
           duoKd = data.stats.p10.kd.valueDec
         }
-        
+
         // Squad 
-        if(data.stats.p9){
+        if (data.stats.p9) {
           squadWins = data.stats.p9.top1.displayValue
           squadTime = data.stats.p9.minutesPlayed.displayValue
           squadKd = data.stats.p9.kd.valueDec
@@ -91,7 +91,7 @@ module.exports = {
         Squad | ${squadWins} | ${squadTime} | ${squadKd}
         Source: FORTNITE TRACKER - https://fortnitetracker.com/
         `)
-      } 
+      }
       else {
         msg.reply(`Something went wrong. Sorry :b:ud.`)
         return null

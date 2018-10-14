@@ -19,7 +19,7 @@ exports.run = (client, message, args) => {
     message.channel.overwritePermissions(message.guild.id, {
       SEND_MESSAGES: false
     }).then(() => {
-      message.channel.send(`Channel locked down for ${ms(ms(time), { long:true })}`).then(() => {
+      message.channel.send(`Channel locked down for ${ms(ms(time), { long: true })}`).then(() => {
 
         client.lockit[message.channel.id] = setTimeout(() => {
           message.channel.overwritePermissions(message.guild.id, {

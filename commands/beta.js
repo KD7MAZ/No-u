@@ -6,23 +6,23 @@ const prefix = '-'
 const owner = '321673115891531787'
 
 exports.run = (bot, message, [mention, ...reason]) => {
-    if (message.author.id !== `${owner}`) return message.channel.send(`**|:exclamation:|  You dont have permission to use this command**`)    
+    if (message.author.id !== `${owner}`) return message.channel.send(`**|:exclamation:|  You dont have permission to use this command**`)
     const betaRole = message.guild.roles.find("name", "BETA TESTER");
 
     const betaMember = message.mentions.members.first();
-const check = "<:check:470611964784017418>"
-    if(message.member.roles.has(betaRole.id)) {
-    
+    const check = "<:check:470611964784017418>"
+    if (message.member.roles.has(betaRole.id)) {
+
         betaMember.addRole(betaRole)
 
-            message.channel.send(`:white_check_mark: Changed roles for ${betaMember.user.username}#${betaMember.user.discriminator}, + BETA TESTER`) 
-        
-    }
-    
+        message.channel.send(`:white_check_mark: Changed roles for ${betaMember.user.username}#${betaMember.user.discriminator}, + BETA TESTER`)
 
-       // message.channel.send(`:x: ${betaMember.user.username}#${betaMember.user.discriminator} already has BETA TESTER!`)
-    
-    
+    }
+
+
+    // message.channel.send(`:x: ${betaMember.user.username}#${betaMember.user.discriminator} already has BETA TESTER!`)
+
+
 
 }
 

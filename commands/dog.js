@@ -8,13 +8,13 @@ const superagent = require('superagent');
 
 exports.run = async (bot, message, [mention, ...reason]) => {
 
-    let {body} = await superagent
-    .get(`https://random.dog/woof.json`);
+    let { body } = await superagent
+        .get(`https://random.dog/woof.json`);
 
     let dogembed = new Discord.RichEmbed()
-    .setColor('#8F00FF')
-    .setTitle("Random Dog Image")
-    .setImage(body.url);
+        .setColor('#8F00FF')
+        .setTitle("Random Dog Image")
+        .setImage(body.url);
     message.channel.send(dogembed);
 
 }

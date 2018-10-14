@@ -17,73 +17,73 @@ bot.on('ready', () => {
 
     bot.user.setActivity(`-help | Serving ${bot.users.size} users | ${bot.guilds.size} servers`);
     totalGuilds = { 'server_count': bot.guilds.size }
-snekfetch.post(`https://discordbots.org/api/bots/${bot.user.id}/stats`)
-  .set('Authorization', process.env.API_TOKEN)
-  .send(totalGuilds)
-  .then(console.log('Updated dbots.org status.'))
-.catch(e => console.warn('dbots.org down spam @oliy'));
+    snekfetch.post(`https://discordbots.org/api/bots/${bot.user.id}/stats`)
+        .set('Authorization', process.env.API_TOKEN)
+        .send(totalGuilds)
+        .then(console.log('Updated dbots.org status.'))
+        .catch(e => console.warn('dbots.org down spam @oliy'));
 
 });
 
 bot.on("message", async message => {
-if(message.author.bot) return;
-if (message.channel.type == 'dm') return;
-    
-    if (message.content.includes('t!rep <@321673115891531787>')) {   
+    if (message.author.bot) return;
+    if (message.channel.type == 'dm') return;
+
+    if (message.content.includes('t!rep <@321673115891531787>')) {
         message.channel.send(`Thank you ${message.author} for repping Ahsan!`)
-    
+
     }
 
     if (message.content.includes('t!daily <@321673115891531787>')) {
         message.channel.send(`Thank you ${message.author} for giving ur daily to Ahsan!`)
-    
+
     }
-    
+
     if (message.content === prefix + 'show semyon') {
         message.channel.send(`Here you are ${message.author} the precious Semyon Kirov! \nhttps://media.discordapp.net/attachments/417037461798125589/437241531460485120/maxresdefault.png?width=961&height=541`)
     }
-    
-if(message.content.indexOf(prefix) !== 0) return;
 
-   
-//if (message.guild.id == '478130826383589386'){
+    if (message.content.indexOf(prefix) !== 0) return;
+
+
+    //if (message.guild.id == '478130826383589386'){
     //if (!message.content.startWith("-ratings")) || (!message.content.startWith('-weekly')) || (!message.content.startWith('-help')) || (!message.content.startWith('-open'))
-   //  return message.channel.send('**|:x:| You are not allowed to use non tanki related commands! \n|:x:| nвам не разрешено использовать команды, не связанные с танками!**')
-//}
-    
+    //  return message.channel.send('**|:x:| You are not allowed to use non tanki related commands! \n|:x:| nвам не разрешено использовать команды, не связанные с танками!**')
+    //}
+
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
 
     try {
-      let commandFile = require(`./commands/${command}.js`);
-      cmdCount += 1
-    
-    if (message.author.id == '198876820727267330')
-        return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)      
-       
-    if (message.author.id == '447658649758990349')
-        return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)   
-     
-    if (message.author.id == '376283876487593987')
-        return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)     
-    
-    if (message.author.id == '326366976853409803')
-        return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)     
-        
-    if (message.author.id == '380426456955617283')
-        return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)     
-    
-    if (message.author.id == '313028083684868096')
-        return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)     
-    
+        let commandFile = require(`./commands/${command}.js`);
+        cmdCount += 1
+
+        if (message.author.id == '198876820727267330')
+            return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)
+
+        if (message.author.id == '447658649758990349')
+            return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)
+
+        if (message.author.id == '376283876487593987')
+            return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)
+
+        if (message.author.id == '326366976853409803')
+            return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)
+
+        if (message.author.id == '380426456955617283')
+            return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)
+
+        if (message.author.id == '313028083684868096')
+            return message.channel.send(`**<a:animatedx:482541818886750218> ${message.author} You are blacklisted you may not use commands from this bot!**`)
+
         commandFile.run(bot, message, args);
-      
-    
+
+
     } catch (err) {
-      console.log(err.message);
+        console.log(err.message);
     } finally {
         console.log(`${message.author.username}#${message.author.discriminator} ran the command: ${command} in ${message.guild.name}`)//.guild.channel.get('323206382147076096').channels.get('450360093012393995').send(`**User:** ${message.author.username} \n **Ran the command:** ${command}`
-             let servercommands = new Discord.RichEmbed()
+        let servercommands = new Discord.RichEmbed()
             .setTimestamp()
             .setTitle("__**Messages:**__")
             .setColor('#ADD8E6')
@@ -92,166 +92,167 @@ if(message.content.indexOf(prefix) !== 0) return;
             .addField("Channel ID", `(${message.channel.id})`)
             .addField("User:", `${message.author.username}#${message.author.discriminator}`)
             .addField("Command:", `-${command}`);
-            bot.guilds.get('323206382147076096').channels.get('481110670373289984').send(servercommands); 
-    
-    
+        bot.guilds.get('323206382147076096').channels.get('481110670373289984').send(servercommands);
+
+
     }
-    if(message.content === prefix + 'cmdcount') {
-    message.channel.send(`${cmdCount} commands have been used today`)
+    if (message.content === prefix + 'cmdcount') {
+        message.channel.send(`${cmdCount} commands have been used today`)
     }
 
 
 
-    if(message.content === prefix + 'ping') {
+    if (message.content === prefix + 'ping') {
         const loading = bot.emojis.find("name", "BUFFER1")
         const Ahsan = '`'
         const m = await
-        message.channel.send(`${loading} Ping? ${loading}`);
-    setTimeout(function (){m.edit(`Pong! Latency is ${Ahsan}${m.createdTimestamp - message.createdTimestamp}ms${Ahsan}. Discord Latency is ${Ahsan}${Math.round(bot.ping)}ms${Ahsan}`);
-    }, 500);
-  }
+            message.channel.send(`${loading} Ping? ${loading}`);
+        setTimeout(function () {
+            m.edit(`Pong! Latency is ${Ahsan}${m.createdTimestamp - message.createdTimestamp}ms${Ahsan}. Discord Latency is ${Ahsan}${Math.round(bot.ping)}ms${Ahsan}`);
+        }, 500);
+    }
     const version = 'Version 1.0.9 by Ahsan'
     const Ahsan = '`'
     const A1 = '**,**'
     if (message.author.bot) return;
-        if (message.content === prefix + 'help') {
-            const embed = new Discord.RichEmbed()
-                .setTitle("Help is now here!")
-                .setAuthor("Space Bot 2.0", bot.user.avatarURL)
-                .setColor('#8F00FF')
-                .setFooter(`${version}`, bot.user.avatarURL)
-                .setThumbnail("http://www.pfpenergy.co.uk/media/1184/help-and-support.png")
-                .setTimestamp()
-                .setURL("https://discord.gg/D4UqdWh")
-                .addField("prefix:", `-`)
-                .addField("Weather Commands:", `weatherC, weatherF`)
-                .addField("Fun Commands:", `afk, Blob, DDoS, depression, lit, lovecalc, lovecalculator, roast, show semyon`, false)
-                .addField("Miscellaneous Commands:", `avatar, creator, facepalm, invite, say, servers, `, false)
-                .addField("Tanki Online Commands:", `ratings, weekly, open container, supplies`)
-                .addField("Танки онлайн:", `рейтинги, открыть контейнер, припасы`)
-                .addField("Fortnite Commands: (Collab w/Nelson)", `dropzones, randomdrop, lootfloor, randomskin`, false)
-                .addField("Server Commands:", `servercommand help, suggest, report, question`, false)
-                .addField("Moderation Commands:", `moderation help, ban, kick, mute, unmute, purge, warn`, true)
+    if (message.content === prefix + 'help') {
+        const embed = new Discord.RichEmbed()
+            .setTitle("Help is now here!")
+            .setAuthor("Space Bot 2.0", bot.user.avatarURL)
+            .setColor('#8F00FF')
+            .setFooter(`${version}`, bot.user.avatarURL)
+            .setThumbnail("http://www.pfpenergy.co.uk/media/1184/help-and-support.png")
+            .setTimestamp()
+            .setURL("https://discord.gg/D4UqdWh")
+            .addField("prefix:", `-`)
+            .addField("Weather Commands:", `weatherC, weatherF`)
+            .addField("Fun Commands:", `afk, Blob, DDoS, depression, lit, lovecalc, lovecalculator, roast, show semyon`, false)
+            .addField("Miscellaneous Commands:", `avatar, creator, facepalm, invite, say, servers, `, false)
+            .addField("Tanki Online Commands:", `ratings, weekly, open container, supplies`)
+            .addField("Танки онлайн:", `рейтинги, открыть контейнер, припасы`)
+            .addField("Fortnite Commands: (Collab w/Nelson)", `dropzones, randomdrop, lootfloor, randomskin`, false)
+            .addField("Server Commands:", `servercommand help, suggest, report, question`, false)
+            .addField("Moderation Commands:", `moderation help, ban, kick, mute, unmute, purge, warn`, true)
 
-            message.channel.send({embed});
+        message.channel.send({ embed });
 
-        };
-});       
+    };
+});
 
 bot.on("message", async message => {
-if (message.channel.type == 'dm') return;
-        
-    if(message.content.toLocaleLowerCase().includes("")) {
-         
-           const usernames = message.author.username + "#" + message.author.discriminator;
-           if (!usernames) return;
-           const messageThe = message.content;
-           if (!messageThe) return;
-           const serverFrom = message.guild.name;
-           if (!serverFrom) return;
-           const serverFromId = message.guild.id;
-           if (!serverFromId) return;
-           if (message.author.id == '328231928798904342') {
+    if (message.channel.type == 'dm') return;
+
+    if (message.content.toLocaleLowerCase().includes("")) {
+
+        const usernames = message.author.username + "#" + message.author.discriminator;
+        if (!usernames) return;
+        const messageThe = message.content;
+        if (!messageThe) return;
+        const serverFrom = message.guild.name;
+        if (!serverFrom) return;
+        const serverFromId = message.guild.id;
+        if (!serverFromId) return;
+        if (message.author.id == '328231928798904342') {
             let domainmsg = new Discord.RichEmbed()
-            .setTimestamp()
-            .setTitle("__**Messages:**__")
-            .setColor("#00FFB9")
-            .addField("From:", `${serverFrom}`)
-            .addField("Sever ID:", `(${serverFromId})`)
-            .addField("User:", `${usernames}`)
-            .addField("Message:", `${messageThe}`);
-            bot.guilds.get('323206382147076096').channels.get('481087902554652672').send(domainmsg);
-           }
-           else
-           {
-
-           if (message.guild.id == "264445053596991498") return;
-           if (message.guild.id == "323206382147076096") return;
-           if (message.guild.id == "334666712505122817") {
-
-
-            let domainmsg = new Discord.RichEmbed()
-            .setTimestamp()
-            .setTitle("__**Messages:**__")
-            .setColor("#8F00FF")
-            .addField("From:", `${serverFrom}`)
-            .addField("Sever ID:", `(${serverFromId})`)
-            .addField("Channel ID", `(${message.channel.id})`)
-            .addField("User:", `${usernames}`)
-            .addField("Message:", `${messageThe}`);
+                .setTimestamp()
+                .setTitle("__**Messages:**__")
+                .setColor("#00FFB9")
+                .addField("From:", `${serverFrom}`)
+                .addField("Sever ID:", `(${serverFromId})`)
+                .addField("User:", `${usernames}`)
+                .addField("Message:", `${messageThe}`);
             bot.guilds.get('323206382147076096').channels.get('481087902554652672').send(domainmsg);
         }
-        else
-        {
-        if (message.guild.id == "398568119603429378") {
-            
-            
-            let S4Emsg = new Discord.RichEmbed()
-            .setTimestamp()
-            .setTitle("__**Messages:**__")
-            .setColor('#00idk3')
-            .addField("From:", `${serverFrom}`)
-            .addField("Sever ID:", `(${serverFromId})`)
-            .addField("Channel ID", `(${message.channel.id})`)
-            .addField("User:", `${usernames}`)
-            .addField("Message:", `${messageThe}`);
-            bot.guilds.get('323206382147076096').channels.get('481087839187107841').send(S4Emsg);    
+        else {
 
+            if (message.guild.id == "264445053596991498") return;
+            if (message.guild.id == "323206382147076096") return;
+            if (message.guild.id == "334666712505122817") {
+
+
+                let domainmsg = new Discord.RichEmbed()
+                    .setTimestamp()
+                    .setTitle("__**Messages:**__")
+                    .setColor("#8F00FF")
+                    .addField("From:", `${serverFrom}`)
+                    .addField("Sever ID:", `(${serverFromId})`)
+                    .addField("Channel ID", `(${message.channel.id})`)
+                    .addField("User:", `${usernames}`)
+                    .addField("Message:", `${messageThe}`);
+                bot.guilds.get('323206382147076096').channels.get('481087902554652672').send(domainmsg);
+            }
+            else {
+                if (message.guild.id == "398568119603429378") {
+
+
+                    let S4Emsg = new Discord.RichEmbed()
+                        .setTimestamp()
+                        .setTitle("__**Messages:**__")
+                        .setColor('#00idk3')
+                        .addField("From:", `${serverFrom}`)
+                        .addField("Sever ID:", `(${serverFromId})`)
+                        .addField("Channel ID", `(${message.channel.id})`)
+                        .addField("User:", `${usernames}`)
+                        .addField("Message:", `${messageThe}`);
+                    bot.guilds.get('323206382147076096').channels.get('481087839187107841').send(S4Emsg);
+
+                }
+
+
+
+            };
         }
- 
-      
-        
-};      
-}}})
+    }
+})
 
 bot.on("guildCreate", guild => {
-    
+
     totalGuilds = { 'server_count': bot.guilds.size }
-snekfetch.post(`https://discordbots.org/api/bots/${bot.user.id}/stats`)
-  .set('Authorization', process.env.API_TOKEN)
-  .send(totalGuilds)
-  .then(console.log('Updated dbots.org status.'))
-.catch(e => console.warn('dbots.org down spam @oliy'));
- 
-    const embed= new Discord.RichEmbed()
-     .setTitle("__**ServerAdded!**__")
-     .setColor("#DCFF67")
-     .addField("Server Name", `${guild.name}`)
-     .addField("Owner" , `${guild.owner}`)
-     .addField("Amount of Members", `${guild.memberCount}`)
-     .addField("Server ID", `${guild.id}`)
-     .addField("Owner ID", `${guild.ownerID}`)
-     .addField("Owner Name", `${guild.owner.user.tag}`);
+    snekfetch.post(`https://discordbots.org/api/bots/${bot.user.id}/stats`)
+        .set('Authorization', process.env.API_TOKEN)
+        .send(totalGuilds)
+        .then(console.log('Updated dbots.org status.'))
+        .catch(e => console.warn('dbots.org down spam @oliy'));
 
-      bot.guilds.get('323206382147076096').channels.get('477591026203099147').send(embed);
+    const embed = new Discord.RichEmbed()
+        .setTitle("__**ServerAdded!**__")
+        .setColor("#DCFF67")
+        .addField("Server Name", `${guild.name}`)
+        .addField("Owner", `${guild.owner}`)
+        .addField("Amount of Members", `${guild.memberCount}`)
+        .addField("Server ID", `${guild.id}`)
+        .addField("Owner ID", `${guild.ownerID}`)
+        .addField("Owner Name", `${guild.owner.user.tag}`);
 
-      console.log(`New server joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
+    bot.guilds.get('323206382147076096').channels.get('477591026203099147').send(embed);
+
+    console.log(`New server joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
     bot.user.setActivity(`-help | Serving ${bot.users.size} users | ${bot.guilds.size} servers`)
 });
 
 
 bot.on("guildDelete", guild => {
- 
+
     totalGuilds = { 'server_count': bot.guilds.size }
-snekfetch.post(`https://discordbots.org/api/bots/${bot.user.id}/stats`)
-  .set('Authorization', process.env.API_TOKEN)
-  .send(totalGuilds)
-  .then(console.log('Updated dbots.org status.'))
-.catch(e => console.warn('dbots.org down spam @oliy'));
- 
+    snekfetch.post(`https://discordbots.org/api/bots/${bot.user.id}/stats`)
+        .set('Authorization', process.env.API_TOKEN)
+        .send(totalGuilds)
+        .then(console.log('Updated dbots.org status.'))
+        .catch(e => console.warn('dbots.org down spam @oliy'));
+
     const embed = new Discord.RichEmbed()
-      .setTitle("__**ServerRemoved!**__")
-      .setColor("#FF5C00")
-      .addField("Server Name", `${guild.name}`)
-      .addField("Owner", `${guild.owner}`)
-      .addField("Amount of Members", `${guild.memberCount}`)
-      .addField("Server ID", `${guild.id}`)
-      .addField("Owner ID", `${guild.ownerID}`)
-      .addField("Owner Name", `${guild.owner.user.tag}`);
+        .setTitle("__**ServerRemoved!**__")
+        .setColor("#FF5C00")
+        .addField("Server Name", `${guild.name}`)
+        .addField("Owner", `${guild.owner}`)
+        .addField("Amount of Members", `${guild.memberCount}`)
+        .addField("Server ID", `${guild.id}`)
+        .addField("Owner ID", `${guild.ownerID}`)
+        .addField("Owner Name", `${guild.owner.user.tag}`);
 
-      bot.guilds.get('323206382147076096').channels.get('477591026203099147').send(embed);
+    bot.guilds.get('323206382147076096').channels.get('477591026203099147').send(embed);
 
-      console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
+    console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
     bot.user.setActivity(`-help | Serving ${bot.users.size} users | ${bot.guilds.size} servers`)
 
 });
@@ -264,66 +265,66 @@ snekfetch.post(`https://discordbots.org/api/bots/${bot.user.id}/stats`)
 //const Ahsan = '`'
 ///const A1 = '**,**'
 ///if (message.author.bot) return;
-   // if (message.content === prefix + 'help') {
+// if (message.content === prefix + 'help') {
 ///        const embed = new Discord.RichEmbed()
-            //.setTitle("Help is now here!")
-            //.setAuthor("Space Bot", "https://cdn.discordapp.com/avatars/437207592054554643/b1081a2a0d426a1a4fe28c10c732c602.jpg?size=2048")
-            //.setColor('#8F00FF')
-            //.setFooter(`${version}`, "https://cdn.discordapp.com/avatars/437207592054554643/b1081a2a0d426a1a4fe28c10c732c602.jpg?size=2048")
-            //.setThumbnail("http://www.pfpenergy.co.uk/media/1184/help-and-support.png")
-            //.setTimestamp()
-            //.setURL("https://discord.gg/D4UqdWh")
-            //.addField("prefix:", `${Ahsan}-${Ahsan}`)
-            //.addField("Weather Commands:", `${Ahsan}weatherC${Ahsan}${A1} ${Ahsan}weatherF${Ahsan}`)
-            //.addField("Fun Commands:", `${Ahsan}afk${Ahsan}${A1} ${Ahsan}Blob${Ahsan}${A1} ${Ahsan}DDoS${Ahsan}${A1} ${Ahsan}depression${Ahsan}${A1} ${Ahsan}lit${Ahsan}${A1} ${Ahsan}lovecalc${Ahsan}${A1} ${Ahsan}lovecalcualotr${Ahsan}${A1} ${Ahsan}roast${Ahsan}${A1} ${Ahsan}show semyon${Ahsan}${A1} ${Ahsan}ノಠ益ಠ)ノ彡┻━┻${Ahsan}`, false)
-            //.addField("Miscellaneous Commands:", `${Ahsan}avatar${Ahsan}${A1} ${Ahsan}creator${Ahsan}${A1} ${Ahsan}invite${Ahsan}${A1} ${Ahsan}say${Ahsan}${A1} ${Ahsan}servers${Ahsan}${A1} ${Ahsan}wtf${Ahsan}`, false)
-            //.addField("Fortnite Commands: (Collab w/Nelson)", `${Ahsan}dropzones${Ahsan}${A1} ${Ahsan}randomdrop${Ahsan}${A1} ${Ahsan}lootfloor${Ahsan}${A1} ${Ahsan}randomskin${Ahsan}`, false)
-            //.addField("Server Commands:", `${Ahsan}servercommand help${Ahsan}${A1} ${Ahsan}suggest${Ahsan}${A1} ${Ahsan}report${Ahsan}${A1} ${Ahsan}question${Ahsan}`, false)
-            //.addField("Moderation Commands", `${Ahsan}moderation help${Ahsan}${A1} ${Ahsan}ban${Ahsan}${A1} ${Ahsan}kick${Ahsan}${A1} ${Ahsan}mute${Ahsan}${A1} ${Ahsan}unmute${Ahsan}${A1} ${Ahsan}purge${Ahsan}${A1} ${Ahsan}warn${Ahsan}`, true)
+//.setTitle("Help is now here!")
+//.setAuthor("Space Bot", "https://cdn.discordapp.com/avatars/437207592054554643/b1081a2a0d426a1a4fe28c10c732c602.jpg?size=2048")
+//.setColor('#8F00FF')
+//.setFooter(`${version}`, "https://cdn.discordapp.com/avatars/437207592054554643/b1081a2a0d426a1a4fe28c10c732c602.jpg?size=2048")
+//.setThumbnail("http://www.pfpenergy.co.uk/media/1184/help-and-support.png")
+//.setTimestamp()
+//.setURL("https://discord.gg/D4UqdWh")
+//.addField("prefix:", `${Ahsan}-${Ahsan}`)
+//.addField("Weather Commands:", `${Ahsan}weatherC${Ahsan}${A1} ${Ahsan}weatherF${Ahsan}`)
+//.addField("Fun Commands:", `${Ahsan}afk${Ahsan}${A1} ${Ahsan}Blob${Ahsan}${A1} ${Ahsan}DDoS${Ahsan}${A1} ${Ahsan}depression${Ahsan}${A1} ${Ahsan}lit${Ahsan}${A1} ${Ahsan}lovecalc${Ahsan}${A1} ${Ahsan}lovecalcualotr${Ahsan}${A1} ${Ahsan}roast${Ahsan}${A1} ${Ahsan}show semyon${Ahsan}${A1} ${Ahsan}ノಠ益ಠ)ノ彡┻━┻${Ahsan}`, false)
+//.addField("Miscellaneous Commands:", `${Ahsan}avatar${Ahsan}${A1} ${Ahsan}creator${Ahsan}${A1} ${Ahsan}invite${Ahsan}${A1} ${Ahsan}say${Ahsan}${A1} ${Ahsan}servers${Ahsan}${A1} ${Ahsan}wtf${Ahsan}`, false)
+//.addField("Fortnite Commands: (Collab w/Nelson)", `${Ahsan}dropzones${Ahsan}${A1} ${Ahsan}randomdrop${Ahsan}${A1} ${Ahsan}lootfloor${Ahsan}${A1} ${Ahsan}randomskin${Ahsan}`, false)
+//.addField("Server Commands:", `${Ahsan}servercommand help${Ahsan}${A1} ${Ahsan}suggest${Ahsan}${A1} ${Ahsan}report${Ahsan}${A1} ${Ahsan}question${Ahsan}`, false)
+//.addField("Moderation Commands", `${Ahsan}moderation help${Ahsan}${A1} ${Ahsan}ban${Ahsan}${A1} ${Ahsan}kick${Ahsan}${A1} ${Ahsan}mute${Ahsan}${A1} ${Ahsan}unmute${Ahsan}${A1} ${Ahsan}purge${Ahsan}${A1} ${Ahsan}warn${Ahsan}`, true)
 
-        //message.channel.send({embed});
+//message.channel.send({embed});
 
-    //};
+//};
 
 
 //});
 
 //bot.on('message', (message) => {
-   // const args = message.content.slice(prefix.length).trim().split(/ +/g);
-   // const command = args.shift().toLowerCase();
+// const args = message.content.slice(prefix.length).trim().split(/ +/g);
+// const command = args.shift().toLowerCase();
 
- //   db.updateValue(message.author.id + message.guild.id, 1).then(i => {
+//   db.updateValue(message.author.id + message.guild.id, 1).then(i => {
 
-       //let message;
-       //if(i.value == 5) message = 5;
-        //else if(i.value == 10) message = 10;
-       // else if(i.value == 15) message = 15;
+//let message;
+//if(i.value == 5) message = 5;
+//else if(i.value == 10) message = 10;
+// else if(i.value == 15) message = 15;
 
-        //if (!isNaN(message)) {
-           // db.updateValue(`userlevel_${message.author.id + message.guild.id}`, 1).then(o =>{
-        //      //  message.channel.send(`You have successfully sent ${messages} messages, you have leveled up! You are now level ${o.value}`)
-  //          })
-  //      }
+//if (!isNaN(message)) {
+// db.updateValue(`userlevel_${message.author.id + message.guild.id}`, 1).then(o =>{
+//      //  message.channel.send(`You have successfully sent ${messages} messages, you have leveled up! You are now level ${o.value}`)
+//          })
+//      }
 //    }
 //)})
 
 bot.on("message", async message => {
     if (message.channel.type == 'dm') return;
-    
-    if (message.guild.id !== '323206382147076096')return;
 
-    if(message.author.bot) return;
+    if (message.guild.id !== '323206382147076096') return;
 
-const swearWords = ["Fuck", "Shit", "Bitch", "Faggot", "Dick", "Dickhead", "Cock", "Cocksucker", "Cunt", "Nigger", "Kys", "Gfys", "Knobhead","fuck", "shit", "bitch", "faggot", "dick", "dickhead", "cock", "cocksucker", "cunt", "nigger", "kys", "gfys", "knobhead", "pussy", "Pussy", "Pussies", "pussies", "dik", "Dik"];
-if (message.author.id === jordan) return;
+    if (message.author.bot) return;
+
+    const swearWords = ["Fuck", "Shit", "Bitch", "Faggot", "Dick", "Dickhead", "Cock", "Cocksucker", "Cunt", "Nigger", "Kys", "Gfys", "Knobhead", "fuck", "shit", "bitch", "faggot", "dick", "dickhead", "cock", "cocksucker", "cunt", "nigger", "kys", "gfys", "knobhead", "pussy", "Pussy", "Pussies", "pussies", "dik", "Dik"];
+    if (message.author.id === jordan) return;
     if (message.author.id === owner) return;
-    if  (swearWords.some(word => message.content.includes(word)) ) {
+    if (swearWords.some(word => message.content.includes(word))) {
         message.delete().catch(err => console.log(err));
         message.channel.send(`${message.author} Please do not use bad words!`);
 
     }
 
-    
+
 
 });
 
@@ -369,7 +370,7 @@ bot.on("guildMemberAdd", (member) => {
             member.guild.channels.get("477585260457230336").send(`<a:PARTY:463006559446892555> **Welcome to ${member.guild.name} ${member.user} You are the ${last} Member! :tada:** \nPlease read the <#477584677339660308> and stay out of trouble!`);
             member.guild.channels.get("477585601105887242").send(`<a:PARTY:463006559446892555> Hello ${member.user} welcome to Ahsan's Server to become a member please go to <#483266115783622668> and react with <a:animatedtick:482541833805627412> to obtain the role \`MEMBERS\` and have full access to the rest of the server! \nThanks for your co-operation`)
             member.send(`Welcome to Ahsan's Server to become a member please go to <#483266115783622668> and react with <a:animatedtick:482541833805627412> to obtain the role and have full access to the rest of the server! \nThanks for your co-operation`)
-         
+
         }
         //leos server
         else if (member.guild.id == '294142702151270402') {
@@ -383,23 +384,23 @@ bot.on("guildMemberAdd", (member) => {
         //wassils server
         else if (member.guild.id == '456016111251488769') {
             member.guild.channels.get("465702266104446976").send(`<a:PARTY:463006559446892555> **Welcome to ${member.guild.name} ${member.user} You are the ${last} Member! :tada:** \nPlease read the Rules and stay out of trouble!`);
-        let embed = new Discord.RichEmbed()
-            .setDescription(`<a:PARTY:463006559446892555> **Hello ${member.user.username}#${member.user.discriminator} Welcome to ${member.guild.name} please join the following server to show your support** <a:PARTY:463006559446892555> **:** \n[Click here to join the support server!](https://discord.gg/D4UqdWh) \n \n\n **Also add me to your server for cool  new perks!** \n[Click here to invite me!](https://discordapp.com/oauth2/authorize?client_id=451417687294345216&scope=bot&permissions=2146958591) `)
-        member.send(embed)
+            let embed = new Discord.RichEmbed()
+                .setDescription(`<a:PARTY:463006559446892555> **Hello ${member.user.username}#${member.user.discriminator} Welcome to ${member.guild.name} please join the following server to show your support** <a:PARTY:463006559446892555> **:** \n[Click here to join the support server!](https://discord.gg/D4UqdWh) \n \n\n **Also add me to your server for cool  new perks!** \n[Click here to invite me!](https://discordapp.com/oauth2/authorize?client_id=451417687294345216&scope=bot&permissions=2146958591) `)
+            member.send(embed)
         }
         //manos' server
         else if (member.guild.id == '446365173586853889') {
             member.guild.channels.get("446365173586853891").send(`<a:PARTY:463006559446892555> **Welcome to ${member.guild.name} ${member.user} You are the ${last} Member! :tada:** \nPlease read the <#455129298345525248> and stay out of trouble!`);
-      const role = member.guild.roles.find("name", "People")
-   
-        member.addRole(role)
+            const role = member.guild.roles.find("name", "People")
+
+            member.addRole(role)
         }
 
         //scanners server
         else if (member.guild.id == '418001869781205002') {
             let embed = new Discord.RichEmbed()
-            .setDescription(`<a:PARTY:463006559446892555> **Hello ${member.user.username}#${member.user.discriminator} Welcome to ${member.guild.name} please join the following server to show your support** ${wlc} **:** \n[Click here to join the support server!](https://discord.gg/D4UqdWh) \n \n\n **Also add me to your server for cool  new perks!** \n[Click here to invite me!](https://discordapp.com/oauth2/authorize?client_id=451417687294345216&scope=bot&permissions=2146958591) `)
-        member.send(embed)
+                .setDescription(`<a:PARTY:463006559446892555> **Hello ${member.user.username}#${member.user.discriminator} Welcome to ${member.guild.name} please join the following server to show your support** ${wlc} **:** \n[Click here to join the support server!](https://discord.gg/D4UqdWh) \n \n\n **Also add me to your server for cool  new perks!** \n[Click here to invite me!](https://discordapp.com/oauth2/authorize?client_id=451417687294345216&scope=bot&permissions=2146958591) `)
+            member.send(embed)
         } else {
             return
         }
@@ -425,26 +426,26 @@ bot.on('guildMemberRemove', (member) => {
         }
         //leos server
         else if (member.guild.id == '294142702151270402') {
-           // member.guild.channels.get("294142702151270402").send(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} has just left ${member.guild.name} <a:CRY:437630971693498368> the server now has ${member.guild.memberCount} Members!** \nI guess ${member.user.username}#${member.user.discriminator} didnt want to follow the rules!`);
-           let embed = new Discord.RichEmbed()
-           .setDescription(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} you have just left ${member.guild.name} please join the following server to show your support** <a:CRY:437630971693498368> **:** \n[Click here to join the support server!](https://discord.gg/D4UqdWh) \n \n\n **Also add me to your server for cool  new perks!** \n[Click here to invite me!](https://discordapp.com/oauth2/authorize?client_id=451417687294345216&scope=bot&permissions=2146958591) `)
-        member.send(embed)
+            // member.guild.channels.get("294142702151270402").send(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} has just left ${member.guild.name} <a:CRY:437630971693498368> the server now has ${member.guild.memberCount} Members!** \nI guess ${member.user.username}#${member.user.discriminator} didnt want to follow the rules!`);
+            let embed = new Discord.RichEmbed()
+                .setDescription(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} you have just left ${member.guild.name} please join the following server to show your support** <a:CRY:437630971693498368> **:** \n[Click here to join the support server!](https://discord.gg/D4UqdWh) \n \n\n **Also add me to your server for cool  new perks!** \n[Click here to invite me!](https://discordapp.com/oauth2/authorize?client_id=451417687294345216&scope=bot&permissions=2146958591) `)
+            member.send(embed)
         }
         //bossuls server
         else if (member.guild.id == '352216498867142666') {
-            member.guild.channels.get("352216498867142667").send(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} has just left ${member.guild.name} <a:CRY:437630971693498368> the server now has ${member.guild.memberCount} Members!** \nI guess ${member.user.username}#${member.user.discriminator} didnt want to follow the rules!`);        
+            member.guild.channels.get("352216498867142667").send(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} has just left ${member.guild.name} <a:CRY:437630971693498368> the server now has ${member.guild.memberCount} Members!** \nI guess ${member.user.username}#${member.user.discriminator} didnt want to follow the rules!`);
         }
         //wassils server
         else if (member.guild.id == '465702266104446976') {
             member.guild.channels.get("465702420635320320").send(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} has just left ${member.guild.name} <a:CRY:437630971693498368> the server now has ${member.guild.memberCount} Members!** \nI guess ${member.user.username}#${member.user.discriminator} didnt want to follow the rules!`);
             let embed = new Discord.RichEmbed()
-            .setDescription(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} you have just left ${member.guild.name} please join the following server to show your support** <a:CRY:437630971693498368> **:** \n[Click here to join the support server!](https://discord.gg/D4UqdWh) \n \n\n **Also add me to your server for cool  new perks!** \n[Click here to invite me!](https://discordapp.com/oauth2/authorize?client_id=451417687294345216&scope=bot&permissions=2146958591) `)
-        member.send(embed)
+                .setDescription(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} you have just left ${member.guild.name} please join the following server to show your support** <a:CRY:437630971693498368> **:** \n[Click here to join the support server!](https://discord.gg/D4UqdWh) \n \n\n **Also add me to your server for cool  new perks!** \n[Click here to invite me!](https://discordapp.com/oauth2/authorize?client_id=451417687294345216&scope=bot&permissions=2146958591) `)
+            member.send(embed)
         }
         //mattys other server
         else if (member.guild.id == '446365173586853889') {
             member.guild.channels.get("446365173586853891").send(`<a:WAVE:437630980480827403> **${member.user.username}#${member.user.discriminator} has just left ${member.guild.name} <a:CRY:437630971693498368> the server now has ${member.guild.memberCount} Members!** \nI guess ${member.user.username}#${member.user.discriminator} didnt want to follow the rules!`);
-  
+
         } else {
             return
         }
@@ -456,7 +457,7 @@ bot.on('guildMemberRemove', (member) => {
 
 });
 
-bot.login(process.env.BOT_TOKEN2);   
+bot.login(process.env.BOT_TOKEN2);
 
 const yourID = "321673115891531787"
 const setupCMD = "-reactionmembers"
@@ -470,7 +471,7 @@ const a = '`'
 if (roles.length !== reactions.length) throw "Roles list and reactions list are not the same length!";
 
 //Function to generate the role messages, based on your settings
-function generateMessages(){
+function generateMessages() {
     var messages = [];
     messages.push(initialMessage);
     for (let role of roles) messages.push(`React below to get the **"${role}"** role!`); //DONT CHANGE THIS
@@ -479,14 +480,14 @@ function generateMessages(){
 
 
 bot.on("message", message => {
-    if (message.author.id == yourID && message.content.toLowerCase() == setupCMD){
+    if (message.author.id == yourID && message.content.toLowerCase() == setupCMD) {
         var toSend = generateMessages();
-        let mappedArray = [[toSend[0], false], ...toSend.slice(1).map( (message, idx) => [message, reactions[idx]])];
-        for (let mapObj of mappedArray){
-            message.channel.send(mapObj[0]).then( sent => {
-                if (mapObj[1]){
-                  sent.react(mapObj[1]);  
-                } 
+        let mappedArray = [[toSend[0], false], ...toSend.slice(1).map((message, idx) => [message, reactions[idx]])];
+        for (let mapObj of mappedArray) {
+            message.channel.send(mapObj[0]).then(sent => {
+                if (mapObj[1]) {
+                    sent.react(mapObj[1]);
+                }
             });
         }
     }
@@ -494,31 +495,31 @@ bot.on("message", message => {
 
 
 bot.on('raw', event => {
-    if (event.t === 'MESSAGE_REACTION_ADD' || event.t == "MESSAGE_REACTION_REMOVE"){
-        
+    if (event.t === 'MESSAGE_REACTION_ADD' || event.t == "MESSAGE_REACTION_REMOVE") {
+
         let channel = bot.channels.get(event.d.channel_id);
-        let message = channel.fetchMessage(event.d.message_id).then(msg=> {
-        let user = msg.guild.members.get(event.d.user_id);
-        
-        if (msg.author.id == bot.user.id && msg.content != initialMessage){
-       
-            var re = `\\*\\*"(.+)?(?="\\*\\*)`;
-            var role = msg.content.match(re)[1];
-        
-            if (user.id != bot.user.id){
-                var roleObj = msg.guild.roles.find('name', role);
-                var memberObj = msg.guild.members.get(user.id);
-                
-                if (event.t === "MESSAGE_REACTION_ADD"){
-                    memberObj.addRole(roleObj)
-                } else {
-                    memberObj.removeRole(roleObj);
+        let message = channel.fetchMessage(event.d.message_id).then(msg => {
+            let user = msg.guild.members.get(event.d.user_id);
+
+            if (msg.author.id == bot.user.id && msg.content != initialMessage) {
+
+                var re = `\\*\\*"(.+)?(?="\\*\\*)`;
+                var role = msg.content.match(re)[1];
+
+                if (user.id != bot.user.id) {
+                    var roleObj = msg.guild.roles.find('name', role);
+                    var memberObj = msg.guild.members.get(user.id);
+
+                    if (event.t === "MESSAGE_REACTION_ADD") {
+                        memberObj.addRole(roleObj)
+                    } else {
+                        memberObj.removeRole(roleObj);
+                    }
                 }
             }
-        }
         })
- 
-    }   
+
+    }
 });
 
 
@@ -530,7 +531,7 @@ let reactions2 = [":Recruit:483627846590529556", ":Private:483627836666806272", 
 if (roles2.length !== reactions2.length) throw "Roles list and reactions list are not the same length!";
 
 //Function to generate the role messages, based on your settings
-function generateMessages(){
+function generateMessages() {
     var messages = [];
     messages.push(initialMessage2);
     for (let role of roles2) messages.push(`React below to get the **"${role}"** role!`); //DONT CHANGE THIS
@@ -540,80 +541,82 @@ function generateMessages(){
 
 bot.on("message", message => {
     let yourID = owner
-    if (message.author.id == yourID && message.content.toLowerCase() == setupCMD2){
+    if (message.author.id == yourID && message.content.toLowerCase() == setupCMD2) {
         var toSend = generateMessages();
-        let mappedArray = [[toSend[0], false], ...toSend.slice(1).map( (message, idx) => [message, reactions2[idx]])];
-        for (let mapObj of mappedArray){
-            message.channel.send(mapObj[0]).then( sent => {
-                if (mapObj[1]){
-                  sent.react(mapObj[1]);  
-                } 
+        let mappedArray = [[toSend[0], false], ...toSend.slice(1).map((message, idx) => [message, reactions2[idx]])];
+        for (let mapObj of mappedArray) {
+            message.channel.send(mapObj[0]).then(sent => {
+                if (mapObj[1]) {
+                    sent.react(mapObj[1]);
+                }
             });
         }
     }
 })
 bot.on('raw', event => {
-    if (event.t === 'MESSAGE_REACTION_ADD' || event.t == "MESSAGE_REACTION_REMOVE"){
-        
+    if (event.t === 'MESSAGE_REACTION_ADD' || event.t == "MESSAGE_REACTION_REMOVE") {
+
         let channel = bot.channels.get(event.d.channel_id);
-        let message = channel.fetchMessage(event.d.message_id).then(msg=> {
-        let user = msg.guild.members.get(event.d.user_id);
-        
-        if (msg.author.id == bot.user.id && msg.content != initialMessage){
-       
-            var re = `\\*\\*"(.+)?(?="\\*\\*)`;
-            var role = msg.content.match(re)[1];
-        
-            if (user.id != bot.user.id){
-                var roleObj = msg.guild.roles.find('name', role);
-                var memberObj = msg.guild.members.get(user.id);
-                
-                if (event.t === "MESSAGE_REACTION_ADD"){
-                    
-                    memberObj.send(`In ${memberObj.guild.name} You were given from the role \`${role}\``)
-                    memberObj.addRole(roleObj)
-                
-                } else {
-                    memberObj.send(`In ${memberObj.guild.name} You were removed from the role \`${role}\``)
-                    memberObj.removeRole(roleObj);
+        let message = channel.fetchMessage(event.d.message_id).then(msg => {
+            let user = msg.guild.members.get(event.d.user_id);
+
+            if (msg.author.id == bot.user.id && msg.content != initialMessage) {
+
+                var re = `\\*\\*"(.+)?(?="\\*\\*)`;
+                var role = msg.content.match(re)[1];
+
+                if (user.id != bot.user.id) {
+                    var roleObj = msg.guild.roles.find('name', role);
+                    var memberObj = msg.guild.members.get(user.id);
+
+                    if (event.t === "MESSAGE_REACTION_ADD") {
+
+                        memberObj.send(`In ${memberObj.guild.name} You were given from the role \`${role}\``)
+                        memberObj.addRole(roleObj)
+
+                    } else {
+                        memberObj.send(`In ${memberObj.guild.name} You were removed from the role \`${role}\``)
+                        memberObj.removeRole(roleObj);
+                    }
                 }
             }
-        }
         })
- 
-    }   
+
+    }
 });
 
 
 bot.on("message", async message => {
     if (message.channel.type == 'dm') return;
-    
+
     if (message.guild.id !== '446365173586853889') return;
     if (message.channel.id == "455122876677357569") return;
-    if(message.author.bot) return;
+    if (message.author.bot) return;
 
-const swearWords = ["http", "https", "Http", "Https", "HTTP", "HTTPS", "HTtp", "HTtp", "HTTps", "HTTPs", "hTtp", "hTtps", "hTTp", "hTTps", "hTTP", "hTPPs", "hTTPS", "HtTp", "HtTps", "HtTP", "HtTPS"];
-if (message.author.id === `446364321681768459`) return;
-if (message.author.id === owner) return;
-    if  (swearWords.some(word => message.content.includes(word)) ) {
+    const swearWords = ["http", "https", "Http", "Https", "HTTP", "HTTPS", "HTtp", "HTtp", "HTTps", "HTTPs", "hTtp", "hTtps", "hTTp", "hTTps", "hTTP", "hTPPs", "hTTPS", "HtTp", "HtTps", "HtTP", "HtTPS"];
+    if (message.author.id === `446364321681768459`) return;
+    if (message.author.id === owner) return;
+    if (swearWords.some(word => message.content.includes(word))) {
         message.delete().catch(err => console.log(err));
         message.channel.send(`${message.author} Please do not send any links!`);
-}})
+    }
+})
 
 bot.on("message", async message => {
     if (message.channel.type == 'dm') return;
-    
+
     if (message.guild.id !== '323206382147076096') return;
     if (message.channel.id == "477585294766374912") return;
     if (message.channel.id == "479205588031635476") return;
-    if(message.author.bot) return;
+    if (message.author.bot) return;
 
-const swearWords = ["http", "https", "Http", "Https", "HTTP", "HTTPS", "HTtp", "HTtp", "HTTps", "HTTPs", "hTtp", "hTtps", "hTTp", "hTTps", "hTTP", "hTPPs", "hTTPS", "HtTp", "HtTps", "HtTP", "HtTPS"];
-if (message.author.id === jordan) return;
-if (message.author.id === owner) return;
-    if  (swearWords.some(word => message.content.includes(word)) ) {
+    const swearWords = ["http", "https", "Http", "Https", "HTTP", "HTTPS", "HTtp", "HTtp", "HTTps", "HTTPs", "hTtp", "hTtps", "hTTp", "hTTps", "hTTP", "hTPPs", "hTTPS", "HtTp", "HtTps", "HtTP", "HtTPS"];
+    if (message.author.id === jordan) return;
+    if (message.author.id === owner) return;
+    if (swearWords.some(word => message.content.includes(word))) {
         message.delete().catch(err => console.log(err));
         message.channel.send(`${message.author} Please do not send any links!`);
-}})
+    }
+})
 
 

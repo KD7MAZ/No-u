@@ -2,8 +2,8 @@ const Discord = require("discord.js");
 
 exports.run = (client, msg, args) => {
 
-responses = [
-        "It is certain", 
+    responses = [
+        "It is certain",
         "It is decidedly so",
         "Without a doubt",
         "Yes definitely",
@@ -13,12 +13,12 @@ responses = [
         "Outlook good",
         "Yes",
         "Signs point to yes",
-        "Reply hazy try again", 
+        "Reply hazy try again",
         "Ask again later",
         "Better not tell you now",
         "Cannot predict now",
         "Concentrate and ask again",
-        "Don't count on it", 
+        "Don't count on it",
         "My reply is no",
         "My sources say no",
         "Outlook not so good",
@@ -32,10 +32,10 @@ responses = [
 
 
     let embed = new Discord.RichEmbed()
-    .setTitle(":8ball: The 8ball replied:")
-    .setColor("#8F00FF")
-    .setDescription((responses[Math.floor(Math.random() * responses.length)]))
+        .setTitle(":8ball: The 8ball replied:")
+        .setColor("#8F00FF")
+        .setDescription((responses[Math.floor(Math.random() * responses.length)]))
     msg.channel.send(embed);
 }
 
-   
+
