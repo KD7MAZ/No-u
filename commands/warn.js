@@ -36,9 +36,9 @@ exports.run = (bot, message, [mention, ...reason]) => {
     if (message.content.startsWith(prefix + 'warn <@!321673115891531787>'))
        return message.channel.send(`${message.author} i can not warn a God, sorry.`)    
        
-    if (message.author.id == message.mentions.users.first()) 
-       return message.channel.send(`${message.author} You cannot do that to yourself, why did you try?`);
-   
+    if (message.mentions.members.first().id === message.author.id){
+      return message.channel.send(`:x: ${message.author} You cannot do that to yourself, why did you try?`);
+    }
        message.delete()
     warnedMember.addRole(warnRole).then(member => {
     let serverwarnedmsg = new Discord.RichEmbed()
