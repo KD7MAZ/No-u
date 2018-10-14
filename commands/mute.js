@@ -54,9 +54,9 @@ const Discord = require('discord.js')
       .setDescription(`**Description:** Mutes a member so they can not type nor add reaction for a specified time limit \n**Usage:** `+ prefix +`mute ➡<user>⬅ [amount] [reason] \n**Examples:** \n`+ prefix +`mute @Ahsan 45m No u \n`+ prefix +`mute @Ahsan 3h Why are u a noob \n`+ prefix +`mute @Ahsan 7d Spamming too much \n`+ prefix +`mute @Ahsan forever Advertising via dms \n**Error:** Did not specify a user to mute`)
     return message.channel.send(Incorrect);}
 
-      if (message.author.id == message.mentions.users.first()) 
-        return message.channel.send(`:x: ${message.author} You cannot do that to yourself, why did you try?`);
-      
+      if (message.mentions.members.first().id === message.author.id){
+      return message.channel.send(`:x: ${message.author} You cannot do that to yourself, why did you try?`);
+    }
       if (message.content.startsWith('-mute <@321673115891531787>'))
         return message.channel.send(`:x: ${message.author} Lol you thought i was gonna mute my own maker, nah m8`) 
         
