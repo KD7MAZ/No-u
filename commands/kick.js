@@ -54,7 +54,9 @@ exports.run = (bot, message, [mention, ...reason]) => {
         message.channel.send(`<a:WAVE:437630980480827403> **Ahsan#3247 has just left ${message.guild.name} <a:CRY:437630971693498368> the server now has ${message.guild.memberCount} Members!** \nI guess Ahsan#3247 didnt want to follow the rules!`);
         return message.channel.send(serverkickmsg)}
 
-
+if (message.mentions.members.first().id === message.author.id){
+      return message.channel.send(`:x: ${message.author} You cannot do that to yourself, why did you try?`);
+    }
   
     kickMember.kick(reason.join(" ")).then(member => {
         let serverKickmsg = new Discord.RichEmbed()
