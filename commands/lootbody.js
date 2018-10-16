@@ -2,12 +2,12 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 const weather = require('weather-js')
 const fs = require('fs')
-const prefix = '-'
+const prefix = '.'
 const owner = '321673115891531787'
 const myserver = '323206382147076096'
 const a = '`'
 const talkedRecently = new Set();
-const logo = `https://i.i.imgur.com/FWdUqI2.png`
+const logo = `https://i.imgur.com/Wo2xa5O.png`
 
 exports.run = (client, message, args) => {
 
@@ -473,8 +473,8 @@ exports.run = (client, message, args) => {
                         .setTitle(`${message.author.username} Looted Someones Body!`)
                         .setColor("#00CED1")
                         .setDescription(`You have found a : ${itemname}`)
-                        .setImage(itemimg)
-                        .setThumbnail(`https://imgur.com/TRiFs1d.png`)
+                        .setThumbnail(itemimg)
+                        .setImage(logo)
                         .setFooter(`${message.author.username} Killed and looted a body!`, message.author.displayAvatarURL)
                     message.channel.send(embed)
                 } catch (err) {
@@ -483,13 +483,13 @@ exports.run = (client, message, args) => {
                         .setTitle(`${message.author.username} Looted Someones Body!`)
                         .setColor("#00CED1")
                         .setDescription(`You have found a : ${itemname}`)
-                        .setImage(itemimg)
-                        .setThumbnail(`https://imgur.com/TRiFs1d.png`)
+                        .setThumbnail(itemimg)
+                        .setImage(logo)
                         .setFooter(`${message.author.username} Killed and looted a body!`, message.author.displayAvatarURL)
                     message.channel.send(embed)
                     }
                 }
-                //light grey #A9A9A9
+               
             }
         }
     
