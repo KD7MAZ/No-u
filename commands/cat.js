@@ -7,9 +7,9 @@ const owner = '321673115891531787'
 const superagent = require('superagent');
 
 exports.run = async (bot, message, [mention, ...reason]) => {
-    if (message.author.id !== owner) return message.channel.send(`${message.author} Sorry for the inconvinience but the cat command doesnt work at the moment.`)
-    let { body } = await superagent
-        .get(`  `);
+    //if (message.author.id !== owner) return message.channel.send(`${message.author} Sorry for the inconvinience but the cat command doesnt work at the moment.`)
+    let {body} = await superagent
+    .get('http://aws.random.cat/meow');
 
     let catembed = new Discord.RichEmbed()
         .setColor('#8F00FF')
