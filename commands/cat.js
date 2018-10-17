@@ -14,7 +14,7 @@ exports.run = async (bot, message, [mention, ...reason]) => {
     let catembed = new Discord.RichEmbed()
         .setColor('#8F00FF')
         .setTitle("Random Cat Image")
-        .setImage(body.url);
+        .setImage(body.file);
     message.channel.send(catembed);
 
 }
